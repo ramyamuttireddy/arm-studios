@@ -42,7 +42,7 @@ export default function LandingPage() {
       {/* Background */}
       <style jsx>{`
         .full-landing-image {
-          background: url("https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg")
+          background: url("https://www.shutterstock.com/image-illustration/twinkling-glitter-falling-on-flat-600nw-674580574.jpg")
             no-repeat center center;
           background-size: cover;
         }
