@@ -30,7 +30,7 @@ export default function Hero() {
           <span className="block mb-2">We design</span>
           <span className="block mb-2">unique</span>
           <span className="block mb-2">web graphic</span>
-          <span className="block">experience</span>
+          <span className="block">experienc</span>
         </motion.h1>
 
         {/* Hidden image hover effect */}
