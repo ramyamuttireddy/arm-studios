@@ -43,10 +43,10 @@ export default function LandingPage() {
     leading-none
     px-6
     text-[40px]        /* phones */
-    sm:text-[60px]     /* small tablets */
+    sm:text-[150px]     /* small tablets */
     md:text-[100px]    /* tablets */
     lg:text-[150px]    /* laptops */
-    xl:text-[300px]    /* desktops */
+    xl:text-[250px]    /* desktops */
   "
       >
         <div>ARM</div>
