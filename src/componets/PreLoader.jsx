@@ -42,7 +42,7 @@ export default function LandingPage() {
       {/* Background */}
       <style jsx>{`
         .full-landing-image {
-          background: url("https://images.unsplash.com/photo-1612831669480-2db82b660dfa?auto=format&fit=crop&w=1950&q=80")
+          background: url("https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg")
             no-repeat center center;
           background-size: cover;
         }
