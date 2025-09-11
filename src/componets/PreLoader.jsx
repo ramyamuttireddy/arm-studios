@@ -1,9 +1,11 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // <-- import
 import $ from "jquery";
 import "jquery.ripples";
 
-
 export default function LandingPage() {
+  const navigate = useNavigate(); // <-- hook
+
   useEffect(() => {
     $(".full-landing-image").ripples({
       resolution: 256,
@@ -20,7 +22,7 @@ export default function LandingPage() {
   }, []);
 
   const goHome = () => {
-    window.location.href = "/homepage";
+    navigate("/homepage"); // <-- use React Router navigation
   };
 
   return (
@@ -28,35 +30,19 @@ export default function LandingPage() {
       className="full-landing-image w-full h-screen flex items-center justify-center relative cursor-pointer"
       onClick={goHome}
     >
-      {/* Dark overlay for better text contrast */}
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Overlay text */}
-      <h1
-        className="
-    relative
-    text-left 
-    text-slate-300
-    font-extrabold 
-    tracking-wide 
-    drop-shadow-2xl 
-    leading-none
-    px-6
-    text-[40px]        /* phones */
-    sm:text-[150px]     /* small tablets */
-    md:text-[100px]    /* tablets */
-    lg:text-[150px]    /* laptops */
-    xl:text-[250px]    /* desktops */
-  "
-      >
+      <h1 className="relative text-left text-slate-300 font-extrabold tracking-wide drop-shadow-2xl leading-none px-6 text-[40px] sm:text-[60px] md:text-[100px] lg:text-[150px] xl:text-[250px]">
         <div>ARM</div>
         <div>STUDIOS</div>
       </h1>
 
-      {/* Background image */}
+      {/* Background */}
       <style jsx>{`
         .full-landing-image {
-          background: url("https://www.shutterstock.com/image-illustration/twinkling-glitter-falling-on-flat-600nw-674580574.jpg")
+          background: url("https://images.unsplash.com/photo-1612831669480-2db82b660dfa?auto=format&fit=crop&w=1950&q=80")
             no-repeat center center;
           background-size: cover;
         }

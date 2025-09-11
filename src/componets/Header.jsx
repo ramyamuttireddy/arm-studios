@@ -78,7 +78,7 @@ export default function Header() {
             className="fixed inset-0 bg-black text-white z-50 flex flex-col md:flex-row"
           >
             {/* Left Big Menu Items */}
-            <div className="flex-1 flex flex-col justify-center items-center md:items-start pl-16 space-y-12">
+            <div className="flex-1 flex flex-col justify-center items-center  md:items-center  p-16 space-y-12">
               {["Home", "Works", "About", "Contact"].map((item, idx) => (
                 <Link
                   to={`#${item.toLowerCase()}`}
