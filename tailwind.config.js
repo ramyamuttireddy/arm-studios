@@ -1,12 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-   {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
-}
-
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
