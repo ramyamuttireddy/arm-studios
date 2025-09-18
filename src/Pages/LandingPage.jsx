@@ -27,7 +27,7 @@ export default function LandingPage() {
 
   return (
     <div
-      className="full-landing-image w-full h-screen flex items-center justify-center relative cursor-pointer"
+      className="full-landing-image w-full h-screen flex items-center justify-center relative cursor-pointer font-sans"
       onClick={goHome}
     >
       {/* Dark overlay */}
