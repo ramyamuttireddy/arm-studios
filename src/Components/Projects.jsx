@@ -8,7 +8,7 @@ const projects = [
     workType: "Residential",
     year: "2023",
     image:
-      "https://scontent.fvtz3-2.fna.fbcdn.net/v/t39.30808-6/470177983_18299929606226203_495389390746194773_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tD2yQx9GMrEQ7kNvwEEiVxM&_nc_oc=AdmfkAv7eZo4zsbneiDNcZRmjd3JN9oqEX1m9AItr1n6CNJ36ZbMK-FCElQMAwQB5Wk&_nc_zt=23&_nc_ht=scontent.fvtz3-2.fna&_nc_gid=_qttOKFibAc8TGxDZhSytw&oh=00_AfaCB7luGhKFUOg-GaNunBY6wKadqhKYbQRgffquGyIErA&oe=68C8CBEC",
+      "https://obys.agency/wp-content/uploads/2022/06/OCHI.png",
   },
   {
     title: "Flat Interiors #221",

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Observer } from "gsap/Observer";
+import Header from "../Components/Header"
 
 gsap.registerPlugin(Observer);
 
@@ -112,6 +113,7 @@ export default function Gallery() {
 
   return (
     <div className="relative w-full h-screen bg-black text-white overflow-hidden font-[TheGoodMonolith]">
+      <Header />
       {/* Slides */}
       <div className="absolute inset-0">
         {slideImages.map((src, i) => (
@@ -127,9 +129,9 @@ export default function Gallery() {
       </div>
 
       {/* Top scroll hint */}
-      <div className="absolute top-8 right-8 text-sm opacity-80 z-50">
+      {/* <div className="absolute top-8 right-8 text-sm opacity-80 z-50">
         scroll or drag
-      </div>
+      </div> */}
 
       {/* Bottom UI */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[720px] max-w-full flex flex-col items-center z-50">
