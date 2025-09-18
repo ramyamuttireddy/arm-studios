@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto Slab", "serif"], // set Helvetica as main
+        sans: [ "Montserrat", "sans-serif"], // set Helvetica as main
       },
     },
   },
