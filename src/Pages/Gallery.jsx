@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Observer } from "gsap/Observer";
-import Header from "../Components/Header"
+import Header from "../Components/Header";
 
 gsap.registerPlugin(Observer);
 
@@ -59,11 +59,11 @@ export default function Gallery() {
       .timeline({
         onStart: () => {
           gsap.set(nextSlide, { autoAlpha: 1 });
-          nextSlide.classList.add("z-50");
+          nextSlide.classList.add("z-20"); // slide below header
         },
         onComplete: () => {
           gsap.set(prevSlide, { autoAlpha: 0 });
-          nextSlide.classList.remove("z-50");
+          nextSlide.classList.remove("z-20");
           setCurrent(next);
           setIsAnimating(false);
         }
@@ -113,9 +113,13 @@ export default function Gallery() {
 
   return (
     <div className="relative w-full h-screen bg-black text-white overflow-hidden font-[TheGoodMonolith]">
-      <Header />
+      {/* Header stays on top */}
+      <div className="relative z-[9999]">
+        <Header />
+      </div>
+
       {/* Slides */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         {slideImages.map((src, i) => (
           <div
             key={i}
@@ -128,13 +132,8 @@ export default function Gallery() {
         ))}
       </div>
 
-      {/* Top scroll hint */}
-      {/* <div className="absolute top-8 right-8 text-sm opacity-80 z-50">
-        scroll or drag
-      </div> */}
-
       {/* Bottom UI */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[720px] max-w-full flex flex-col items-center z-50">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[720px] max-w-full flex flex-col items-center z-10">
         <div className="text-xl font-bold mb-8 opacity-90 tracking-wide">
           COSMIC SERIES
         </div>
