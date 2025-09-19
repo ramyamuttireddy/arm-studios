@@ -39,7 +39,7 @@ export default function Projects() {
                 Villa #22
               </h2>
               <img
-                src="public/assets/img/Villa 22.png"
+                src="/assets/img/Villa 22.png"
                 alt="Villa"
                 className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] 2xl:w-[858px] 2xl:h-[536px] object-cover"
               />
@@ -61,7 +61,7 @@ export default function Projects() {
                 Flat Interiors #221
               </h2>
               <img
-                src="public/assets/img/Flat Interiors 221.png"
+                src="/assets/img/Flat Interiors 221.png"
                 alt="Flat"
                 className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover"
               />
@@ -93,7 +93,7 @@ export default function Projects() {
                     Villa #44
                   </h2>
                   <img
-                    src="public/assets/img/Villa 44.png"
+                    src="/assets/img/Villa 44.png"
                     alt="Villa"
                     className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover"
                   />
@@ -135,7 +135,7 @@ export default function Projects() {
                     Sandalwood Villa
                   </h2>
                   <img
-                    src="public/assets/img/Sandalwood Villa.png"
+                    src="/assets/img/Sandalwood Villa.png"
                     alt="Villa"
                     className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover"
                   />
@@ -195,7 +195,7 @@ export default function Projects() {
                     Residence #11
                   </h2>
                   <img
-                    src="public/assets/img/Residence 11.png"
+                    src="/assets/img/Residence 11.png"
                     alt="Villa"
                     className="shadow-slate-50 w-full lg:w-[550px] lg:h-[750px] 2xl:w-[615px] 2xl:h-[820px] object-cover"
                   />
@@ -222,7 +222,7 @@ export default function Projects() {
                     Residence #622
                   </h2>
                   <img
-                    src="public/assets/img/Residence 622.png"
+                    src="/assets/img/Residence 622.png"
                     alt="Villa"
                     className="shadow-slate-50 w-full lg:w-[550px] lg:h-[700px] 2xl:w-[615px] 2xl:h-[769px] object-cover"
                   />
