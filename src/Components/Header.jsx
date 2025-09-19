@@ -38,21 +38,21 @@ export default function Header() {
       <header className="fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-6 flex justify-between items-center bg-black text-white">
         <div className="flex items-center gap-4">
           <FaTh
-            className="text-2xl md:text-3xl cursor-pointer text-white hover:text-gray-400 transition-colors"
+            className=" text-2xl md:text-3xl cursor-pointer text-white hover:text-gray-400 transition-colors"
             onClick={toggleMenu}
           />
           <span
             onClick={handleLogoClick}
-            className="text-xl md:text-2xl font-bold tracking-widest text-white hover:text-gray-400 cursor-pointer"
+            className="text-xl md:text-xl font-bold  text-white hover:text-gray-400 cursor-pointer text-left leading-3"
           >
             ARM STUDIO
           </span>
         </div>
 
         <nav className="hidden md:flex gap-8 uppercase text-sm tracking-wide text-white">
-          <Link to="/works" className="text-white hover:text-gray-400">Works</Link>
-          <Link to="/about" className="text-white hover:text-gray-400">About</Link>
-          <Link to="/contact" className="text-white hover:text-gray-400">Contact</Link>
+          <Link to="/works" className="text-white hover:text-gray-400 text-[13px]">Works</Link>
+          <Link to="/about" className="text-white hover:text-gray-400 text-[13px]">About</Link>
+          <Link to="/contact" className="text-white hover:text-gray-400 text-[13px]">Contact</Link>
         </nav>
       </header>
 

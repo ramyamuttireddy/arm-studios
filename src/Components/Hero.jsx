@@ -8,7 +8,7 @@ export default function Hero() {
       className="relative flex flex-col gap-40 min-h-screen bg-black text-white overflow-hidden"
     >
       {/* Container */}
-      <div className="w-full max-w-[1200px] mx-auto p-40 md:px-12 lg:px-20 flex gap-10 justify-center h-full">
+      <div className="w-full max-w-[1200px] mx-auto p-40 md:px-12 lg:px-20 flex gap-20 justify-center h-full">
         {/* Section Counter */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
@@ -16,7 +16,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="mb-10 text-gray-400 text-4xl md:text-6xl font-serif italic  pt-10"
         >
-          01
+          8
         </motion.div>
 
         {/* Hero Headline */}
@@ -24,8 +24,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, staggerChildren: 0.2 }}
-          className="font-extrabold leading-[1.1] tracking-tight 
-                     text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem]"
+          className=" leading-[50px] uppercase  
+                     text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-medium "
         >
           <span className="block mb-2">We design</span>
           <span className="block mb-2">unique</span>
@@ -53,9 +53,9 @@ export default function Hero() {
   /> 
 
   <img
-    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnI3_zGoIlHDVvHzHJJccDV8b_w-0PX6hs_tPkZRPgEe18aw66"
+    src="public/assets/img/Hero Circle.png"
     alt="House Design"
-    className="w-[800px] object-cover"
+    className="w-[1300px] object-cover"
   />
 
   {/* Circle (pin) on image */}
