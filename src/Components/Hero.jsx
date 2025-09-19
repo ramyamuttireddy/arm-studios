@@ -53,7 +53,7 @@ export default function Hero() {
   /> 
 
   <img
-    src="/assets/img/Hero Circle.png"
+    src="assets/img/hero_circle.png"
     alt="House Design"
     className="w-[1300px] object-cover"
   />
