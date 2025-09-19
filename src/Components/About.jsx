@@ -42,7 +42,7 @@ export default function About() {
               {/* Image */}
               <div className="flex-1 flex justify-center lg:justify-start">
                 <div className="bg-slate-100 p-4 sm:p-6 md:p-8 lg:p-10 max-w-sm lg:max-w-none">
-                  <img src="public/assets/img/Logo.png" alt="ARM Studios Logo" className="w-full h-auto" />
+                  <img src="/assets/img/Logo.png" alt="ARM Studios Logo" className="w-full h-auto" />
                 </div>
               </div>
 

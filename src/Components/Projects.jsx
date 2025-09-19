@@ -251,7 +251,7 @@ export default function Projects() {
                 Villa Entrance
               </h2>
               <img
-                src="public/assets/img/Villa Entrance.png"
+                src="/assets/img/Villa Entrance.png"
                 alt="Villa"
                 className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] 2xl:w-[858px] 2xl:h-[536px] object-cover"
               />
@@ -273,7 +273,7 @@ export default function Projects() {
                 Private Villa
               </h2>
               <img
-                src="public/assets/img/Private Villa.png"
+                src="/assets/img/Private Villa.png"
                 alt="Flat"
                 className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[511px] 2xl:h-[681px] object-cover"
               />
