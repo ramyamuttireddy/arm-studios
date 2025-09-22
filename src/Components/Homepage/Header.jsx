@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTh } from "react-icons/fa";
-import StaggeredMenu from "../MENUPAGE/Menupage"; // Adjust path
+import StaggeredMenu from "../../MENUPAGE/Menupage"; // Adjust path
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

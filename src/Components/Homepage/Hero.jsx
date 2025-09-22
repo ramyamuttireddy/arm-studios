@@ -8,13 +8,13 @@ export default function Hero() {
       className="relative flex flex-col gap-40 min-h-screen bg-black text-white overflow-hidden"
     >
       {/* Container */}
-      <div className="w-full max-w-[1200px] mx-auto p-40 md:px-12 lg:px-20 flex gap-20 justify-center h-full">
+      <div className="w-full max-w-[1200px] mx-auto p-5 pt-40 md:px-12 lg:px-20 flex  gap-10 justify-center h-full xl:p-30 xl:gap-20 ">
         {/* Section Counter */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="mb-10 text-gray-400 text-4xl md:text-6xl font-serif italic  pt-10"
+          className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[96px] fade-in  text-right"
         >
           8
         </motion.div>

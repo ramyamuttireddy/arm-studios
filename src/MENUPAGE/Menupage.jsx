@@ -70,17 +70,17 @@ export default function StaggeredMenu({
                 key={idx}
                 to={item.link}
                 onClick={() => setOpen(false)}
-                className="hover:text-gray-400 transition-colors w-full  text-[30px] sm:text-[40px] md:text-[60px] lg:text-[40px] xl:text-[80px]"
+                className="hover:text-gray-400 transition-colors w-full  text-[30px] sm:text-[40px] md:text-[60px] lg:text-[40px] xl:text-[80px] 2xl:text-[90px]"
                 ref={(el) => (itemsRef.current[idx] = el)}
-              >
-                {displayItemNumbering && (
+              > 
+                {/* {displayItemNumbering && (
                   <span
                     className="mr-1 sm:mr-2 md:mr-3 lg:mr-4 xl:mr-6"
                     style={{ color: accentColor }}
                   >
                     {`0${idx + 1}.`}
                   </span>
-                )}
+                )} */}
                 {item.label}
               </Link>
             ))}

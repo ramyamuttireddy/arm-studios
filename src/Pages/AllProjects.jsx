@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../Components/Header";
+import Header from "../Components/Homepage/Header";
 
 // Projects data
 const projects = [

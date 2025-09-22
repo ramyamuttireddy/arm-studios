@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Observer } from "gsap/Observer";
-import Header from "../Components/Header";
+import Header from "../Components/Homepage/Header";
 
 gsap.registerPlugin(Observer);
 

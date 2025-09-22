@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { GoArrowDownRight } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
-import useFadeInOnScroll from "../animations/useFadeInOnScroll";
+import useFadeInOnScroll from "../../animations/useFadeInOnScroll";
 
 export default function Projects() {
   useFadeInOnScroll(".fade-in");
@@ -16,15 +16,15 @@ export default function Projects() {
     <section className="relative w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-black text-white overflow-hidden fade-in">
       <div className=" px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-16 xl:gap-20 justify-end items-end  mb-8 md:mb-12 lg:mb-16">
+        <div className="flex justify-center  items-center md:flex-row gap-4 md:gap-10 lg:gap-16 xl:gap-20 xl:justify-end xl:items-end  mb-8 md:mb-12 lg:mb-16">
           {/* Number */}
-          <div className="text-gray-800 text-3xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] fade-in w-[30%] text-right">
+          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[96px] fade-in w-[30%] text-right">
             02
           </div>
 
           {/* Heading */}
           <div className="border-b-2 w-full md:w-[85%] lg:w-[82%] xl:w-[70%] p-2 flex justify-start">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-[100px] 2xl:text-[110px] font-medium border-white pb-2 tracking-wide fade-in">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-[100px] 2xl:text-[110px] font-medium border-white pb-2 tracking-wide fade-in">
               OUR PROJECTS
             </h2>
           </div>
@@ -41,7 +41,7 @@ export default function Projects() {
               <img
                 src="/assets/img/Villa 22.png"
                 alt="Villa"
-                className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] 2xl:w-[858px] 2xl:h-[536px] object-cover"
+                className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] xl:w-[800px] xl:h-[500px] 2xl:w-[858px] 2xl:h-[536px] object-cover"
               />
               <div className="w-[100px] sm:w-[120px] md:w-[134px] h-[30px] sm:h-[32px] md:h-[35px] bg-white mt-3 md:mt-4"></div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2">
@@ -63,7 +63,7 @@ export default function Projects() {
               <img
                 src="/assets/img/Flat Interiors 221.png"
                 alt="Flat"
-                className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover"
+                className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] xl:w-[500px] xl:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover"
               />
               <div className="w-[100px] sm:w-[120px] md:w-[134px] h-[30px] sm:h-[32px] md:h-[35px] bg-white mt-3 md:mt-4"></div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2">
@@ -88,14 +88,14 @@ export default function Projects() {
                 className="flex flex-col items-start lg:items-end cursor-pointer group"
                 onClick={handleClick}
               >
-                <div className="ml-0 lg:ml-[50px]">
+                <div className="ml-0 lg:ml-[20px] 2xl:ml-[50px]">
                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8">
                     Villa #44
                   </h2>
                   <img
                     src="/assets/img/Villa 44.png"
                     alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover"
+                    className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover"
                   />
                   <div className="w-[100px] sm:w-[120px] md:w-[134px] h-[30px] sm:h-[32px] md:h-[35px] bg-white mt-3 md:mt-4"></div>
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2">
@@ -169,7 +169,7 @@ export default function Projects() {
             </div>
 
             {/* Right Column */}
-            <div className="flex-1">
+            <div className="flex-2">
               {/* Arrow Button */}
               <div className="mt-10 md:mt-16 lg:mt-[140px] flex justify-center lg:justify-end fade-in">
                 <button
