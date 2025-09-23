@@ -18,25 +18,32 @@ export default function HomePage() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Preloader />;
+  if (loading) {
+    return (
+      <div className="bg-black text-white overflow-hidden font-sans h-screen w-screen">
+        <Preloader />
+      </div>
+    );
+  }
 
   return (
-    <div className="bg-black text-white overflow-x-hidden font-sans">
-      <CustomCursor />
-      <Header />
-      <main className="space-y-24">
-        <div className="fade-in">
-          <Hero />
-        </div>
-        <div className="fade-in">
-          <Projects />
-        </div>
-        <div className="fade-in">
-          <About />
-          <ScroolText />
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <div className="bg-black text-white font-sans scroll-smooth overflow-x-hidden overflow-y-scroll [&::-webkit-scrollbar]:hidden">
+  <CustomCursor />
+  <Header />
+  <main className="space-y-24">
+    <section className="fade-in">
+      <Hero />
+    </section>
+    <section className="fade-in">
+      <Projects />
+    </section>
+    <section className="fade-in">
+      <About />
+      <ScroolText />
+    </section>
+  </main>
+  <Footer />
+</div>
+
   );
 }

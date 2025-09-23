@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <>
       {/* Top Navbar */}
-      <header className="fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4 md:py-6 flex justify-between items-center bg-gradient-to-r from-black via-gray-900 to-black shadow-lg text-white transition-all duration-500">
+      <header className="fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4 md:py-6 flex justify-between items-center bg-black shadow-sm shadow-slate-300  text-white transition-all duration-500">
         {/* Logo & Hamburger */}
         <div className="flex items-center gap-4">
           <FaTh
