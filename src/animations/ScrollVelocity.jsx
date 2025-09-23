@@ -9,6 +9,7 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 
+// Hook to get the width of an element
 function useElementWidth(ref) {
   const [width, setWidth] = useState(0);
 
@@ -26,11 +27,11 @@ function useElementWidth(ref) {
 
 export const ScrollVelocity = ({
   texts = [],
-  velocity = 100,
+  velocity = 50, // reduced default velocity
   damping = 50,
-  stiffness = 400,
+  stiffness = 100, // lower stiffness for smoother movement
   numCopies = 6,
-  velocityMapping = { input: [0, 1000], output: [0, 5] },
+  velocityMapping = { input: [0, 1000], output: [0, 1] }, // lower output for slower scaling
 }) => {
   function VelocityText({
     children,
@@ -43,15 +44,17 @@ export const ScrollVelocity = ({
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
     const scrollVelocity = useVelocity(scrollY);
+
     const smoothVelocity = useSpring(scrollVelocity, {
       damping: damping ?? 50,
-      stiffness: stiffness ?? 400,
+      stiffness: stiffness ?? 100, // smoother
     });
+
     const velocityFactor = useTransform(
       smoothVelocity,
       velocityMapping?.input || [0, 1000],
-      velocityMapping?.output || [0, 5],
-      { clamp: false }
+      velocityMapping?.output || [0, 1],
+      { clamp: true } // clamp to avoid extreme fast movement
     );
 
     const copyRef = useRef(null);
@@ -69,16 +72,13 @@ export const ScrollVelocity = ({
     });
 
     const directionFactor = useRef(1);
+
     useAnimationFrame((t, delta) => {
       let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
-      if (velocityFactor.get() < 0) {
-        directionFactor.current = -1;
-      } else if (velocityFactor.get() > 0) {
-        directionFactor.current = 1;
-      }
+      // use velocityFactor to gently increase/decrease speed
+      moveBy *= 1 + velocityFactor.get();
 
-      moveBy += directionFactor.current * moveBy * velocityFactor.get();
       baseX.set(baseX.get() + moveBy);
     });
 
@@ -88,12 +88,7 @@ export const ScrollVelocity = ({
         <span
           key={i}
           ref={i === 0 ? copyRef : null}
-          className=" font-sans
-            flex-shrink-0 px-8
-            text-2xl md:text-5xl 2xl:text-[96px]
-            font-extrabold italic uppercase
-            text-transparent [-webkit-text-stroke:1px_white]
-          "
+          className="font-sans flex-shrink-0 px-8 text-2xl md:text-5xl 2xl:text-[96px] font-extrabold italic uppercase text-transparent [-webkit-text-stroke:1px_white]"
         >
           {children}
         </span>

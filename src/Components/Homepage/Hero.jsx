@@ -27,7 +27,7 @@ export default function Hero() {
           className=" leading-[50px] uppercase  
                      text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-medium "
         >
-          <span className="block mb-2">We design</span>
+          <span className="block mb-2 ">We design</span>
           <span className="block mb-2">unique</span>
           <span className="block mb-2">web graphic</span>
           <span className="block">experienc</span>

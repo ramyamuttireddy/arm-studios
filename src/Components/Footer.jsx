@@ -59,13 +59,15 @@ export default function Footer() {
         </div>
        
       </div>
-    </div>
 
-    <div className=" flex justify-end items-end">
+       <div className=" flex justify-end items-end mt-20">
        <div className="w-[70%] border-t-2">
         <div className="text-lg pt-10 pb-20">@armstudios.design</div>
     </div>
     </div>
+    </div>
+
+   
     </div>
     
   );

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import CustomCursor from "../animations/CursorPointer";
 import useFadeInOnScroll from "../animations/useFadeInOnScroll";
-import Header from "../Components/Homepage/Header.jsx"
-import Hero from "../Components/Homepage/Hero.jsx";
-import Projects from "../Components/Homepage/Projects.jsx"
-import About from "../Components/Homepage/About.jsx"
-import Footer from "../Components/Homepage/Footer.jsx";
-import Preloader from "../Components/Homepage/PreLoader.jsx"
-import ScroolText from "../Components/Homepage/ScroolText.jsx";
+import Header from "../Components/Header";
+import Hero from "../Components/Homepage/Hero";
+import Projects from "../Components/Homepage/Projects";
+import About from "../Components/Homepage/About";
+import Footer from "../Components/Footer";
+import Preloader from "../Components/PreLoader";
+import ScroolText from "../Components/Homepage/ScroolText";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);

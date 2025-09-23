@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTh } from "react-icons/fa";
-import StaggeredMenu from "../../MENUPAGE/Menupage"; // Adjust path
+import StaggeredMenu from "../MENUPAGE/Menupage"; // Adjust path
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,31 +28,39 @@ export default function Header() {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   const handleLogoClick = () => {
-    toggleMenu();           
-    navigate("/homepage");  
+    toggleMenu();
+    navigate("/homepage");
   };
 
   return (
     <>
       {/* Top Navbar */}
-      <header className="fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-6 flex justify-between items-center bg-black text-white">
+      <header className="fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4 md:py-6 flex justify-between items-center bg-gradient-to-r from-black via-gray-900 to-black shadow-lg text-white transition-all duration-500">
+        {/* Logo & Hamburger */}
         <div className="flex items-center gap-4">
           <FaTh
-            className=" text-2xl md:text-3xl cursor-pointer text-white hover:text-gray-400 transition-colors"
+            className="text-2xl md:text-3xl cursor-pointer text-white hover:text-blue-400 transition-colors duration-300"
             onClick={toggleMenu}
           />
           <span
             onClick={handleLogoClick}
-            className="text-xl md:text-xl font-bold  text-white hover:text-gray-400 cursor-pointer text-left leading-3"
+            className="text-xl md:text-2xl font-extrabold tracking-widest text-white hover:text-blue-400 cursor-pointer leading-none"
           >
             ARM STUDIO
           </span>
         </div>
 
-        <nav className="hidden md:flex gap-8 uppercase text-sm tracking-wide text-white">
-          <Link to="/works" className="text-white hover:text-gray-400 text-[13px]">Works</Link>
-          <Link to="/about" className="text-white hover:text-gray-400 text-[13px]">About</Link>
-          <Link to="/contact" className="text-white hover:text-gray-400 text-[13px]">Contact</Link>
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex gap-10 uppercase text-sm tracking-widest font-medium">
+          {menuItems.slice(1).map((item, idx) => (
+            <Link
+              key={idx}
+              to={item.link}
+              className="text-white hover:[-webkit-text-stroke:1px_white] hover:text-blue-600 transition-all duration-300 text-[14px] relative after:content-[''] after:block after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
       </header>
 

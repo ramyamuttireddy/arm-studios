@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Observer } from "gsap/Observer";
-import Header from "../Components/Homepage/Header";
+import Header from "../Components/Header";
 
 gsap.registerPlugin(Observer);
 
@@ -112,7 +112,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-black text-white overflow-hidden font-[TheGoodMonolith]">
+    <div className="relative w-full h-screen bg-black text-white overflow-hidden font-sans">
       {/* Header stays on top */}
       <div className="relative z-[9999]">
         <Header />

@@ -9,8 +9,7 @@ export default function StaggeredMenu({
   socialItems = [],
   contactInfo = {},
   displaySocials = true,
-  displayItemNumbering = true,
-  accentColor = "#ff6b6b",
+  accentColor = "#3b82f6", // changed to blue
   contentColor = "white",
   logoUrl,
 }) {
@@ -52,15 +51,15 @@ export default function StaggeredMenu({
       className="fixed top-0 left-0 w-full md:w-[80%] h-full bg-black z-40 transform -translate-x-full shadow-xl shadow-slate-700"
       style={{ color: contentColor }}
     >
-      <div className="flex flex-col md:flex-row h-full px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 md:py-20 gap-6 sm:gap-8 md:gap-12 lg:gap-96 xl:">
+      <div className="flex flex-col md:flex-row h-full px-6 md:px-12 py-8 md:py-20 gap-6 md:gap-12">
         {/* Left: Logo + Menu Items */}
         <div className="flex-1 flex flex-col justify-center min-w-0">
           {logoUrl && (
-            <div className="mb-2 sm:mb-4 md:mb-8 lg:mb-12">
+            <div className="mb-4 md:mb-8">
               <img
                 src={logoUrl}
                 alt="Logo"
-                className="w-[60px] sm:w-[80px] md:w-[100px] lg:w-[120px] xl:w-[140px] h-auto object-contain"
+                className="w-[80px] md:w-[120px] h-auto object-contain"
               />
             </div>
           )}
@@ -70,18 +69,15 @@ export default function StaggeredMenu({
                 key={idx}
                 to={item.link}
                 onClick={() => setOpen(false)}
-                className="hover:text-gray-400 transition-colors w-full  text-[30px] sm:text-[40px] md:text-[60px] lg:text-[40px] xl:text-[80px] 2xl:text-[90px]"
                 ref={(el) => (itemsRef.current[idx] = el)}
-              > 
-                {/* {displayItemNumbering && (
-                  <span
-                    className="mr-1 sm:mr-2 md:mr-3 lg:mr-4 xl:mr-6"
-                    style={{ color: accentColor }}
-                  >
-                    {`0${idx + 1}.`}
-                  </span>
-                )} */}
+                className={` hover:[-webkit-text-stroke:1px_white] relative text-[30px] sm:text-[40px] md:text-[60px] lg:text-[50px] xl:text-[80px] 2xl:text-[90px] mb-4 md:mb-6 hover:text-transparent transition-colors duration-300`}
+              >
                 {item.label}
+                {/* subtle underline effect on hover */}
+                <span
+                  className="absolute left-0 -bottom-1 w-0 h-[2px] transition-all duration-300"
+                  style={{ backgroundColor: accentColor }}
+                ></span>
               </Link>
             ))}
           </div>
@@ -91,7 +87,7 @@ export default function StaggeredMenu({
         <div className="flex-1 flex flex-col justify-start md:justify-center items-start md:pl-6 lg:pl-12">
           {displaySocials && socialItems.length > 0 && (
             <div className="flex flex-col mb-4">
-              <h3 className="text-xs sm:text-lg md:text-lg font-bold uppercase tracking-widest mb-1">
+              <h3 className="text-xs sm:text-lg md:text-lg font-bold uppercase tracking-widest mb-2">
                 Socials
               </h3>
               {socialItems.map((social, idx) => (
@@ -100,7 +96,7 @@ export default function StaggeredMenu({
                   href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gray-400 transition-colors text-sm sm:text-base md:text-lg"
+                  className="hover:text-gray-400 transition-colors text-sm sm:text-base md:text-lg mb-1"
                   ref={(el) => (socialsRef.current[idx] = el)}
                 >
                   {social.label}
@@ -111,18 +107,16 @@ export default function StaggeredMenu({
 
           {contactInfo.address && (
             <div className="mb-4">
-              <h3 className="text-xs sm:text-sm md:text-sm font-semibold uppercase tracking-widest mt-14 mb-2">
+              <h3 className="text-xs sm:text-sm md:text-sm font-semibold uppercase tracking-widest mt-8 mb-2">
                 Address
               </h3>
-              <p className="text-sm sm:text-base md:text-base">
-                {contactInfo.address}
-              </p>
+              <p className="text-sm sm:text-base md:text-base">{contactInfo.address}</p>
             </div>
           )}
 
           {contactInfo.email && (
             <div>
-              <h3 className="text-xs sm:text-sm md:text-sm font-semibold uppercase tracking-widest mt-14 mb-2">
+              <h3 className="text-xs sm:text-sm md:text-sm font-semibold uppercase tracking-widest mt-8 mb-2">
                 Say Hi
               </h3>
               <a
