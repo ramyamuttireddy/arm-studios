@@ -1,6 +1,7 @@
 export default function Footer() {
   return (
-    <div className="relative w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-black text-white overflow-hidden fade-in">
+    <div>
+      <div className="relative w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-black text-white overflow-hidden fade-in">
       {/* Header */}
       <div className="flex justify-center  items-center md:flex-row gap-4 md:gap-10 lg:gap-16 xl:gap-20 xl:justify-end xl:items-end  mb-8 md:mb-12 lg:mb-16 ">
         {/* Number */}
@@ -18,12 +19,12 @@ export default function Footer() {
 
       {/* social icons Container */}
       <div
-        className="w-full md:w-[85%] lg:w-[82%] xl:w-[80%] p-2 flex lg:justify-end xl:justify-end "
+        className="w-full md:w-[85%] lg:w-[82%] xl:w-[90%] 2xl:w-[80%] p-2 flex justify-center lg:justify-end xl:justify-end 2xl:justify-end "
       >
 
-        <div className=" flex md:justify-end  lg:mr-10
-        font-sans flex-col md:flex-row 
-        gap-8 lg:gap-16 xl:gap-24 2xl:gap-40  xl:ml-40" >
+        <div className=" flex justify-center md:justify-end  lg:mr-10
+        font-sans flex-col md:flex-row xl:mr-0
+        gap-8 lg:gap-16 xl:gap-24 2xl:gap-40 lg:ml-40 xl:justify-end  xl:ml-80 2xl:ml-40" >
            {/* Social */}
         <div className="text-center md:text-left">
           <p className="font-medium text-lg sm:text-xl xl:text-2xl 2xl:text-[24px] mb-2">
@@ -59,5 +60,13 @@ export default function Footer() {
        
       </div>
     </div>
+
+    <div className=" flex justify-end items-end">
+       <div className="w-[70%] border-t-2">
+        <div className="text-lg pt-10 pb-20">@armstudios.design</div>
+    </div>
+    </div>
+    </div>
+    
   );
 }

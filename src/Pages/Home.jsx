@@ -7,6 +7,7 @@ import Projects from "../Components/Homepage/Projects.jsx"
 import About from "../Components/Homepage/About.jsx"
 import Footer from "../Components/Homepage/Footer.jsx";
 import Preloader from "../Components/Homepage/PreLoader.jsx"
+import ScroolText from "../Components/Homepage/ScroolText.jsx";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ export default function HomePage() {
         </div>
         <div className="fade-in">
           <About />
+          <ScroolText />
         </div>
       </main>
       <Footer />
