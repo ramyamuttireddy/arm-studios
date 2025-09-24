@@ -10,7 +10,7 @@ export default function Footer() {
         </div>
 
         {/* Heading */}
-        <div className="border-b-2 w-full md:w-[85%] lg:w-[82%] xl:w-[70%] p-2 flex justify-start lg:mr-10">
+        <div className="border-b-[1px] w-full md:w-[85%] lg:w-[82%] xl:w-[70%] p-2 flex justify-start lg:mr-10">
           <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-[100px] 2xl:text-[110px] font-medium border-white pb-2 tracking-wide fade-in">
             LET'S CREATE
           </h2>
@@ -60,8 +60,8 @@ export default function Footer() {
        
       </div>
 
-       <div className=" flex justify-end items-end mt-20">
-       <div className="w-[70%] border-t-2">
+       <div className=" flex justify-end items-end mt-20 xl:ml-20">
+       <div className="w-[70%] border-t-[1px]">
         <div className="text-lg pt-10 pb-20">@armstudios.design</div>
     </div>
     </div>
