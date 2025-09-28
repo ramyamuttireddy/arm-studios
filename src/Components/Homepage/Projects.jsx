@@ -100,11 +100,11 @@ export default function Projects() {
                   />
                   <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                    <div>
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                       <h3>xxxxxxxxxxxxxxx</h3>
                       <h3>Residential</h3>
                     </div>
-                    <div>
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                       <p>0000</p>
                     </div>
                   </div>
@@ -131,11 +131,11 @@ export default function Projects() {
                 />
                 <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
                 <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                  <div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                     <h3>xxxxxxxxxxxxxxx</h3>
                     <h3>Residential</h3>
                   </div>
-                  <div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                     <p>0000</p>
                   </div>
                 </div>
@@ -173,11 +173,11 @@ export default function Projects() {
                 />
                 <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
                 <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                  <div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                     <h3>USA</h3>
                     <h3>Residential</h3>
                   </div>
-                  <div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                     <p>0000</p>
                   </div>
                 </div>
@@ -198,11 +198,11 @@ export default function Projects() {
                 />
                 <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
                 <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                  <div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                     <h3>xxxxxxxxxxxxxxx</h3>
                     <h3>Residential</h3>
                   </div>
-                  <div>
+                  <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                     <p>0000</p>
                   </div>
                 </div>
@@ -228,11 +228,11 @@ export default function Projects() {
               />
               <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                <div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                   <h3>xxxxxxxxxxxxxxx</h3>
                   <h3>Residential</h3>
                 </div>
-                <div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                   <p>0000</p>
                 </div>
               </div>
@@ -250,11 +250,11 @@ export default function Projects() {
               />
               <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                <div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                   <h3>USA</h3>
                   <h3>Residential</h3>
                 </div>
-                <div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[24px]">
                   <p>0000</p>
                 </div>
               </div>
