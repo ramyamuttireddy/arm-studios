@@ -44,7 +44,7 @@ export const ScrollVelocity = ({ texts = [], velocity = 100, className = "" }) =
         <span
           key={i}
           ref={i === 0 ? copyRef : null}
-          className="font-Anton flex-shrink-0 px-8 text-2xl md:text-5xl 2xl:text-[150px] italic uppercase text-transparent [-webkit-text-stroke:1px_black] 3xl:text-[200px]"
+          className="font-Anton flex-shrink-0 px-8 text-2xl md:text-5xl xl:text-[120px] 2xl:text-[150px] italic uppercase text-transparent [-webkit-text-stroke:1px_black] 3xl:text-[200px]"
         >
           {children}
         </span>
