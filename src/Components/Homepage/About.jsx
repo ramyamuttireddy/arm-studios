@@ -1,8 +1,8 @@
 function About() {
   return (
     <>
-      <div className="about-container  py-12 md:py-16 lg:py-20 xl:py-24 3xl:pt-[200px] 3xl:pb-[200px] bg-black text-white overflow-hidden fade-in flex flex-col justify-center mx-auto w-[80%] h-[80%]">
-        <div className="px-4 sm:px-3 md:px-8 lg:px-10 xl:px-12">
+      <div className="  py-12 md:py-16 lg:py-20 xl:py-24 3xl:pt-[200px] 3xl:pb-[200px] bg-black text-white overflow-hidden fade-in flex flex-col justify-center mx-auto sm:w-[100%] h-[80%] lg:w-[100%] 2xl:w-[80%]">
+        <div className="px-4 sm:px-1 md:px-8 lg:px-10 xl:px-12">
           <div className="flex gap-[20px] md:gap-[50px] 3xl:gap-[100px]">
             <div className="pt-4 text-4xl font-light italic md:text-5xl md:pt-10 2xl:text-[90px] text-center 3xl:text-[90px]">
               02
