@@ -31,11 +31,11 @@ export default function Hero() {
       </div>
 
       {/* Bottom Info */}
-      <div className="w-full bg-[#0100FC] flex justify-end p-8 pb-6 3xl:pb-12">
+      <div className="w-full bg-[#0100FC] flex justify-end p-8 pb-0 z-20 3xl:pb-8">
         <div className="text-right border-b border-white/30 p-3 3xl:p-6">
-          <p className="text-sm 3xl:text-[35px] 3xl:leading-[1.4]">Commercial</p>
-          <p className="text-sm 3xl:text-[35px] 3xl:leading-[1.4]">Europe</p>
-          <p className="text-sm mt-1 3xl:text-[35px] 3xl:leading-[1.4]">2023</p>
+          <p className="text-sm 2xl:text-[24px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">Commercial</p>
+          <p className="text-sm 2xl:text-[24px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">Europe</p>
+          <p className="text-sm 2xl:text-[24px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">2023</p>
         </div>
       </div>
     </section>

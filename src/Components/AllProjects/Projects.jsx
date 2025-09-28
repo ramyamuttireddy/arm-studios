@@ -66,7 +66,7 @@ export default function Projects() {
     <div className="flex flex-col min-h-screen bg-black text-white overflow-hidden">
 
       {/* Full-width image section */}
-      <div className="relative w-full flex-grow flex justify-center items-center py-8 z-10">
+      <div className="relative w-full flex-grow flex justify-center items-center gap-10 py-8 z-10">
         <div className="relative w-full h-auto flex justify-center items-center overflow-hidden">
           {/* Background image */}
           <img
@@ -79,18 +79,18 @@ export default function Projects() {
           <div className="absolute inset-0 bg-white/20 z-5"></div>
 
           {/* Project list */}
-          <div className="  z-5 relative z-10 w-full max-w-[1200px] h-auto overflow-y-visible px-4 py-6 flex flex-col gap-4 2xl:mt-40 2xl:mb-20">
+          <div className="z-5 relative z-10 w-full max-w-[1200px] h-auto overflow-y-visible px-4 py-6 flex flex-col gap-4 2xl:mt-40 2xl:mb-20 3xl:max-w-[2000px]">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="project-item w-full flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 px-4 sm:px-6 border-b border-white/20 cursor-pointer group relative"
+                className="project-item w-full flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 px-4 sm:px-6 border-b border-white/20 cursor-pointer group relative 3xl:p-10"
                 onMouseEnter={() => setHoverImage(project.image)}
                 onClick={handleClick}
               >
-                <div className="project-title text-lg sm:text-xl font-bold text-white group-hover:text-black transition-colors duration-300">
+                <div className="project-title text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-[24px] 3xl:text-[48px] font-bold text-white group-hover:text-black transition-colors duration-300">
                   {project.title}
                 </div>
-                <div className="project-year text-base sm:text-lg text-white group-hover:text-black transition-colors duration-300 mt-1 sm:mt-0">
+                <div className="project-year text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[24px] 3xl:text-[48px] text-white group-hover:text-black transition-colors duration-300 mt-1 sm:mt-0">
                   {project.year}
                 </div>
                 <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></span>
