@@ -86,25 +86,27 @@ export default function Projects() {
             <div className="flex-1 flex flex-col gap-12">
               {/* Villa #44 */}
               <div
-                className="flex flex-col items-start lg:items-end cursor-pointer group"
+                className="flex flex-col items-start lg:items-end cursor-pointer group "
                 onClick={handleClick}
               >
-                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
-                  Villa #44
-                </h2>
-                <img
-                  src="/assets/img/Villa 44.png"
-                  alt="Villa"
-                  className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover 3xl:w-[1200px] 3xl:h-auto m-[20px]"
-                />
-                <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
-                <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                  <div>
-                    <h3>xxxxxxxxxxxxxxx</h3>
-                    <h3>Residential</h3>
-                  </div>
-                  <div>
-                    <p>0000</p>
+                <div className="w-full">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
+                    Villa #44
+                  </h2>
+                  <img
+                    src="/assets/img/Villa 44.png"
+                    alt="Villa"
+                    className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover 3xl:w-[1200px] 3xl:h-auto m-[20px]"
+                  />
+                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
+                    <div>
+                      <h3>xxxxxxxxxxxxxxx</h3>
+                      <h3>Residential</h3>
+                    </div>
+                    <div>
+                      <p>0000</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -118,7 +120,8 @@ export default function Projects() {
 
               {/* Sandalwood Villa */}
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
-                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
+                <div className="bg-black">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                   Sandalwood Villa
                 </h2>
                 <img
@@ -136,6 +139,8 @@ export default function Projects() {
                     <p>0000</p>
                   </div>
                 </div>
+                </div>
+                
               </div>
 
               {/* Arrow Button */}
@@ -157,7 +162,8 @@ export default function Projects() {
 
               {/* Residence #11 */}
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
-                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
+                <div className="bg-black">
+                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                   Residence #11
                 </h2>
                 <img
@@ -175,11 +181,14 @@ export default function Projects() {
                     <p>0000</p>
                   </div>
                 </div>
+                </div>
+               
               </div>
 
               {/* Residence #622 */}
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
-                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
+                <div className="bg-black">
+                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                   Residence #622
                 </h2>
                 <img
@@ -197,6 +206,8 @@ export default function Projects() {
                     <p>0000</p>
                   </div>
                 </div>
+                </div>
+               
               </div>
             </div>
           </div>
@@ -206,7 +217,7 @@ export default function Projects() {
         <div className="third-container flex justify-center w-full h-full">
           <div className="mt-10 md:mt-16 lg:mt-20 2xl:mt-[90px] flex flex-col lg:flex-row-reverse gap-10 md:gap-12 lg:gap-[60px] fade-in 3xl:gap-[120px] 3xl:flex-row-reverse">
             {/* Villa Entrance */}
-            <div className="villa-entrance 2xl:mt-[100px] fade-in">
+            <div className=" 2xl:mt-[100px] fade-in">
               <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-[32px]">
                 Villa Entrance
               </h2>
