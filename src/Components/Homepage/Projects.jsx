@@ -89,14 +89,14 @@ export default function Projects() {
                 className="flex flex-col items-start lg:items-end cursor-pointer group "
                 onClick={handleClick}
               >
-                <div className="w-full">
+                <div className="bg-black">
                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                     Villa #44
                   </h2>
                   <img
                     src="/assets/img/Villa 44.png"
                     alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover 3xl:w-[1200px] 3xl:h-auto m-[20px]"
+                    className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover 3xl:w-[1200px] 3xl:h-auto "
                   />
                   <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
