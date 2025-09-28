@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
+import "../Components/main.css"; // <-- import the CSS
 
 export default function StaggeredMenu({
   open,
@@ -9,7 +10,7 @@ export default function StaggeredMenu({
   socialItems = [],
   contactInfo = {},
   displaySocials = true,
-  accentColor = "#3b82f6", // changed to blue
+  accentColor = "#3b82f6",
   contentColor = "white",
   logoUrl,
 }) {
@@ -48,32 +49,27 @@ export default function StaggeredMenu({
   return (
     <div
       ref={menuRef}
-      className="fixed top-0 left-0 w-full md:w-[80%] h-full bg-black z-40 transform -translate-x-full shadow-xl shadow-slate-700"
+      className="staggered-menu fixed top-0 left-0 w-full md:w-[80%] h-full bg-black z-40 transform -translate-x-full shadow-xl shadow-slate-700"
       style={{ color: contentColor }}
     >
-      <div className="flex flex-col md:flex-row h-full px-6 md:px-12 py-8 md:py-20 gap-6 md:gap-12">
+      <div className="staggered-menu-container flex flex-col md:flex-row h-full px-6 md:px-12 py-8 md:py-20 gap-6 md:gap-12">
         {/* Left: Logo + Menu Items */}
-        <div className="flex-1 flex flex-col justify-center min-w-0">
+        <div className="staggered-menu-logo flex-1 flex flex-col justify-center min-w-0">
           {logoUrl && (
             <div className="mb-4 md:mb-8">
-              <img
-                src={logoUrl}
-                alt="Logo"
-                className="w-[80px] md:w-[120px] h-auto object-contain"
-              />
+              <img src={logoUrl} alt="Logo" className="w-[80px] md:w-[120px] h-auto object-contain" />
             </div>
           )}
-          <div className="flex flex-col uppercase font-bold w-full">
+          <div className="staggered-menu-items flex flex-col uppercase font-bold w-full">
             {items.map((item, idx) => (
               <Link
                 key={idx}
                 to={item.link}
                 onClick={() => setOpen(false)}
                 ref={(el) => (itemsRef.current[idx] = el)}
-                className={` hover:[-webkit-text-stroke:1px_white] relative text-[30px] sm:text-[40px] md:text-[60px] lg:text-[50px] xl:text-[80px] 2xl:text-[90px] mb-4 md:mb-6 hover:text-transparent transition-colors duration-300`}
+                className={`hover:[-webkit-text-stroke:1px_white] relative text-[30px] sm:text-[40px] md:text-[60px] lg:text-[50px] xl:text-[80px] 2xl:text-[90px] mb-4 md:mb-6 hover:text-transparent transition-colors duration-300`}
               >
                 {item.label}
-                {/* subtle underline effect on hover */}
                 <span
                   className="absolute left-0 -bottom-1 w-0 h-[2px] transition-all duration-300"
                   style={{ backgroundColor: accentColor }}
@@ -84,10 +80,10 @@ export default function StaggeredMenu({
         </div>
 
         {/* Right: Socials + Contact Info */}
-        <div className="flex-1 flex flex-col justify-start md:justify-center items-start md:pl-6 lg:pl-12">
+        <div className="staggered-menu-right flex-1 flex flex-col justify-start md:justify-center items-start md:pl-6 lg:pl-12">
           {displaySocials && socialItems.length > 0 && (
-            <div className="flex flex-col mb-4">
-              <h3 className="text-xs sm:text-lg md:text-lg font-bold uppercase tracking-widest mb-2">
+            <div className="staggered-menu-socials flex flex-col mb-4">
+              <h3 className="staggered-menu-heading text-xs sm:text-lg md:text-lg font-bold uppercase tracking-widest mb-2">
                 Socials
               </h3>
               {socialItems.map((social, idx) => (
@@ -105,28 +101,27 @@ export default function StaggeredMenu({
             </div>
           )}
 
-          {contactInfo.address && (
-            <div className="mb-4">
-              <h3 className="text-xs sm:text-sm md:text-sm font-semibold uppercase tracking-widest mt-8 mb-2">
-                Address
-              </h3>
-              <p className="text-sm sm:text-base md:text-base">{contactInfo.address}</p>
-            </div>
-          )}
+          <div className="staggered-menu-contact">
+            {contactInfo.address && (
+              <div className="mb-4">
+                <h3 className="staggered-menu-heading text-xs sm:text-sm md:text-sm font-semibold uppercase tracking-widest mt-8 mb-2">
+                  Address
+                </h3>
+                <p className="text-sm sm:text-base md:text-base">{contactInfo.address}</p>
+              </div>
+            )}
 
-          {contactInfo.email && (
-            <div>
-              <h3 className="text-xs sm:text-sm md:text-sm font-semibold uppercase tracking-widest mt-8 mb-2">
-                Say Hi
-              </h3>
-              <a
-                href={`mailto:${contactInfo.email}`}
-                className="hover:text-gray-400 text-sm sm:text-base md:text-base"
-              >
-                {contactInfo.email}
-              </a>
-            </div>
-          )}
+            {contactInfo.email && (
+              <div>
+                <h3 className="staggered-menu-heading text-xs sm:text-sm md:text-sm font-semibold uppercase tracking-widest mt-8 mb-2">
+                  Say Hi
+                </h3>
+                <a href={`mailto:${contactInfo.email}`} className="hover:text-gray-400 text-sm sm:text-base md:text-base">
+                  {contactInfo.email}
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

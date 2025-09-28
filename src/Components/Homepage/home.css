@@ -1,0 +1,348 @@
+
+
+
+
+
+/* Hero section */
+
+/* Ultra-wide screens ≥3000px */
+@media (min-width: 3000px) {
+  /* Section gap */
+  #home {
+    gap: 300px;
+  }
+
+  /* Container */
+  #home .hero-container {
+    max-width: 2400px;
+    gap: 100px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    padding-top: 300px !important; /* double of 1920 padding */
+  }
+
+  /* Section counter */
+  #home .hero-counter {
+    font-size: 180px;
+    line-height: 180px;
+  }
+
+  /* Hero headline */
+  #home .hero-headline {
+    font-size: 220px;
+    line-height: 200px;
+  }
+
+  #home .hero-headline span {
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+
+  /* Hover image */
+  #home .hover-img {
+    width: 96px;
+  }
+
+  /* Floating circle */
+  #home .floating-circle {
+    width: 24rem; /* w-96 */
+    height: 24rem; /* h-96 */
+    top: -200px;
+    right: 400px;
+  }
+
+  /* Hero main image */
+  #home .hero-main-img {
+    width: 2600px;
+  }
+
+  /* Extra padding for main image section */
+  #home .hero-bottom-padding {
+    padding-top: 100px !important;
+  }
+}
+
+/* Project Header section */
+/* Ultra-wide screens ≥3000px */
+@media (min-width: 3000px) {
+  /* Header Number */
+  .projects-section .header-number {
+    font-size: 192px !important; /* double original 96px */
+    line-height: 1 !important;
+  }
+
+  /* Header Title */
+  .projects-section .header-title {
+    font-size: 220px !important; /* double ~110px */
+    line-height: 1 !important;
+  }
+
+  /* Adjust container spacing */
+  .projects-section > div {
+    gap: 40px !important; /* increase flex gaps for ultra-wide */
+    margin-bottom: 80px !important; /* same as original spacing scaled up */
+  }
+
+  
+}
+
+
+/* 1st Container */
+/* Ultra-wide screens ≥3000px */
+@media (min-width: 3000px) {
+  .first-container {
+    gap: 120px !important; /* double normal gap for ultra-wide */
+    margin-top: 240px !important; /* scale up margin-top */
+  }
+
+  /* Villa #22 */
+  .villa22-img {
+    width: 1600px !important;  /* roughly double 858px */
+    height: 1072px !important; /* roughly double 536px */
+  }
+  .villa22-title {
+    font-size: 72px !important; /* scale title proportionally */
+  }
+
+  /* Flat Interiors #221 */
+  .flat221-img {
+    width: 1072px !important;  /* double 536px */
+    height: 1394px !important; /* double 697px */
+  }
+  .flat221-title {
+    font-size: 72px !important; /* scale title proportionally */
+  }
+}
+
+
+/* 2nd Container */
+
+/* Base container class for targeting 2nd container */
+.second-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* Ultra-wide screens ≥3000px */
+@media (min-width: 3000px) {
+
+  /* Main flex container */
+  .second-container > .flex {
+    gap: 200px !important; /* double the 1920px lg:gap-[60px] */
+    padding: 100px;
+  }
+
+  /* Column spacing */
+  .second-container .flex-2 {
+    flex: 1;
+  }
+
+  /* Titles h2 */
+  .second-container h2 {
+    font-size: 72px !important; /* scale from 36px */
+    line-height: 1.1 !important;
+    margin-bottom: 32px !important; /* scale mb-8 */
+    margin-top: 100px;
+  }
+
+  /* Images scaling */
+  .second-container img {
+    width: 100% !important;
+    max-width: 1200px !important;
+    height: auto !important;
+    margin: 20px;
+  }
+
+  /* White info box below images */
+  .second-container .info-box {
+    width: 200px !important; /* scaled */
+    height: 60px !important; /* scaled */
+  }
+
+  /* Text below info box */
+  .second-container .info-text {
+    font-size: 48px !important;
+  }
+
+  /* Arrow Buttons scaling */
+  .second-container .arrow-button {
+    width: 500px !important;
+    height: 500px !important;
+    margin: 100px;
+  }
+
+  .second-container .arrow-button svg {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  /* Gaps & spacing */
+  .second-container .mt-8 { margin-top: 32px !important; }
+  .second-container .mt-10 { margin-top: 40px !important; }
+  .second-container .mt-12 { margin-top: 48px !important; }
+  .second-container .mt-16 { margin-top: 64px !important; }
+  .second-container .mt-50 { margin-top: 100px !important; }
+  .second-container .mt-140 { margin-top: 280px !important; }
+  .second-container .pt-40 { padding-top: 80px !important; }
+  .second-container .pt-70 { padding-top: 140px !important; }
+
+  /* Column alignment */
+  .second-container .items-start { align-items: flex-start !important; }
+  .second-container .items-end { align-items: flex-end !important; }
+}
+
+
+/* 3rd Container */
+/* Base container class for targeting 3rd container */
+.third-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ultra-wide screens ≥3000px */
+@media (min-width: 3000px) {
+
+  /* Main flex container */
+  .third-container > .flex {
+    gap: 120px !important; /* double the 1920px lg:gap-[60px] */
+  }
+
+  /* Titles h2 */
+  .third-container h2 {
+    font-size: 72px !important; /* scale from 36px */
+    line-height: 1.1 !important;
+    margin-bottom: 32px !important;
+  }
+
+  /* Images scaling */
+  .third-container img {
+    width: 100% !important;
+    max-width: 1200px !important;
+    height: auto !important;
+  }
+
+  /* White info box below images */
+  .third-container .info-box {
+    width: 200px !important; /* scaled */
+    height: 60px !important; /* scaled */
+  }
+
+  /* Text below info box */
+  .third-container .info-text {
+    font-size: 48px !important;
+  }
+
+  /* Column spacing & reverse */
+  .third-container > .flex {
+    flex-direction: row-reverse !important;
+  }
+
+  /* Gaps & spacing */
+  .third-container .mt-10 { margin-top: 40px !important; }
+  .third-container .mt-16 { margin-top: 64px !important; }
+  .third-container .mt-20 { margin-top: 80px !important; }
+  .third-container .mt-90 { margin-top: 180px !important; }
+  .third-container .mt-100 { margin-top: 200px !important; }
+
+  /* Column alignment */
+  .third-container .items-start { align-items: flex-start !important; }
+  .third-container .items-end { align-items: flex-end !important; }
+}
+
+/* Base container class for circle button */
+.circle-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ultra-wide screens ≥3000px */
+@media (min-width: 3000px) {
+
+  /* Arrow Button scaling */
+  .circle-container .circle-button {
+    width: 700px !important;  /* scale from 250px */
+    height: 700px !important; /* scale from 250px */
+  }
+
+  /* Text scaling */
+  .circle-container .circle-button-text {
+    font-size: 55px !important; /* scale text proportionally */
+  }
+
+  /* Margins scaling */
+  .circle-container .mt-10 { margin-top: 40px !important; }
+  .circle-container .mt-16 { margin-top: 64px !important; }
+  .circle-container .lg\:mt-\[140px\] { margin-top: 280px !important; }
+}
+
+
+
+/* Base container for About section */
+.about-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* Ultra-wide screens ≥3000px */
+@media (min-width: 3000px) {
+
+  /* Padding scaling */
+  .about-container {
+    padding-top: 200px !important; /* scale from xl:py-24 */
+    padding-bottom: 200px !important;
+  }
+
+  /* Gap scaling */
+  .about-container .flex {
+    gap: 100px !important; /* scale from md:gap-[50px] */
+  }
+  .abou-text{
+    font-size: 48px;
+  }
+
+  /* Headings scaling */
+  .about-container .text-4xl,
+  .about-container .md\:text-5xl,
+  .about-container .md\:text-8xl {
+    font-size: 96px !important; /* scale from 8xl */
+  }
+
+  /* Paragraph text scaling */
+  .about-container .about-text {
+    font-size: 48px !important; /* scale from lg:text-[20px] */
+    line-height: 1.4 !important;
+  }
+
+  /* Project box scaling */
+  .about-container .project-box {
+    width: 1400px !important; /* scale from 700px */
+    padding: 100px 50px !important; /* scale padding */
+    margin-top: -90px !important; /* scale negative margin */
+    margin-left: -200px;
+  }
+
+  /* Project box text scaling */
+  .about-container .project-box .text-\[16px\],
+  .about-container .project-box .lg\:text-\[36px\] {
+    font-size: 72px !important; /* scale from 36px */
+  }
+
+  .about-container .project-box .lg\:text-\[20px\] {
+    font-size: 48px !important; /* scale from 20px */
+  }
+
+  /* Image scaling */
+  .about-container img {
+    max-width: 1000px !important; /* scale proportionally */
+    height: auto !important;
+  }
+}
+
+
+
+

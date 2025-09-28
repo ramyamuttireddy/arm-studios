@@ -1,0 +1,148 @@
+/* ================= Ultra-wide screens ≥3000px ================= */
+
+/* Header adjustments */
+@media (min-width: 3000px) {
+  /* Header padding */
+  .header-container {
+    padding-left: 8rem; /* px-32 */
+    padding-right: 8rem;
+    padding-top: 3rem;   /* py-12 */
+    padding-bottom: 3rem;
+  }
+
+  /* Logo & Hamburger spacing */
+  .header-logo-wrapper {
+    gap: 3rem; /* gap-12 */
+  }
+
+  /* Hamburger & Logo text size */
+  .header-hamburger {
+    font-size: 5rem; /* text-6xl */
+  }
+  .header-logo-text {
+    font-size: 4rem; /* text-6xl */
+  }
+
+  /* Desktop nav spacing & font-size */
+  .header-nav {
+    gap: 6rem; /* gap-24 */
+    font-size: 2.5rem; /* text-5xl */
+  }
+
+  /* Nav links font-size */
+  .header-nav a {
+    font-size: 2.5rem; /* override small text */
+  }
+}
+
+/* ================= Drop-down / Staggered Menu ================= */
+@media (min-width: 3000px) {
+  /* Menu container padding & gap */
+  .staggered-menu-container {
+    padding-left: 8rem;  /* px-32 */
+    padding-right: 8rem;
+    padding-top: 8rem;   /* py-32 */
+    padding-bottom: 8rem;
+    gap: 3rem;           /* extra spacing */
+  }
+
+  /* Logo image */
+  .staggered-menu-logo img {
+    width: 240px !important; /* override inline / Tailwind */
+  }
+
+  /* Menu items font-size & spacing */
+  .staggered-menu-items a {
+    font-size: 180px !important; /* ultra-wide font */
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Section headings */
+  .staggered-menu-heading {
+    font-size: 3rem !important; /* heading text */
+  }
+
+  /* Social links: bigger font + more spacing */
+  .staggered-menu-socials a {
+    font-size: 2rem !important;
+    line-height: 3.5rem !important;  /* taller line height */
+    margin-top: 20px;                 /* extra spacing from above */
+    margin-bottom: 1.5rem !important;/* spacing between links */
+    display: block;                   /* ensure vertical spacing */
+  }
+
+  /* Address / Email */
+  .staggered-menu-contact p,
+  .staggered-menu-contact a {
+    font-size: 2rem !important;
+    line-height: 3.2rem !important;
+    margin-top: 20px;
+  }
+}
+
+
+/* footer Section */
+
+/* Footer Section */
+
+/* Ultra-wide screens ≥3000px */
+@media (min-width: 3000px) {
+  /* Container padding & spacing */
+  .footer-container {
+    padding-top: 300px !important;
+    padding-bottom: 60px !important; /* reduced bottom padding so border is close */
+  }
+
+  /* Number */
+  .footer-number {
+    font-size: 192px !important;
+    width: 20% !important;
+    line-height: 1 !important;
+  }
+
+  /* Heading */
+  .footer-heading {
+    width: 75% !important;
+  }
+
+  .footer-heading h2 {
+    font-size: 220px !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Socials container */
+  .footer-socials {
+    width: 90% !important;
+    gap: 60px !important;
+    justify-content: center !important; /* center above border */
+    align-items: flex-start !important;
+    margin-bottom: 40px !important; /* spacing above bottom border */
+  }
+
+  .footer-socials div p {
+    font-size: 48px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Bottom border section - full width with content */
+  .footer-bottom {
+    width: 100% !important;
+     /* full-width border */
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    display: flex !important;
+    justify-content: center !important; /* center the content */
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+
+  .footer-bottom > div {
+    font-size: 36px !important;
+    line-height: 1.5 !important;
+    text-align: center !important; /* center text */
+  }
+}
+
+
+
+

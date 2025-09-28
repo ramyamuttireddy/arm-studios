@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTh } from "react-icons/fa";
 import StaggeredMenu from "../MENUPAGE/Menupage"; // Adjust path
+import "./main.css";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,23 +36,23 @@ export default function Header() {
   return (
     <>
       {/* Top Navbar */}
-      <header className="fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4 md:py-6 flex justify-between items-center bg-black shadow-sm shadow-slate-300  text-white transition-all duration-500">
+      <header className="header-container fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4 md:py-6 flex justify-between items-center bg-black text-white transition-all duration-500">
         {/* Logo & Hamburger */}
-        <div className="flex items-center gap-4">
+        <div className="header-logo-wrapper flex items-center gap-4">
           <FaTh
-            className="text-2xl md:text-3xl cursor-pointer text-white hover:text-blue-400 transition-colors duration-300"
+            className="header-hamburger text-2xl md:text-3xl cursor-pointer text-white hover:text-blue-400 transition-colors duration-300"
             onClick={toggleMenu}
           />
           <span
             onClick={handleLogoClick}
-            className="text-xl md:text-2xl font-extrabold tracking-widest text-white hover:text-blue-400 cursor-pointer leading-none"
+            className="header-logo-text text-xl md:text-2xl font-extrabold tracking-widest text-white hover:text-blue-400 cursor-pointer leading-none"
           >
             ARM STUDIO
           </span>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-10 uppercase text-sm tracking-widest font-medium">
+        <nav className="header-nav hidden md:flex gap-10 uppercase text-sm tracking-widest font-medium">
           {menuItems.slice(1).map((item, idx) => (
             <Link
               key={idx}

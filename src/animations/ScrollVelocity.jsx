@@ -88,7 +88,7 @@ export const ScrollVelocity = ({
         <span
           key={i}
           ref={i === 0 ? copyRef : null}
-          className="font-sans flex-shrink-0 px-8 text-2xl md:text-5xl 2xl:text-[96px] font-extrabold italic uppercase text-transparent [-webkit-text-stroke:1px_white]"
+          className="font-sans flex-shrink-0 px-8 text-2xl md:text-5xl 2xl:text-[96px] font-extrabold italic uppercase text-transparent [-webkit-text-stroke:1px_white] [@media(min-width:2500px)]:text-[200px]"
         >
           {children}
         </span>
