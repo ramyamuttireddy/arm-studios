@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"], // set Helvetica as main
+        Anton: ["'Anton', sans-serif"],
+        
       },
       screens: {
         '3xl': '2840px', // new ultra-wide breakpoint

@@ -2,7 +2,7 @@ import ScrollVelocity from "../../animations/ScrollVelocity";
 
 export default function ScroolText() {
   return (
-    <div className="bg-black py-10">
+    <div className="bg-black py-20">
       <ScrollVelocity
         texts={[
           "DISTRIBUTION & INDUSTRIAL    ATHLETIC & RECREATIONAL",
