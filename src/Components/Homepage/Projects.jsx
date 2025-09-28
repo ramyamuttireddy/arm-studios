@@ -120,7 +120,7 @@ export default function Projects() {
 
               {/* Sandalwood Villa */}
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
-                <div className="bg-black">
+                <div className="bg-black cursor-pointer group" onClick={handleClick}>
                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                   Sandalwood Villa
                 </h2>
@@ -162,7 +162,7 @@ export default function Projects() {
 
               {/* Residence #11 */}
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
-                <div className="bg-black">
+                <div className="bg-black cursor-pointer group" onClick={handleClick}>
                    <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                   Residence #11
                 </h2>
@@ -187,7 +187,7 @@ export default function Projects() {
 
               {/* Residence #622 */}
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
-                <div className="bg-black">
+                <div className="bg-black cursor-pointer group" onClick={handleClick}>
                    <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                   Residence #622
                 </h2>
@@ -217,7 +217,7 @@ export default function Projects() {
         <div className="third-container flex justify-center w-full h-full">
           <div className="mt-10 md:mt-16 lg:mt-20 2xl:mt-[90px] flex flex-col lg:flex-row-reverse gap-10 md:gap-12 lg:gap-[60px] fade-in 3xl:gap-[120px] 3xl:flex-row-reverse">
             {/* Villa Entrance */}
-            <div className=" 2xl:mt-[100px] fade-in">
+            <div className=" 2xl:mt-[100px] fade-in cursor-pointer group" onClick={handleClick}>
               <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-[32px]">
                 Villa Entrance
               </h2>
@@ -239,7 +239,7 @@ export default function Projects() {
             </div>
 
             {/* Private Villa */}
-            <div className="private-villa fade-in">
+            <div className="private-villa fade-in cursor-pointer group" onClick={handleClick}>
               <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-[32px]">
                 Private Villa
               </h2>
@@ -268,9 +268,10 @@ export default function Projects() {
             <button
               type="button"
               className="circle-button bg-[#0100FC] w-[150px] sm:w-[200px] lg:w-[250px] 2xl:w-[320px] 3xl:w-[700px] h-[150px] sm:h-[200px] lg:h-[250px] 2xl:h-[320px] 3xl:h-[700px] flex items-center justify-center rounded-full hover:bg-blue transition duration-300 shadow-2xl"
+              onClick={handleClick}
             >
               <div className="text-base sm:text-lg md:text-xl lg:text-[24px] 3xl:text-[55px] circle-button-text">
-                <h3>All projects 48</h3>
+                <h3>All projects 19</h3>
               </div>
             </button>
           </div>
