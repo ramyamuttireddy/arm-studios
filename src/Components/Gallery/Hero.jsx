@@ -7,7 +7,7 @@ export default function Hero() {
       className="flex flex-col gap-40 bg-[#0100FC] text-white overflow-hidden h-screen 3xl:h-screen"
     >
       {/* Main Container */}
-      <div className="max-w-[1200px] mx-auto p-5 pt-40 md:px-12 lg:px-10 flex gap-10 h-full 3xl:pt-80">
+      <div className="max-w-[1200px] 3xl:max-w-[2000px] mx-auto p-5 pt-40 md:px-12 lg:px-10 flex gap-10 h-full 3xl:pt-80">
         
         {/* Section Counter */}
         <motion.div

@@ -79,138 +79,122 @@ export default function Projects() {
         </div>
 
         {/* 2nd Container */}
+        {/* 2nd Container */}
         <div className="second-container flex justify-center w-full h-full mt-12 md:mt-16 lg:mt-20 fade-in">
           <div className="flex flex-col justify-center lg:flex-row gap-10 md:gap-12 lg:gap-[60px] fade-in 3xl:gap-[200px] 3xl:p-[100px]">
             {/* Left Column */}
-            <div className="flex-2">
+            <div className="flex-1 flex flex-col gap-12">
               {/* Villa #44 */}
               <div
                 className="flex flex-col items-start lg:items-end cursor-pointer group"
                 onClick={handleClick}
               >
-                <div className="ml-0 lg:ml-[20px] 2xl:ml-[50px]">
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
-                    Villa #44
-                  </h2>
-                  <img
-                    src="/assets/img/Villa 44.png"
-                    alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover 3xl:w-[1200px] 3xl:h-auto m-[20px]"
-                  />
-                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
-                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                    <div>
-                      <h3>xxxxxxxxxxxxxxx</h3>
-                      <h3>Residential</h3>
-                    </div>
-                    <div>
-                      <p>0000</p>
-                    </div>
+                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
+                  Villa #44
+                </h2>
+                <img
+                  src="/assets/img/Villa 44.png"
+                  alt="Villa"
+                  className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover 3xl:w-[1200px] 3xl:h-auto m-[20px]"
+                />
+                <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
+                  <div>
+                    <h3>xxxxxxxxxxxxxxx</h3>
+                    <h3>Residential</h3>
+                  </div>
+                  <div>
+                    <p>0000</p>
                   </div>
                 </div>
               </div>
 
               {/* Arrow Button */}
-              <div className="mt-10 md:mt-16 lg:mt-140 flex justify-center lg:justify-start fade-in">
-                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
-                  <GoArrowDownRight className="text-gray-400 3xl:w-[120px] 3xl:h-[120px]" />
+              <div className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-start">
+                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
+                  <GoArrowDownRight className="text-gray-400 w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] 2xl:w-[100px] 2xl:h-[100px] 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
               </div>
 
               {/* Sandalwood Villa */}
-              <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 lg:mt-50 fade-in">
-                <div
-                  className="cursor-pointer group fade-in"
-                  onClick={handleClick}
-                >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
-                    Sandalwood Villa
-                  </h2>
-                  <img
-                    src="/assets/img/Sandalwood Villa.png"
-                    alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover 3xl:w-[1072px] 3xl:h-[1394px]"
-                  />
-                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
-                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                    <div>
-                      <h3>xxxxxxxxxxxxxxx</h3>
-                      <h3>Residential</h3>
-                    </div>
-                    <div>
-                      <p>0000</p>
-                    </div>
+              <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
+                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
+                  Sandalwood Villa
+                </h2>
+                <img
+                  src="/assets/img/Sandalwood Villa.png"
+                  alt="Villa"
+                  className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover 3xl:w-[1072px] 3xl:h-[1394px]"
+                />
+                <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
+                  <div>
+                    <h3>xxxxxxxxxxxxxxx</h3>
+                    <h3>Residential</h3>
+                  </div>
+                  <div>
+                    <p>0000</p>
                   </div>
                 </div>
               </div>
 
               {/* Arrow Button */}
-              <div className="mt-10 md:mt-16 lg:mt-140 flex justify-center lg:justify-end fade-in">
-                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
-                  <GoArrowDown className="text-gray-400 3xl:w-[120px] 3xl:h-[120px]" />
+              <div className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-end">
+                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
+                  <GoArrowDown className="text-gray-400 w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] 2xl:w-[100px] 2xl:h-[100px] 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
               </div>
             </div>
 
             {/* Right Column */}
-            <div className="flex-2">
+            <div className="flex-1 flex flex-col gap-12">
               {/* Arrow Button */}
-              <div className="mt-10 md:mt-16 lg:mt-140 flex justify-center lg:justify-end fade-in">
-                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
-                  <GoArrowDown className="text-gray-400 3xl:w-[120px] 3xl:h-[120px]" />
+              <div className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-end">
+                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
+                  <GoArrowDown className="text-gray-400 w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] 2xl:w-[100px] 2xl:h-[100px] 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
               </div>
 
               {/* Residence #11 */}
-              <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 lg:pt-40 fade-in">
-                <div
-                  className="cursor-pointer group fade-in"
-                  onClick={handleClick}
-                >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
-                    Residence #11
-                  </h2>
-                  <img
-                    src="/assets/img/Residence 11.png"
-                    alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[550px] lg:h-[750px] 2xl:w-[615px] 2xl:h-[820px] object-cover 3xl:w-[1200px] 3xl:h-auto"
-                  />
-                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
-                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                    <div>
-                      <h3>USA</h3>
-                      <h3>Residential</h3>
-                    </div>
-                    <div>
-                      <p>0000</p>
-                    </div>
+              <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
+                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
+                  Residence #11
+                </h2>
+                <img
+                  src="/assets/img/Residence 11.png"
+                  alt="Villa"
+                  className="shadow-slate-50 w-full lg:w-[550px] lg:h-[750px] 2xl:w-[615px] 2xl:h-[820px] object-cover 3xl:w-[1200px] 3xl:h-auto"
+                />
+                <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
+                  <div>
+                    <h3>USA</h3>
+                    <h3>Residential</h3>
+                  </div>
+                  <div>
+                    <p>0000</p>
                   </div>
                 </div>
               </div>
 
               {/* Residence #622 */}
-              <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 lg:pt-70 fade-in">
-                <div
-                  className="cursor-pointer group fade-in"
-                  onClick={handleClick}
-                >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
-                    Residence #622
-                  </h2>
-                  <img
-                    src="/assets/img/Residence 622.png"
-                    alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[550px] lg:h-[700px] 2xl:w-[615px] 2xl:h-[769px] object-cover 3xl:w-[1200px] 3xl:h-auto"
-                  />
-                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
-                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
-                    <div>
-                      <h3>xxxxxxxxxxxxxxx</h3>
-                      <h3>Residential</h3>
-                    </div>
-                    <div>
-                      <p>0000</p>
-                    </div>
+              <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
+                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
+                  Residence #622
+                </h2>
+                <img
+                  src="/assets/img/Residence 622.png"
+                  alt="Villa"
+                  className="shadow-slate-50 w-full lg:w-[550px] lg:h-[700px] 2xl:w-[615px] 2xl:h-[769px] object-cover 3xl:w-[1200px] 3xl:h-auto"
+                />
+                <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
+                  <div>
+                    <h3>xxxxxxxxxxxxxxx</h3>
+                    <h3>Residential</h3>
+                  </div>
+                  <div>
+                    <p>0000</p>
                   </div>
                 </div>
               </div>
