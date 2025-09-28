@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 
 const slideData = [
@@ -15,6 +15,20 @@ export default function GalleryLayout() {
   const thumbsRef = useRef([]);
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+
+  // Initialize heartbeat on current thumbnail
+  useEffect(() => {
+    thumbsRef.current.forEach((thumb, i) => {
+      gsap.killTweensOf(thumb);
+      if (i === current && thumb) {
+        gsap.to(thumb, { scale: 1.05, duration: 0.6, repeat: -1, yoyo: true, ease: "power1.inOut" });
+        thumb.style.opacity = 1;
+      } else if (thumb) {
+        thumb.style.opacity = 0.5;
+        thumb.style.transform = "scale(1)";
+      }
+    });
+  }, [current]);
 
   const formatCounter = (i) => String(i + 1).padStart(2, "0");
 
@@ -34,18 +48,6 @@ export default function GalleryLayout() {
       .fromTo(nextSlide, { scale: 0.1, yPercent: 100, autoAlpha: 1 }, { duration: 0.7, scale: 0.4, yPercent: 0, ease: "expo" })
       .to(nextSlide, { duration: 1, scale: 1, ease: "power4.inOut" }, ">-0.3")
       .to(prevSlide, { duration: 1, autoAlpha: 0, ease: "power4.inOut" }, "<");
-
-    // Update thumbnails
-    thumbsRef.current.forEach((thumb, i) => {
-      gsap.killTweensOf(thumb); // remove previous heartbeat
-      if (i === index) {
-        thumb.style.opacity = 1;
-        gsap.to(thumb, { scale: 1.05, duration: 0.6, repeat: -1, yoyo: true, ease: "power1.inOut" });
-      } else {
-        thumb.style.opacity = 0.5;
-        thumb.style.transform = "scale(1)";
-      }
-    });
   };
 
   const navigate = (dir) => {
@@ -56,48 +58,51 @@ export default function GalleryLayout() {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-[#0100FC] text-white font-sans flex flex-col items-center justify-center p-8">
+    <section className="relative w-full min-h-screen bg-[#0100FC] text-white font-sans flex flex-col items-center justify-center ">
       
       {/* Main Slides */}
-      <div className="relative w-full max-w-screen-xl aspect-video overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          {slideData.map((slide, i) => (
-            <div
-              key={i}
-              ref={(el) => (slidesRef.current[i] = el)}
-              className="absolute inset-0 bg-cover bg-center will-change-transform"
-              style={{ backgroundImage: `url(${slide.img})`, opacity: i === current ? 1 : 0 }}
-            />
-          ))}
-        </div>
+      <div className="relative w-full aspect-video overflow-hidden">
+        {slideData.map((slide, i) => (
+          <div
+            key={i}
+            ref={(el) => (slidesRef.current[i] = el)}
+            className="absolute inset-0 bg-cover bg-center will-change-transform w-full h-full"
+            style={{ backgroundImage: `url(${slide.img})`, opacity: i === current ? 1 : 0 }}
+          />
+        ))}
 
         {/* Navigation Arrows */}
-        <div onClick={() => navigate(-1)} className="absolute left-0 top-0 bottom-0 w-20 flex items-center justify-center cursor-pointer bg-black/30 hover:bg-black/50 transition-colors z-10">
-          <span className="text-4xl">{"<"}</span>
+        <div
+          onClick={() => navigate(-1)}
+          className="absolute left-0 top-0 bottom-0 w-16 flex items-center justify-center cursor-pointer bg-black/30 hover:bg-black/50 transition-colors z-10"
+        >
+          <span className="text-4xl">&lt;</span>
         </div>
-        <div onClick={() => navigate(1)} className="absolute right-0 top-0 bottom-0 w-20 flex items-center justify-center cursor-pointer bg-black/30 hover:bg-black/50 transition-colors z-10">
-          <span className="text-4xl">{">"}</span>
+        <div
+          onClick={() => navigate(1)}
+          className="absolute right-0 top-0 bottom-0 w-16 flex items-center justify-center cursor-pointer bg-black/30 hover:bg-black/50 transition-colors z-10"
+        >
+          <span className="text-4xl">&gt;</span>
         </div>
       </div>
 
       {/* Title and Counter */}
-      <div className="flex items-center justify-between w-full max-w-screen-xl mt-4 px-2">
-        <h2 className="text-xl font-bold opacity-90">{slideData[current].title}</h2>
-        <span className="text-sm opacity-70">{formatCounter(current)} / {formatCounter(slideData.length)}</span>
+      <div className="flex items-center justify-between w-full mt-4 px-2 max-w-full">
+        <h2 className="text-lg md:text-xl font-bold opacity-90 3xl:text-[50px]">{slideData[current].title}</h2>
+        <span className="text-sm opacity-70 3xl:text-[50px]">{formatCounter(current)} / {formatCounter(slideData.length)}</span>
       </div>
 
       {/* Thumbnails */}
-      <div className="w-full max-w-screen-xl flex gap-2 mt-4 z-10 justify-center">
+      <div className="w-full flex gap-2 mt-4 overflow-x-auto px-2 justify-center pb-8">
         {slideData.map((slide, i) => (
-          <div key={i} className="flex flex-col items-center">
+          <div key={i} className="flex flex-col items-center flex-shrink-0 cursor-pointer">
             <div
               ref={(el) => (thumbsRef.current[i] = el)}
               onClick={() => goToSlide(i)}
-              className="w-[120px] h-20 bg-cover bg-center cursor-pointer transition-transform transition-opacity"
-              style={{ backgroundImage: `url(${slide.img})`, opacity: i === current ? 1 : 0.5 }}
+              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60  bg-cover bg-center transition-transform transition-opacity "
+              style={{ backgroundImage: `url(${slide.img})` }}
             />
-            {/* Small line under thumbnail */}
-            <div className={`h-1 w-full mt-1 rounded-full transition-all ${i === current ? "bg-white" : "bg-gray-500"}`} />
+            <div className={`h-[2px] w-full mt-1 rounded-full transition-all ${i === current ? "bg-white" : "bg-gray-500"}`} />
           </div>
         ))}
       </div>

@@ -61,14 +61,6 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col min-h-screen bg-black text-white overflow-hidden">
-      {/* Top section */}
-      <div className="w-full bg-black/80 flex justify-end p-8 pb-0 z-20 ">
-        <div className="text-right border-b border-white/30 p-3">
-          <p className="text-sm">Architecture</p>
-          <p className="text-sm">Interior</p>
-          <p className="text-sm mt-1">Design (Architecture + Interior)</p>
-        </div>
-      </div>
 
       {/* Full-width image section */}
       <div className="relative w-full flex-grow flex justify-center items-center py-8 z-10">
@@ -84,7 +76,7 @@ export default function Projects() {
           <div className="absolute inset-0 bg-white/20 z-5"></div>
 
           {/* Project list */}
-          <div className=" bg-white/20 z-5 relative z-10 w-full max-w-[1200px] h-auto overflow-y-visible px-4 py-6 flex flex-col gap-4 2xl:mt-40 2xl:mb-20">
+          <div className="  z-5 relative z-10 w-full max-w-[1200px] h-auto overflow-y-visible px-4 py-6 flex flex-col gap-4 2xl:mt-40 2xl:mb-20">
             {projects.map((project) => (
               <div
                 key={project.id}

@@ -39,10 +39,11 @@ export default function LandingPage() {
           src="/assets/Landing Page/arm_studio_text.png"
           alt="Landing Page Text"
           className="
-      w-full h-auto
-      max-w-[1693px]     /* Default & 2xl */
-      [@media(min-width:2500px)]:max-w-[2500px] /* Custom for 2500px+ */
-    "
+            w-full h-auto
+            max-w-[1693px]      /* default */
+            2xl:max-w-[1693px]   /* 2xl screens */
+            3xl:max-w-[3000px]   /* 3xl ultra-wide */
+          "
         />
       </div>
 

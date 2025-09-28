@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTh } from "react-icons/fa";
 import StaggeredMenu from "../MENUPAGE/Menupage"; // Adjust path
-import "./main.css";
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,29 +35,32 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Navbar */}
-      <header className="header-container fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4 md:py-6 flex justify-between items-center bg-black text-white transition-all duration-500">
+      <header
+        className="header-container fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4 md:py-6 flex justify-between items-center bg-black text-white transition-all duration-500
+  3xl:px-32 3xl:py-12
+"
+      >
         {/* Logo & Hamburger */}
-        <div className="header-logo-wrapper flex items-center gap-4">
+        <div className="header-logo-wrapper flex items-center gap-4 3xl:gap-12">
           <FaTh
-            className="header-hamburger text-2xl md:text-3xl cursor-pointer text-white hover:text-blue-400 transition-colors duration-300"
+            className="header-hamburger text-2xl md:text-3xl cursor-pointer text-white hover:text-blue-400 transition-colors duration-300 3xl:text-[5rem]"
             onClick={toggleMenu}
           />
           <span
             onClick={handleLogoClick}
-            className="header-logo-text text-xl md:text-2xl font-extrabold tracking-widest text-white hover:text-blue-400 cursor-pointer leading-none"
+            className="header-logo-text text-xl md:text-2xl font-extrabold tracking-widest text-white hover:text-blue-400 cursor-pointer leading-none 3xl:text-[4rem]"
           >
             ARM STUDIO
           </span>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="header-nav hidden md:flex gap-10 uppercase text-sm tracking-widest font-medium">
+        <nav className="header-nav hidden md:flex gap-10 uppercase text-sm tracking-widest font-medium 3xl:gap-24 3xl:text-[2.5rem]">
           {menuItems.slice(1).map((item, idx) => (
             <Link
               key={idx}
               to={item.link}
-              className="text-white hover:[-webkit-text-stroke:1px_white] hover:text-blue-600 transition-all duration-300 text-[14px] relative after:content-[''] after:block after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+              className="text-white hover:[-webkit-text-stroke:1px_white] hover:text-blue-600 transition-all duration-300 text-[14px] relative after:content-[''] after:block after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full 3xl:text-[2.5rem]"
             >
               {item.label}
             </Link>

@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { GoArrowDownRight } from "react-icons/go";
-import { GoArrowDown } from "react-icons/go";
+import { GoArrowDownRight, GoArrowDown } from "react-icons/go";
 import useFadeInOnScroll from "../../animations/useFadeInOnScroll";
 
 export default function Projects() {
@@ -14,34 +13,34 @@ export default function Projects() {
 
   return (
     <section className="projects-section relative w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-black text-white overflow-hidden fade-in">
-      <div className=" px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         {/* Header */}
-        <div className="flex justify-center items-center md:flex-row gap-4 md:gap-10 lg:gap-16 xl:gap-20 xl:justify-end xl:items-end mb-8 md:mb-12 lg:mb-16">
+        <div className="flex justify-center items-center md:flex-row gap-4 md:gap-10 lg:gap-16 xl:gap-20 xl:justify-end xl:items-end mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px] projects-section">
           {/* Number */}
-          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[96px] fade-in w-[30%] text-right header-number">
+          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[96px] fade-in w-[30%] text-right 3xl:text-[192px] 3xl:leading-[1] header-number">
             02
           </div>
 
           {/* Heading */}
           <div className="border-b-2 w-full md:w-[85%] lg:w-[82%] xl:w-[70%] p-2 flex justify-start">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-[100px] 2xl:text-[110px] font-medium border-white pb-2 tracking-wide fade-in header-title">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-[100px] 2xl:text-[110px] font-medium border-white pb-2 tracking-wide fade-in 3xl:text-[220px] 3xl:leading-[1] header-title">
               OUR PROJECTS
             </h2>
           </div>
         </div>
 
-        {/* 1st container */}
+        {/* 1st Container */}
         <div>
-          <div className=" mt-10 md:mt-16 lg:mt-20 xl:mt-[120px] flex flex-col justify-center  lg:flex-row gap-10 md:gap-12 lg:gap-[60px] fade-in first-container">
+          <div className="mt-10 md:mt-16 lg:mt-20 xl:mt-[120px] flex flex-col justify-center lg:flex-row gap-10 md:gap-12 lg:gap-[60px] fade-in 3xl:gap-[120px] 3xl:mt-[240px] first-container">
             {/* Villa #22 */}
             <div className="cursor-pointer group" onClick={handleClick}>
-              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 villa22-title">
+              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] villa22-title">
                 Villa #22
               </h2>
               <img
                 src="/assets/img/Villa 22.png"
                 alt="Villa"
-                className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] xl:w-[800px] xl:h-[500px] 2xl:w-[858px] 2xl:h-[536px] object-cover villa22-img"
+                className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] xl:w-[800px] xl:h-[500px] 2xl:w-[858px] 2xl:h-[536px] object-cover 3xl:w-[1600px] 3xl:h-[1072px] villa22-img"
               />
               <div className="w-[100px] sm:w-[120px] md:w-[134px] h-[30px] sm:h-[32px] md:h-[35px] bg-white mt-3 md:mt-4"></div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2">
@@ -57,13 +56,13 @@ export default function Projects() {
 
             {/* Flat Interiors #221 */}
             <div className="cursor-pointer group fade-in" onClick={handleClick}>
-              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 flat221-title">
+              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] flat221-title">
                 Flat Interiors #221
               </h2>
               <img
                 src="/assets/img/Flat Interiors 221.png"
                 alt="Flat"
-                className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] xl:w-[500px] xl:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover flat221-img"
+                className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] xl:w-[500px] xl:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover 3xl:w-[1072px] 3xl:h-[1394px] flat221-img"
               />
               <div className="w-[100px] sm:w-[120px] md:w-[134px] h-[30px] sm:h-[32px] md:h-[35px] bg-white mt-3 md:mt-4"></div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2">
@@ -79,9 +78,9 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* 2nd container */}
+        {/* 2nd Container */}
         <div className="second-container flex justify-center w-full h-full mt-12 md:mt-16 lg:mt-20 fade-in">
-          <div className="flex flex-col justify-center lg:flex-row gap-10 md:gap-12 lg:gap-[60px] fade-in">
+          <div className="flex flex-col justify-center lg:flex-row gap-10 md:gap-12 lg:gap-[60px] fade-in 3xl:gap-[200px] 3xl:p-[100px]">
             {/* Left Column */}
             <div className="flex-2">
               {/* Villa #44 */}
@@ -90,16 +89,16 @@ export default function Projects() {
                 onClick={handleClick}
               >
                 <div className="ml-0 lg:ml-[20px] 2xl:ml-[50px]">
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                     Villa #44
                   </h2>
                   <img
                     src="/assets/img/Villa 44.png"
                     alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover"
+                    className="shadow-slate-50 w-full lg:w-[600px] lg:h-[300px] xl:w-[650px] xl:h-[300px] 2xl:w-[700px] 2xl:h-[394px] object-cover 3xl:w-[1200px] 3xl:h-auto m-[20px]"
                   />
-                  <div className="info-box bg-white mt-3 md:mt-4"></div>
-                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text">
+                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
                     <div>
                       <h3>xxxxxxxxxxxxxxx</h3>
                       <h3>Residential</h3>
@@ -113,8 +112,8 @@ export default function Projects() {
 
               {/* Arrow Button */}
               <div className="mt-10 md:mt-16 lg:mt-140 flex justify-center lg:justify-start fade-in">
-                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300">
-                  <GoArrowDownRight className="text-gray-400" />
+                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
+                  <GoArrowDownRight className="text-gray-400 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
               </div>
 
@@ -124,16 +123,16 @@ export default function Projects() {
                   className="cursor-pointer group fade-in"
                   onClick={handleClick}
                 >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                     Sandalwood Villa
                   </h2>
                   <img
                     src="/assets/img/Sandalwood Villa.png"
                     alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover"
+                    className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[536px] 2xl:h-[697px] object-cover 3xl:w-[1072px] 3xl:h-[1394px]"
                   />
-                  <div className="info-box bg-white mt-3 md:mt-4"></div>
-                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text">
+                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
                     <div>
                       <h3>xxxxxxxxxxxxxxx</h3>
                       <h3>Residential</h3>
@@ -147,8 +146,8 @@ export default function Projects() {
 
               {/* Arrow Button */}
               <div className="mt-10 md:mt-16 lg:mt-140 flex justify-center lg:justify-end fade-in">
-                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300">
-                  <GoArrowDown className="text-gray-400" />
+                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
+                  <GoArrowDown className="text-gray-400 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
               </div>
             </div>
@@ -157,8 +156,8 @@ export default function Projects() {
             <div className="flex-2">
               {/* Arrow Button */}
               <div className="mt-10 md:mt-16 lg:mt-140 flex justify-center lg:justify-end fade-in">
-                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300">
-                  <GoArrowDown className="text-gray-400" />
+                <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
+                  <GoArrowDown className="text-gray-400 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
               </div>
 
@@ -168,16 +167,16 @@ export default function Projects() {
                   className="cursor-pointer group fade-in"
                   onClick={handleClick}
                 >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                     Residence #11
                   </h2>
                   <img
                     src="/assets/img/Residence 11.png"
                     alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[550px] lg:h-[750px] 2xl:w-[615px] 2xl:h-[820px] object-cover"
+                    className="shadow-slate-50 w-full lg:w-[550px] lg:h-[750px] 2xl:w-[615px] 2xl:h-[820px] object-cover 3xl:w-[1200px] 3xl:h-auto"
                   />
-                  <div className="info-box bg-white mt-3 md:mt-4"></div>
-                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text">
+                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
                     <div>
                       <h3>USA</h3>
                       <h3>Residential</h3>
@@ -195,16 +194,16 @@ export default function Projects() {
                   className="cursor-pointer group fade-in"
                   onClick={handleClick}
                 >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-8 3xl:mt-[100px]">
                     Residence #622
                   </h2>
                   <img
                     src="/assets/img/Residence 622.png"
                     alt="Villa"
-                    className="shadow-slate-50 w-full lg:w-[550px] lg:h-[700px] 2xl:w-[615px] 2xl:h-[769px] object-cover"
+                    className="shadow-slate-50 w-full lg:w-[550px] lg:h-[700px] 2xl:w-[615px] 2xl:h-[769px] object-cover 3xl:w-[1200px] 3xl:h-auto"
                   />
-                  <div className="info-box bg-white mt-3 md:mt-4"></div>
-                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text">
+                  <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+                  <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
                     <div>
                       <h3>xxxxxxxxxxxxxxx</h3>
                       <h3>Residential</h3>
@@ -220,20 +219,20 @@ export default function Projects() {
         </div>
 
         {/* 3rd Container */}
-        <div className="third-container flex justify-center">
-          <div className="mt-10 md:mt-16 lg:mt-20 2xl:mt-[90px] flex flex-col lg:flex-row-reverse gap-10 md:gap-12 lg:gap-[60px] fade-in">
+        <div className="third-container flex justify-center w-full h-full">
+          <div className="mt-10 md:mt-16 lg:mt-20 2xl:mt-[90px] flex flex-col lg:flex-row-reverse gap-10 md:gap-12 lg:gap-[60px] fade-in 3xl:gap-[120px] 3xl:flex-row-reverse">
             {/* Villa Entrance */}
             <div className="villa-entrance 2xl:mt-[100px] fade-in">
-              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8">
+              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-[32px]">
                 Villa Entrance
               </h2>
               <img
                 src="/assets/img/Villa Entrance.png"
                 alt="Villa"
-                className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] 2xl:w-[858px] 2xl:h-[536px] object-cover"
+                className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] 2xl:w-[858px] 2xl:h-[536px] object-cover 3xl:w-[1600px] 3xl:h-[800px]"
               />
-              <div className="info-box bg-white mt-3 md:mt-4"></div>
-              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text">
+              <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
                 <div>
                   <h3>xxxxxxxxxxxxxxx</h3>
                   <h3>Residential</h3>
@@ -246,16 +245,16 @@ export default function Projects() {
 
             {/* Private Villa */}
             <div className="private-villa fade-in">
-              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8">
+              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[36px] font-medium mb-6 md:mb-8 3xl:text-[72px] 3xl:mb-[32px]">
                 Private Villa
               </h2>
               <img
                 src="/assets/img/Private Villa.png"
                 alt="Flat"
-                className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[511px] 2xl:h-[681px] object-cover"
+                className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[511px] 2xl:h-[681px] object-cover 3xl:w-[1200px] 3xl:h-[1400px]"
               />
-              <div className="info-box bg-white mt-3 md:mt-4"></div>
-              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text">
+              <div className="info-box bg-white mt-3 md:mt-4 3xl:w-[200px] 3xl:h-[60px]"></div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 mt-2 info-text 3xl:text-[48px]">
                 <div>
                   <h3>USA</h3>
                   <h3>Residential</h3>
@@ -268,17 +267,14 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* circle Container */}
-
         {/* Circle Container */}
-        <div className="circle-container">
-          {/* Arrow Button */}
-          <div className="mt-10 md:mt-16 lg:mt-[140px] flex justify-center fade-in">
+        <div className="circle-container w-full h-full">
+          <div className="mt-10 md:mt-16 lg:mt-[140px] 3xl:mt-[280px] flex justify-center fade-in">
             <button
               type="button"
-              className="circle-button bg-[#0100FC] w-[150px] sm:w-[200px] lg:w-[250px] 2xl:w-[320px] h-[150px] sm:h-[200px] lg:h-[250px] 2xl:h-[320px] flex items-center justify-center rounded-full hover:bg-blue transition duration-300 shadow-2xl"
+              className="circle-button bg-[#0100FC] w-[150px] sm:w-[200px] lg:w-[250px] 2xl:w-[320px] 3xl:w-[700px] h-[150px] sm:h-[200px] lg:h-[250px] 2xl:h-[320px] 3xl:h-[700px] flex items-center justify-center rounded-full hover:bg-blue transition duration-300 shadow-2xl"
             >
-              <div className="text-base sm:text-lg md:text-xl lg:text-[24px] circle-button-text">
+              <div className="text-base sm:text-lg md:text-xl lg:text-[24px] 3xl:text-[55px] circle-button-text">
                 <h3>All projects 48</h3>
               </div>
             </button>

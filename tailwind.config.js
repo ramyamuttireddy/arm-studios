@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [ "Montserrat", "sans-serif"], // set Helvetica as main
+        sans: ["Montserrat", "sans-serif"], // set Helvetica as main
+      },
+      screens: {
+        '3xl': '2840px', // new ultra-wide breakpoint
       },
     },
   },
