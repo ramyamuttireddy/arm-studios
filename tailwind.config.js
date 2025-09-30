@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"], // set Helvetica as main
         Anton: ["'Anton', sans-serif"],
+        Cormorant:["Cormorant Garamond", "serif"]
         
       },
       screens: {
