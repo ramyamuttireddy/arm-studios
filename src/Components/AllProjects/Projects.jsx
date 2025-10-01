@@ -95,10 +95,10 @@ export default function Projects() {
               onMouseEnter={() => setHoverImage(project.image)}
               onClick={handleClick}
             >
-              <div className="font-sans text-lg sm:text-md md:text-[20px] 3xl:text-[40px]  font-bold text-white group-hover:text-black transition-colors duration-300">
+              <div className="font-sans text-lg sm:text-md md:text-[18px] 3xl:text-[40px]  font-bold text-white group-hover:text-black transition-colors duration-300">
                 {project.title}
               </div>
-              <div className="project-year text-base sm:text-md md:text-[20px] 3xl:text-[40px]  text-white group-hover:text-black transition-colors duration-300 mt-1 sm:mt-0">
+              <div className="project-year text-base sm:text-md md:text-[18px] 3xl:text-[40px]  text-white group-hover:text-black transition-colors duration-300 mt-1 sm:mt-0">
                 {project.year}
               </div>
               <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></span>

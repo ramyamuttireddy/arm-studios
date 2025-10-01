@@ -58,7 +58,7 @@ export default function GalleryLayout() {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-[#0100FC] text-white font-sans flex flex-col items-center justify-center ">
+    <section className="relative w-full min-h-screen bg-black text-white font-sans flex flex-col items-center justify-center ">
       
       {/* Main Slides */}
       <div className="relative w-full aspect-video overflow-hidden">

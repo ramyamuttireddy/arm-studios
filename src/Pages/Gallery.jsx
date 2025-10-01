@@ -6,6 +6,7 @@ import Hero from "../Components/Gallery/Hero";
 import Footer from "../Components/Footer";
 import Preloader from "../Components/PreLoader";
 import GalleryLayout from "../Components/Gallery/GalleryLayout";
+import About from "../Components/Work/About"
 
 export default function Gallery() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ export default function Gallery() {
         </div>
         <div className="fade-in">
           <GalleryLayout />
+          <About />
         </div>
       </main>
       <Footer />
