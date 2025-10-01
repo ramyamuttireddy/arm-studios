@@ -47,7 +47,7 @@ export default function Hero() {
         </motion.h1>
 
         {/* Hidden image hover effect */}
-        <div className="absolute top-1/2 right-10 hidden md:block">
+        {/* <div className="absolute top-1/2 right-10 hidden md:block">
           <img
             src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg"
             alt="hover"
@@ -56,7 +56,7 @@ export default function Hero() {
               3xl:w-[96px]
             "
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Main Image Section */}

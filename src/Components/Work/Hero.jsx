@@ -58,7 +58,7 @@ export default function Hero() {
 
       {/* Bottom Info Section (like top section in second hero) */}
       {/* Bottom Info Section (like top section in second hero) */}
-      <div className="w-full bg-black/80 flex justify-end p-8 pb-0 z-20 3xl:pb-8">
+      <div className="w-full bg-black/80 flex justify-center md:justify-end p-8 pb-0 z-20 3xl:pb-8">
         <div className="text-left border-b border-white/30 p-3 3xl:p-6">
           <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
             Architecture
