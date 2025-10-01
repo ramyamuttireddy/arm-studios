@@ -8,7 +8,7 @@ export default function Projects() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/allprojects");
+    
   };
 
   return (

@@ -2,24 +2,30 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const projects = [
-  { id: 1, title: "Villa #22", year: "2020", image: "https://cdn.cosmos.so/7d47d4e2-0eff-4e2f-9734-9d24a8ba067e?format=jpeg" },
-  { id: 2, title: "Flat Interiors #221", year: "2022", image: "https://cdn.cosmos.so/5eee2d2d-3d4d-4ae5-96d4-cdbae70a2387?format=jpeg" },
-  { id: 3, title: "Villa #44", year: "2019", image: "https://cdn.cosmos.so/def30e8a-34b2-48b1-86e1-07ec5c28f225?format=jpeg" },
-  { id: 4, title: "Residence #11", year: "2020", image: "https://cdn.cosmos.so/44d7cb23-6759-49e4-9dc1-acf771b3a0d1?format=jpeg" },
-  { id: 5, title: "Sandalwood Villa", year: "2021", image: "https://cdn.cosmos.so/7712fe42-42ca-4fc5-9590-c89f2db99978?format=jpeg" },
-  { id: 6, title: "Residence #622", year: "2017", image: "https://cdn.cosmos.so/def30e8a-34b2-48b1-86e1-07ec5c28f225?format=jpeg" },
-  { id: 7, title: "Private Villa", year: "2021", image: "https://cdn.cosmos.so/44d7cb23-6759-49e4-9dc1-acf771b3a0d1?format=jpeg" },
-  { id: 8, title: "Villa Entrance", year: "2022", image: "https://cdn.cosmos.so/7d47d4e2-0eff-4e2f-9734-9d24a8ba067e?format=jpeg" },
-  { id: 9, title: "Condominium Apartment #42", year: "2018", image: "https://cdn.cosmos.so/5eee2d2d-3d4d-4ae5-96d4-cdbae70a2387?format=jpeg" },
-  { id: 10, title: "Conceptual Skyscraper #25", year: "2023", image: "https://cdn.cosmos.so/7712fe42-42ca-4fc5-9590-c89f2db99978?format=jpeg" },
-  { id: 11, title: "Condominium Karma Residence", year: "2021", image: "https://cdn.cosmos.so/7712fe42-42ca-4fc5-9590-c89f2db99978?format=jpeg" },
-  { id: 12, title: "House For Staycation", year: "2017", image: "https://cdn.cosmos.so/def30e8a-34b2-48b1-86e1-07ec5c28f225?format=jpeg" },
-  { id: 13, title: "Luxury Gated Community", year: "2021", image: "https://cdn.cosmos.so/44d7cb23-6759-49e4-9dc1-acf771b3a0d1?format=jpeg" },
+  { id: 1, title: "Conceptual Skyscraper #25", year: "Residential 2021", image: "https://cdn.cosmos.so/7d47d4e2-0eff-4e2f-9734-9d24a8ba067e?format=jpeg" },
+  { id: 2, title: "Condominium Apartment #42", year: "Condominium 2020", image: "https://cdn.cosmos.so/5eee2d2d-3d4d-4ae5-96d4-cdbae70a2387?format=jpeg" },
+  { id: 3, title: "Condominium Karma Residence", year: "Condominium 2022", image: "https://cdn.cosmos.so/def30e8a-34b2-48b1-86e1-07ec5c28f225?format=jpeg" },
+  { id: 4, title: "Farmhouse (Richmond, USA)", year: "Residential 2016", image: "https://cdn.cosmos.so/44d7cb23-6759-49e4-9dc1-acf771b3a0d1?format=jpeg" },
+  { id: 5, title: "Flat Interiors #221", year: "Residential 2020", image: "https://cdn.cosmos.so/7712fe42-42ca-4fc5-9590-c89f2db99978?format=jpeg" },
+  { id: 6, title: "Forest Resort ", year: "Hospitality 2023", image: "https://cdn.cosmos.so/def30e8a-34b2-48b1-86e1-07ec5c28f225?format=jpeg" },
+  { id: 7, title: "House CAD", year: "Residential 2012", image: "https://cdn.cosmos.so/44d7cb23-6759-49e4-9dc1-acf771b3a0d1?format=jpeg" },
+  { id: 8, title: "House for Staycation ", year: "Residential 2021", image: "https://cdn.cosmos.so/7d47d4e2-0eff-4e2f-9734-9d24a8ba067e?format=jpeg" },
+  { id: 9, title: "Luxury Gated Community", year: "Residential 2022", image: "https://cdn.cosmos.so/5eee2d2d-3d4d-4ae5-96d4-cdbae70a2387?format=jpeg" },
+  { id: 10, title: "Mixed Use Apartment (Astralis)", year: "Residential 2023", image: "https://cdn.cosmos.so/7712fe42-42ca-4fc5-9590-c89f2db99978?format=jpeg" },
+  { id: 11, title: "Private Villa", year: "Residential 2023", image: "https://cdn.cosmos.so/7712fe42-42ca-4fc5-9590-c89f2db99978?format=jpeg" },
+  { id: 12, title: "Residence #11", year: " Residential 2024", image: "https://cdn.cosmos.so/def30e8a-34b2-48b1-86e1-07ec5c28f225?format=jpeg" },
+  { id: 13, title: "Residence #622", year: "Residential 2021", image: "https://cdn.cosmos.so/44d7cb23-6759-49e4-9dc1-acf771b3a0d1?format=jpeg" },
+  { id: 14, title: "Residence #7 ", year: "Residential 2020", image: "https://cdn.cosmos.so/7d47d4e2-0eff-4e2f-9734-9d24a8ba067e?format=jpeg" },
+  { id: 15, title: "Sandalwood Villa Interiors", year: "Residential 2019", image: "https://cdn.cosmos.so/5eee2d2d-3d4d-4ae5-96d4-cdbae70a2387?format=jpeg" },
+  { id: 16, title: "Villa #22", year: "Residential 2019", image: "https://cdn.cosmos.so/7712fe42-42ca-4fc5-9590-c89f2db99978?format=jpeg" },
+  { id: 17, title: "Private Villa", year: "Residential 2023", image: "https://cdn.cosmos.so/7712fe42-42ca-4fc5-9590-c89f2db99978?format=jpeg" },
+  { id: 18, title: "Villa #44", year: " Residential 2023", image: "https://cdn.cosmos.so/def30e8a-34b2-48b1-86e1-07ec5c28f225?format=jpeg" },
+  { id: 19, title: "Villa Entrance", year: "Residential 2023", image: "https://cdn.cosmos.so/44d7cb23-6759-49e4-9dc1-acf771b3a0d1?format=jpeg" },
 ];
 
 export default function Projects() {
   const [hoverImage, setHoverImage] = useState(projects[0].image);
-  const [visibleCount, setVisibleCount] = useState(9); 
+  const [visibleCount, setVisibleCount] = useState(10); 
   const bgRef = useRef(null);
   const navigate = useNavigate();
 
@@ -87,11 +93,11 @@ export default function Projects() {
 
       {/* Scrollable project list */}
       <div className="relative z-10 w-full h-full overflow-y-auto scrollbar-none">
-        <div className="w-full lg:w-[60%] 2xl:w-[50%] mx-auto py-8 flex flex-col gap-4 px-4">
+        <div className="w-full lg:w-[80%] xl:w-[60%] mx-auto py-8 flex flex-col gap-4 px-4">
           {projects.slice(0, visibleCount).map((project) => (
             <div
               key={project.id}
-              className="project-item w-full flex  sm:flex-row justify-between items-start sm:items-center py-4 3xl:py-10  px-4 sm:px-6 border-b border-white/20 cursor-pointer group relative"
+              className="project-item w-full flex flex-col  sm:flex-row justify-between items-start sm:items-center py-4 3xl:py-10  px-4 sm:px-6 border-b border-white/20 cursor-pointer group relative"
               onMouseEnter={() => setHoverImage(project.image)}
               onClick={handleClick}
             >

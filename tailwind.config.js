@@ -14,6 +14,7 @@ export default {
       },
       screens: {
         '3xl': '2840px', // new ultra-wide breakpoint
+        '4xl':"3840px"
       },
     },
   },
