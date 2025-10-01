@@ -88,7 +88,7 @@ export const ScrollVelocity = ({
         <span
           key={i}
           ref={i === 0 ? copyRef : null}
-          className="font-Anton flex-shrink-0 px-8 text-2xl md:text-5xl 2xl:text-[96px] italic uppercase text-transparent [-webkit-text-stroke:1px_white] 3xl:text-[200px]"
+          className="font-Anton flex-shrink-0 px-10 py-4 text-2xl md:text-5xl xl:text-[96px] italic uppercase text-transparent [-webkit-text-stroke:1px_white] 3xl:text-[200px]"
         >
           {children}
         </span>
