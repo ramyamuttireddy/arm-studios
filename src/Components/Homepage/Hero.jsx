@@ -60,7 +60,7 @@ export default function Hero() {
       </div>
 
       {/* Main Image Section */}
-      <div className="relative w-full flex justify-end pt-50 hero-bottom-padding  3xl:pt-[100px]">
+      <div className="relative w-full flex justify-end pt-50  xl:pb-[150px]  3xl:pt-[100px]">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}

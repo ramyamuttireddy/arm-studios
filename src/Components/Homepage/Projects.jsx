@@ -15,14 +15,14 @@ export default function Projects() {
     <section className="projects-section relative w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-black text-white overflow-hidden fade-in">
       <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         {/* Header */}
-        <div className=" w-full flex justify-center items-center md:flex-row gap-4 md:gap-10 lg:gap-16 xl:gap-20 xl:justify-end xl:items-end mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px] projects-section">
+        <div className=" w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-16 xl:gap-20  mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px] ">
           {/* Number */}
-          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[96px] fade-in w-[30%] text-right 3xl:text-[192px] 3xl:leading-[1] header-number">
+          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[64px] fade-in w-[30%] text-right 3xl:text-[192px] 3xl:leading-[1] ">
             02
           </div>
 
           {/* Heading */}
-          <div className="border-b-2 w-full p-2 flex justify-start">
+          <div className="border-b-2 w-full pb-2 flex justify-start">
             <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-[90px] 2xl:text-[110px] font-medium border-white pb-2 tracking-wide fade-in 3xl:text-[220px] 3xl:leading-[1] header-title">
               OUR PROJECTS
             </h2>
