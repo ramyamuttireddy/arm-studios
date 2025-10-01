@@ -8,7 +8,7 @@ export default function Projects() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/allprojects"); // 👈 goes to gallery
+    navigate("/allprojects");
   };
 
   return (
@@ -37,7 +37,7 @@ export default function Projects() {
               className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
               onClick={handleClick}
             >
-              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px] villa22-title">
+              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Villa #22
               </h2>
               <img
@@ -47,10 +47,10 @@ export default function Projects() {
               />
 
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px]  3xl:text-[50px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                   <p>Residential</p>
                 </div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px] 3xl:text-[50px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                   <p>0000</p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function Projects() {
               className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
               onClick={handleClick}
             >
-              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px] villa22-title ">
+              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px] villa22-title ">
                 Flat Interiors #221
               </h2>
               <img
@@ -71,10 +71,10 @@ export default function Projects() {
               />
 
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px]  3xl:text-[50px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                   <h3>Lorem Ipsum ajdf</h3>
                 </div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px] 3xl:text-[50px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                   <p>0000</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function Projects() {
                 onClick={handleClick}
               >
                 <div className="cursor-pointer group flex flex-col justify-center xl:ml-10 3xl:ml-60 gap-5 3xl:gap-20">
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px] ">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px] ">
                     Villa #44
                   </h2>
                   <img
@@ -104,11 +104,11 @@ export default function Projects() {
                   />
 
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                    <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                       <h3>xxxxxxxxxxxxxxx</h3>
                       <h3>Residential</h3>
                     </div>
-                    <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px] 3xl:text-[50px]">
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                       <p>0000</p>
                     </div>
                   </div>
@@ -128,7 +128,7 @@ export default function Projects() {
                   className="cursor-pointer group flex flex-col justify-center xl:ml-10 gap-5 3xl:gap-20"
                   onClick={handleClick}
                 >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium 3xl:text-[72px]">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium 3xl:text-[72px]">
                     Sandalwood Villa
                   </h2>
 
@@ -140,11 +140,11 @@ export default function Projects() {
                   />
 
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                    <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                       <h3>xxxxxxxxxxxxxxx</h3>
                       <h3>Residential</h3>
                     </div>
-                    <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px] 3xl:text-[50px]">
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                       <p>0000</p>
                     </div>
                   </div>
@@ -174,7 +174,7 @@ export default function Projects() {
                   className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
                   onClick={handleClick}
                 >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px]">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[24px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                     Residence #11
                   </h2>
                   <img
@@ -184,11 +184,11 @@ export default function Projects() {
                   />
                   
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                    <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                       <h3>USA</h3>
                       <h3>Residential</h3>
                     </div>
-                    <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px] 3xl:text-[50px]">
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                       <p>0000</p>
                     </div>
                   </div>
@@ -201,7 +201,7 @@ export default function Projects() {
                   className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
                   onClick={handleClick}
                 >
-                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px]">
+                  <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                     Residence #622
                   </h2>
                   <img
@@ -211,11 +211,11 @@ export default function Projects() {
                   />
                   
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                    <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                       <h3>xxxxxxxxxxxxxxx</h3>
                       <h3>Residential</h3>
                     </div>
-                    <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px] 3xl:text-[50px]">
+                    <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                       <p>0000</p>
                     </div>
                   </div>
@@ -233,7 +233,7 @@ export default function Projects() {
               className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
               onClick={handleClick}
             >
-              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px]">
+              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Villa Entrance
               </h2>
               <img
@@ -242,11 +242,11 @@ export default function Projects() {
                 className="shadow-slate-50 w-full lg:w-[750px] lg:h-[450px] 2xl:w-[858px] 2xl:h-[536px] object-cover 3xl:w-[1600px] 3xl:h-[800px]"
               />
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                   <h3>xxxxxxxxxxxxxxx</h3>
                   <h3>Residential</h3>
                 </div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px] 3xl:text-[50px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                   <p>0000</p>
                 </div>
               </div>
@@ -257,7 +257,7 @@ export default function Projects() {
               className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
               onClick={handleClick}
             >
-              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px]">
+              <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Private Villa
               </h2>
               <img
@@ -267,11 +267,11 @@ export default function Projects() {
               />
               
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                   <h3>USA</h3>
                   <h3>Residential</h3>
                 </div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[18px] 2xl:text-[24px] 3xl:text-[50px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
                   <p>0000</p>
                 </div>
               </div>

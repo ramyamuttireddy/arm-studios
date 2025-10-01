@@ -34,8 +34,8 @@ export default function Header() {
   return (
     <>
       <header
-        className="header-container fixed top-0 left-0 w-full z-50 px-6 md:px-16 py-4  flex justify-between items-center bg-black text-white transition-all duration-500
-  3xl:px-32 3xl:py-12
+        className="header-container fixed top-0 left-0 w-full z-50 px-6 md:px-16   flex justify-between items-center bg-black text-white transition-all duration-500
+  3xl:px-32 
 "
       >
         {/* Logo & Hamburger */}
@@ -45,7 +45,7 @@ export default function Header() {
             src="/assets/img/logo.png" // <-- replace with your 9-dots logo path
             alt="Menu Logo"
             onClick={toggleMenu}
-            className="cursor-pointer w-8 h-8 md:w-10 md:h-10 object-contain hover:opacity-80 transition 3xl:w-[4rem] 3xl:h-[5rem]"
+            className="cursor-pointer w-8 h-8 md:w-[42px] md:h-[42px] object-contain hover:opacity-80 transition 3xl:w-[5rem] 3xl:h-[5rem]"
           />
 
           {/* Right Logo (replacing ARM STUDIO text) */}
@@ -53,7 +53,7 @@ export default function Header() {
             src="/assets/Landing Page/arm_content.png" // <-- replace with your ARM logo path
             alt="ARM Studio Logo"
             onClick={handleLogoClick}
-            className="cursor-pointer w-[105px] md:w-[105px] object-contain hover:opacity-80 transition 3xl:w-[200px]"
+            className="cursor-pointer w-[105px] md:w-[110px] md:h-[110px] object-contain hover:opacity-80 transition 3xl:w-[300px] 3xl:h-[300px]"
           />
         </div>
 

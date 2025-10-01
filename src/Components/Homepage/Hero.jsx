@@ -15,7 +15,7 @@ export default function Hero() {
         className="
           hero-container w-full p-5 pt-60 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[80vh]
           xl:p-30 xl:gap-20 
-           3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[200px] xl:pt-[250px]  3xl:pt-[600px]
+           3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[200px] xl:pt-[280px] 2xl:pt-[300px] 3xl:pt-[700px]
         "
       >
         {/* Section Counter - Left */}
@@ -24,11 +24,11 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
           className="
-            hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[96px]
+            hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
             fade-in text-left 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant
           "
         >
-          8
+          08
         </motion.div>
 
         {/* Hero Headline - Right */}

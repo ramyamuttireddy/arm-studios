@@ -6,12 +6,14 @@ export default function WorkProjects() {
       {/* image section */}
       <div className="flex flex-col justify-center items-center p-4 xl:p-20 2xl:p-40">
         {/* condominium and conceptual section */}
-        <div className="flex flex-col gap-20 lg:flex-row lg:gap-16">
+        <div className="flex flex-col gap-20 lg:flex-row lg:gap-12">
           {/* first div */}
           <div className="flex flex-col gap-20">
-            <div>
-              <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
-                Condominium Apartment #42
+            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+              <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px]">
+                <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
+                  Condominium Apartment #42
+                </h2>
               </div>
               <div>
                 <img
@@ -20,21 +22,32 @@ export default function WorkProjects() {
                   className=""
                 />
               </div>
-              <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-                <div>Lorem Ipusm ajdf Residential</div>
-                <div>0000</div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  Lorem Ipusm ajdf Residential
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px] 3xl:text-[50px]">
+                  0000
+                </div>
               </div>
             </div>
-            <div className="lg:pl-20">
-              <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+            <div className="lg:pl-20 cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+              <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Condominium Karma Residence
               </div>
               <div>
-                <img src="/assets/Featured Works/Condominium-apartment-1.jpeg" alt="" />
+                <img
+                  src="/assets/Featured Works/Condominium-apartment-1.jpeg"
+                  alt=""
+                />
               </div>
-              <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-                <div>Lorem Ipusm ajdf Residential</div>
-                <div>0000</div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  Lorem Ipusm ajdf Residential
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  0000
+                </div>
               </div>
             </div>
           </div>
@@ -60,8 +73,8 @@ export default function WorkProjects() {
                 </svg>
               </div>
             </div>
-            <div>
-              <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+              <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Conceptual Skyscraper #25
               </div>
               <div>
@@ -71,9 +84,13 @@ export default function WorkProjects() {
                   className=""
                 />
               </div>
-              <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-                <div>Lorem Ipusm ajdf Residential</div>
-                <div>0000</div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  Lorem Ipusm ajdf Residential
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  0000
+                </div>
               </div>
             </div>
           </div>
@@ -101,8 +118,8 @@ export default function WorkProjects() {
               </svg>
             </div>
           </div>
-          <div>
-            <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+          <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
               House For Staycation
             </div>
             <div>
@@ -112,21 +129,23 @@ export default function WorkProjects() {
                 className=""
               />
             </div>
-            <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-              <div>
-                <div>Lorem Ipusm ajdf</div>
-                <div>Residential</div>
+            <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
+                <h3>Lorem Ipusm ajdf </h3>
+                <h3>Residential</h3>
               </div>
-              <div>0000</div>
+              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                <p>0000</p>
+              </div>
             </div>
           </div>
         </div>
         {/* House for Staycation section */}
 
         {/* Luxury Gated Community and CAD section */}
-        <div className="flex flex-col gap-[75px] pt-20 lg:flex-row lg:pl-16">
-          <div>
-            <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16">
+          <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
               Luxury Gated Community
             </div>
             <div>
@@ -136,46 +155,50 @@ export default function WorkProjects() {
                 className=""
               />
             </div>
-            <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-              <div>
+            <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                 <div>Lorem Ipusm ajdf</div>
                 <div>Residential</div>
               </div>
-              <div>0000</div>
+              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
             </div>
           </div>
-          <div>
-            <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+          <div  className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
               House CAD
             </div>
             <div>
               <img src="/assets/Featured Works/house-cad.jpeg" alt="" />
             </div>
-            <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-              <div>
+            <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                 <div>Lorem Ipusm ajdf</div>
                 <div>Residential</div>
               </div>
-              <div>0000</div>
+              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
             </div>
           </div>
         </div>
         {/* Luxury Gated Community and CAD section */}
 
         {/* Residence and Mixed Use Apartment section */}
-        <div className="flex flex-col gap-20 pt-20 lg:flex-row lg:gap-16 lg:pl-24">
+        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16">
           {/* first div */}
           <div className="flex flex-col gap-20 xl:gap-28">
-            <div>
-              <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+              <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Residence #7
               </div>
               <div>
-                <img src="/assets/Featured Works/Residence.png" alt="" className="" />
+                <img
+                  src="/assets/Featured Works/Residence.png"
+                  alt=""
+                  className=""
+                />
               </div>
-              <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-                <div>Lorem Ipusm ajdf Residential</div>
-                <div>0000</div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">Lorem Ipusm ajdf Residential</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
@@ -201,8 +224,8 @@ export default function WorkProjects() {
 
           {/* second div */}
           <div className="flex flex-col gap-20 lg:pt-[70px]">
-            <div>
-              <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+              <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Mixed Use Apartment (Astralis)
               </div>
               <div>
@@ -212,9 +235,9 @@ export default function WorkProjects() {
                   className=""
                 />
               </div>
-              <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-                <div>Lorem Ipusm ajdf Residential</div>
-                <div>0000</div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">Lorem Ipusm ajdf Residential</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
               </div>
             </div>
           </div>
@@ -223,37 +246,45 @@ export default function WorkProjects() {
         {/* Residence and Mixed Use Apartment section */}
 
         {/* Villa Entrance and farmhouse section */}
-        <div className="flex flex-col gap-20 pt-20 lg:flex-row lg:gap-16 lg:pt-[120]">
+        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16">
           {/* first div */}
           <div className="flex flex-col gap-20">
-            <div>
-              <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+              <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Villa Entrance
               </div>
               <div>
-                <img src="/assets/Featured Works/villa-entrance.jpeg" alt="" className="" />
+                <img
+                  src="/assets/Featured Works/villa-entrance.jpeg"
+                  alt=""
+                  className=""
+                />
               </div>
-              <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-                <div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                   <div>Lorem Ipusm ajdf</div>
                   <div> Residential</div>
                 </div>
-                <div>0000</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
               </div>
             </div>
-            <div className="lg:pl-52">
-              <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+            <div className="lg:pl-52 cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+              <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Forest Resort
               </div>
               <div>
-                <img src="/assets/Featured Works/forest-resort.jpeg" alt="" className="" />
+                <img
+                  src="/assets/Featured Works/forest-resort.jpeg"
+                  alt=""
+                  className=""
+                />
               </div>
-              <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-                <div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                   <div>Lorem Ipusm ajdf</div>
                   <div> Residential</div>
                 </div>
-                <div>0000</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
               </div>
             </div>
           </div>
@@ -279,19 +310,23 @@ export default function WorkProjects() {
                 </svg>
               </div>
             </div>
-            <div>
-              <div className="pb-6 text-xl font-medium xl:text-3xl 3xl:text-5xl">
+            <div className=" cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+              <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Farmhouse
               </div>
               <div>
-                <img src="/assets/Featured Works/farmhouse.jpeg" alt="" className="" />
+                <img
+                  src="/assets/Featured Works/farmhouse.jpeg"
+                  alt=""
+                  className=""
+                />
               </div>
-              <div className="flex justify-between border-b pb-10 pt-9 text-base font-medium xl:text-2xl xl:pb-20 3xl:text-4xl">
-                <div>
+              <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                   <div>Lorem Ipusm ajdf</div>
                   <div> Residential</div>
                 </div>
-                <div>0000</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
               </div>
             </div>
           </div>
