@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Container */}
       <div
         className="
-          hero-container w-full p-5 pt-40 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[80vh]
+          hero-container w-full p-5 pt-60 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[80vh]
           xl:p-30 xl:gap-20 
            3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[200px] xl:pt-[250px]  3xl:pt-[600px]
         "

@@ -1,10 +1,10 @@
 function About() {
   return (
     <>
-      <div className="max-w-[1920px] m-[0_auto] flex flex-col lg:flex-row w-full justify-center object-contain pt-20 pb-20 3xl:pt-40 3xl:pb-40 font-sans">
+      <div className="w-full xl:w-[80%] 3xl:max-w-[2840px] m-[0_auto] flex flex-col lg:flex-row  justify-center object-contain pt-20 pb-20 3xl:pt-40 3xl:pb-40 font-sans">
         
         {/* Left side -> 02 */}
-        <div className="flex justify-center lg:justify-end w-full ">
+        <div className="flex justify-center lg:justify-end  ">
           <div className="font-Cormorant  text-4xl font-light italic md:text-5xl  xl:text-[90px] 3xl:text-[90px]">
             02
           </div>
