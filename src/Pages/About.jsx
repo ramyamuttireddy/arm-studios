@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import CustomCursor from "../Animations/CustomCursor";
 import useFadeInOnScroll from "../Animations/UseFadeInScroll";
 import Header from "../Components/MainComponent/Header";
@@ -12,6 +13,9 @@ import ScrollText from "../Components/About/Scrooltext"
 
 export default function About() {
   useFadeInOnScroll(".fade-in");
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <div className="bg-black text-white font-sans scroll-m-48 overflow-x-hidden [&::-webkit-scrollbar]:hidden">

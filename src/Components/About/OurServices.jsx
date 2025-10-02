@@ -15,7 +15,7 @@ function OurServices () {
                         </div>
                     </div>    
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 xl:mr-6">
                       <div className="flex flex-col gap-9">
                          <div className="text-4xl font-medium">
                               Our Services
