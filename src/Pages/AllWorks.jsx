@@ -15,7 +15,7 @@ export default function AllWorks() {
   }, []);
 
   return (
-    <div className="bg-black text-white overflow-x-hidden font-sans">
+    <div className="bg-black text-white font-sans scroll-smooth overflow-x-hidden overflow-y-scroll [&::-webkit-scrollbar]:hidden">
       <CustomCursor />
       <Header />
       <main className="space-y-24">
