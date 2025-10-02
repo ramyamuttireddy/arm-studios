@@ -1,4 +1,4 @@
-import ScrollVelocity from "../../animations/ScrollVelocity";
+import ScrollVelocity from "../../Animations/ScrollVelocity";
 
 export default function ScroolText() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Hero() {
+export default function ContactHero() {
   return (
     <div>
         <div className="bg-black text-white h-screen w-full mx-auto">

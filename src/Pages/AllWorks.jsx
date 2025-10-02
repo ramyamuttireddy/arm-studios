@@ -2,13 +2,12 @@ import { useState, useEffect } from "react";
 import CustomCursor from "../Animations/CustomCursor";
 import useFadeInOnScroll from "../Animations/UseFadeInScroll";
 import Header from "../Components/MainComponent/Header";
-import GalleryHero from "../Components/Gallery/Main Gallery/GalleryHero";
+import AllWorksHero from "../Components/AllWorks/AllWorksHero";
+import AllWorksList from "../Components/AllWorks/AllWorkslist";
 import Footer from "../Components/MainComponent/Footer";
 import Preloader from "../Components/MainComponent/PreLoader";
-import GalleryLayout from "../Components/Gallery/Main Gallery/GalleryLayout";
-import ScroolAbout from "../Components/Works/ScroolAbout"
 
-export default function Gallery() {
+export default function AllWorks() {
   const [loading, setLoading] = useState(true);
   useFadeInOnScroll(".fade-in");
 
@@ -21,18 +20,17 @@ export default function Gallery() {
 
   return (
     <div className="bg-black text-white overflow-x-hidden font-sans">
+      <CustomCursor />
       <Header />
       <main className="space-y-24">
         <div className="fade-in">
-          <GalleryHero />
+          <AllWorksHero/>
         </div>
         <div className="fade-in">
-          <GalleryLayout />
-          <ScroolAbout />
+          <AllWorksList />
         </div>
       </main>
       <Footer />
-      <CustomCursor />
     </div>
   );
 }

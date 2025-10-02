@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import CustomCursor from "../animations/CursorPointer";
-import useFadeInOnScroll from "../animations/useFadeInOnScroll";
-import Preloader from "../Components/PreLoader"
-import Header from "../Components/Header"
-import Hero from "../Components/Work/Hero";
-import WorkProjects from "../Components/Work/WorkProjects"
-import About from "../Components/Work/About"
-import Footer from "../Components/Footer"
+import CustomCursor from "../Animations/CustomCursor"
+import useFadeInOnScroll from "../Animations/UseFadeInScroll"
+import Preloader from "../Components/MainComponent/PreLoader"
+import Header from "../Components/MainComponent/Header"
+import WorksHero from "../Components/Works/WorksHero";
+import WorkProjects from "../Components/Works/WorksProjects"
+import ScrollAbout from "../Components/Works/ScroolAbout"
+import Footer from "../Components/MainComponent/Footer"
 
 
 export default function Works() {
@@ -32,13 +32,13 @@ export default function Works() {
   <Header />
   <main className="space-y-24">
     <section className="fade-in">
-      <Hero />
+      <WorksHero />
     </section>
     <section className="fade-in">
       <WorkProjects />
     </section>
     <section className="fade-in">
-      <About />
+      <ScrollAbout />
     </section>
   </main>
   <Footer />

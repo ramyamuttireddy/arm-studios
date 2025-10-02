@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import CustomCursor from "../animations/CursorPointer";
-import useFadeInOnScroll from "../animations/useFadeInOnScroll";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import Preloader from "../Components/PreLoader";
-import Hero from "../Components/Contact/Hero";
-import ContactSection from "../Components/Contact/contactSection";
+import CustomCursor from "../Animations/CustomCursor"
+import useFadeInOnScroll from "../Animations/UseFadeInScroll";
+import Header from "../Components/MainComponent/Header";
+import Footer from "../Components/MainComponent/Footer";
+import Preloader from "../Components/MainComponent/PreLoader";
+import ContactHero from "../Components/Contact/ContactHero";
+import ContactSection from "../Components/Contact/ContactSection";
 
 export default function Contact() {
   const [loading, setLoading] = useState(true);
@@ -30,7 +30,7 @@ export default function Contact() {
   <Header />
   <main className="space-y-24">
     <section className="fade-in">
-      <Hero />
+      <ContactHero />
     </section>
     <section className="fade-in">
       <ContactSection  />

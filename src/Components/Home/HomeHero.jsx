@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function HomeHero() {
   return (
-      <section
-      id="featured"
-      className="relative flex flex-col gap-40 bg-black text-white overflow-hidden h-screen 3xl:gap-[120px]"
+    <section
+      id="home"
+      className="
+        relative flex flex-col gap-40 min-h-screen bg-black text-white overflow-hidden
+        hero-top-padding
+        3xl:gap-[300px] 3xl:min-h-[3000px] lg:gap-80 xl:gap-60 2xl:gap-40
+      "
     >
       {/* Container */}
       <div
@@ -24,7 +28,7 @@ export default function Hero() {
             fade-in text-left 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant
           "
         >
-         25'
+          08
         </motion.div>
 
         {/* Hero Headline - Right */}
@@ -37,9 +41,9 @@ export default function Hero() {
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
           "
         >
-          <span className="block 3xl:mb-6">Office Design #1</span>
-          
-          
+          <span className="block 3xl:mb-6">WE DESIGN</span>
+          <span className="block 3xl:mb-6">UNIQUE SPACIAL</span>
+          <span className="block 3xl:mb-6">EXPERIENCES</span>
         </motion.h1>
 
         {/* Hidden image hover effect */}
@@ -55,21 +59,27 @@ export default function Hero() {
         </div> */}
       </div>
 
+      {/* Main Image Section */}
+      <div className="relative w-full flex justify-end pt-50  xl:pb-[150px]  3xl:pt-[100px]">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 1.2, duration: 0.6 }}
+          className="
+            floating-circle absolute top-[-100px] right-[200px] w-32 h-32 md:w-48 md:h-48 bg-blue-500 rounded-full
+            -translate-x-1/2 -translate-y-1/2
+            3xl:w-[24rem] 3xl:h-[24rem] 3xl:top-[-200px] 3xl:right-[400px]
+          "
+        />
 
-      {/* Bottom Info Section (like top section in second hero) */}
-      {/* Bottom Info Section (like top section in second hero) */}
-      <div className="w-full bg-black/80 flex justify-center md:justify-end p-8 pb-0 z-20 3xl:pb-8">
-        <div className="text-left border-b border-white/30 p-3 3xl:p-6">
-          <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-            Commercial 
-          </p>
-          <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-            Europe
-          </p>
-          <p className="text-sm mt-1 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-           2023
-          </p>
-        </div>
+        <img
+          src="/assets/HomePageImages/hero_circle.png"
+          alt="House Design"
+          className="hero-main-img w-[1300px] object-cover 3xl:w-[2600px]"
+        />
+
+        {/* Dark Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
     </section>
   );

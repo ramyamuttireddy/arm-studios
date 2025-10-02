@@ -7,7 +7,7 @@ export default function ContactSection() {
       <div
         className="absolute inset-0 bg-no-repeat bg-cover bg-center"
         style={{
-          backgroundImage: "url('/assets/img/contactus-bg-images.jpg')",
+          backgroundImage: "url('/assets/contact/contactus-bg-images.jpg')",
         }}
       ></div>
 

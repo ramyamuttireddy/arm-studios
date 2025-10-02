@@ -1,6 +1,6 @@
-import ScrollVelocity from "./ScrollVelocity";
+import ScrollVelocity from "../../Animations/ScrollAboutAnimation";
 
-export default function About() {
+export default function ScrollAbout() {
   return (
     <div className=" h-[60vh] flex flex-col gap-20 bg-white justify-center items-end">
       <div className="border-t border-black mb-4 w-[80%] flex items-end">

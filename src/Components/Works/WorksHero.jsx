@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function WorksHero() {
   return (
     <section
       id="featured"

@@ -1,4 +1,4 @@
-function About() {
+function HomeAbout() {
   return (
     <>
       <div className="w-full xl:w-[80%] 3xl:max-w-[2840px] m-[0_auto] flex flex-col lg:flex-row  justify-center object-contain pt-20 pb-20 3xl:pt-40 3xl:pb-40 font-sans">
@@ -44,7 +44,7 @@ function About() {
             {/* Image */}
             <div className="p-[0px_15px]">
               <img
-                src="/assets/img/Flat Interiors 221.png"
+                src="/assets/HomePageImages/Flat Interiors 221.png"
                 alt="ARM Studios Project"
                 className="lg:max-w-[504px] lg:h-[508px] 3xl:max-w-[1000px] 3xl:h-auto"
               />
@@ -109,4 +109,4 @@ function About() {
   );
 }
 
-export default About;
+export default HomeAbout;

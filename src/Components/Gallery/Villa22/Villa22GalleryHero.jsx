@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function Villa22GalleryHero() {
   return (
-     <section
+      <section
       id="featured"
       className="relative flex flex-col gap-40 bg-black text-white overflow-hidden h-screen 3xl:gap-[120px]"
     >
@@ -24,7 +24,7 @@ export default function Hero() {
             fade-in text-left 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant
           "
         >
-         88
+         19'
         </motion.div>
 
         {/* Hero Headline - Right */}
@@ -37,8 +37,8 @@ export default function Hero() {
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
           "
         >
-          <span className="block 3xl:mb-6">ALL</span>
-          <span className="block 3xl:mb-6">WORKS</span>
+          <span className="block 3xl:mb-6">Villa #22</span>
+          
           
         </motion.h1>
 
@@ -61,13 +61,13 @@ export default function Hero() {
       <div className="w-full bg-black/80 flex justify-center md:justify-end p-8 pb-0 z-20 3xl:pb-8">
         <div className="text-left border-b border-white/30 p-3 3xl:p-6">
           <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-            Architecture
+            Residential  
           </p>
           <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-            Interior
+           
           </p>
           <p className="text-sm mt-1 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-            Design (Architecture + Interior)
+           2019
           </p>
         </div>
       </div>

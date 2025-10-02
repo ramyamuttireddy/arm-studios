@@ -22,7 +22,7 @@ const projects = [
   { id: 18, title: "Villa Entrance", year: " Residential 2023", image: "https://cdn.cosmos.so/def30e8a-34b2-48b1-86e1-07ec5c28f225?format=jpeg" },
 ];
 
-export default function Projects() {
+export default function AllWorksList() {
   const [hoverImage, setHoverImage] = useState(projects[0].image);
   const [visibleCount, setVisibleCount] = useState(10); 
   const bgRef = useRef(null);

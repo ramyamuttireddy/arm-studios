@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import CustomCursor from "../animations/CursorPointer";
-import useFadeInOnScroll from "../animations/useFadeInOnScroll";
-import Header from "../Components/Header";
-import Hero from "../Components/Homepage/Hero";
-import Projects from "../Components/Homepage/Projects";
-import About from "../Components/Homepage/About";
-import Footer from "../Components/Footer";
-import Preloader from "../Components/PreLoader";
-import ScroolText from "../Components/Homepage/ScroolText";
+import CustomCursor from "../Animations/CustomCursor";
+import useFadeInOnScroll from "../Animations/UseFadeInScroll";
+import Header from "../Components/MainComponent/Header"
+import HomeHero from "../Components/Home/HomeHero";
+import OurProjects from "../Components/Home/OurProjects";
+import HomeAbout from "../Components/Home/HomeAbout";
+import Footer from "../Components/MainComponent/Footer";
+import Preloader from "../Components/MainComponent/PreLoader"
+import ScroolText from "../Components/Home/ScroolText";
 
-export default function HomePage() {
+export default function Home() {
   const [loading, setLoading] = useState(true);
   useFadeInOnScroll(".fade-in");
 
@@ -32,13 +32,13 @@ export default function HomePage() {
   <Header />
   <main className="space-y-24">
     <section className="fade-in">
-      <Hero />
+      <HomeHero />
     </section>
     <section className="fade-in">
-      <Projects />
+      <OurProjects />
     </section>
     <section className="fade-in">
-      <About />
+      <HomeAbout />
       <ScroolText />
     </section>
   </main>
