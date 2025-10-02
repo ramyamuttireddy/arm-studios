@@ -8,6 +8,7 @@ import OurStudio from "../Components/About/OurStudio"
 import OurServices from "../Components/About/OurServices"
 import OurTeam from "../Components/About/OurTeam"
 import IndustryLeaders from "../Components/About/IndustryLeaders"
+import ScrollText from "../Components/About/Scrooltext"
 
 export default function About() {
   useFadeInOnScroll(".fade-in");
@@ -27,6 +28,9 @@ export default function About() {
         <section className="fade-in">
           <OurTeam />
           <IndustryLeaders />
+        </section>
+         <section className="fade-in">
+          <ScrollText/>
         </section>
       </main>
       <Footer />

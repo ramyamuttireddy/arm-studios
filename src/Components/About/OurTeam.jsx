@@ -5,7 +5,7 @@ function OurTeam () {
            <div>
                {/* Images section */}
                      <div className="flex justify-end items-end">
-                         <img src="assets/images/about-page-image.jpg" alt="" className="w-[80%]" />
+                         <img src="/assets/About/about-page-image.jpg" alt="" className="w-[80%]" />
                      </div>
                 {/* Images section */}
                 {/* Our Team Section */}
