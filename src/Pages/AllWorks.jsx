@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import CustomCursor from "../Animations/CustomCursor";
 import useFadeInOnScroll from "../Animations/UseFadeInScroll";
 import Header from "../Components/MainComponent/Header";
@@ -9,7 +10,9 @@ import Footer from "../Components/MainComponent/Footer";
 export default function AllWorks() {
   useFadeInOnScroll(".fade-in");
 
- 
+ useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-black text-white overflow-x-hidden font-sans">
