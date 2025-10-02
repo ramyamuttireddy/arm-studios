@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
-import CustomCursor from "../Animations/CustomCursor";
-import useFadeInOnScroll from "../Animations/UseFadeInScroll";
-import Header from "../Components/MainComponent/Header";
-import Villa22GalleryHero from "../Components/Gallery/Villa22/Villa22GalleryHero";
-import Footer from "../Components/MainComponent/Footer";
-import Preloader from "../Components/MainComponent/PreLoader";
-import Villa22GalleryLayout from "../Components/Gallery/Villa22/Villa22GalleryLayout";
-import ScroolAbout from "../Components/Works/ScroolAbout"
+import CustomCursor from "../../Animations/CustomCursor";
+import useFadeInOnScroll from "../../Animations/UseFadeInScroll";
+import Header from "../../Components/MainComponent/Header";
+import Footer from "../../Components/MainComponent/Footer";
+import Preloader from "../../Components/MainComponent/PreLoader";
+import ScroolAbout from "../../Components/Works/ScroolAbout";
+
+import Villa22GalleryLayout from "../../Components/Gallery/Villa22/Villa22GalleryLayout";
+import Villa22GalleryHero from "../../Components/Gallery/Villa22/Villa22GalleryHero";
 
 export default function Villa22Gallery() {
   const [loading, setLoading] = useState(true);

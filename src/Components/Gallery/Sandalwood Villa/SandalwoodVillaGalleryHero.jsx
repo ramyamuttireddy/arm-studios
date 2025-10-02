@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function FlatInteriors221GalleryHero() {
+export default function SandalwoodVillaGalleryHero() {
   return (
       <section
       id="featured"
@@ -24,7 +24,7 @@ export default function FlatInteriors221GalleryHero() {
             fade-in text-left 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant
           "
         >
-         20'
+         19'
         </motion.div>
 
         {/* Hero Headline - Right */}
@@ -37,8 +37,8 @@ export default function FlatInteriors221GalleryHero() {
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
           "
         >
-          <span className="block 3xl:mb-6">Flat Interiors</span>
-          <span className="block 3xl:mb-6"> #221</span>
+          <span className="block 3xl:mb-6">Sandalwood Villa </span>
+          <span className="block 3xl:mb-6"> Interiors</span>
           
           
         </motion.h1>
@@ -68,7 +68,7 @@ export default function FlatInteriors221GalleryHero() {
            
           </p>
           <p className="text-sm mt-1 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-           2020
+           2019
           </p>
         </div>
       </div>

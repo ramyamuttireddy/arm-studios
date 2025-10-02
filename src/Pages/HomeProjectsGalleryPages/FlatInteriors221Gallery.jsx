@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
-import CustomCursor from "../Animations/CustomCursor";
-import useFadeInOnScroll from "../Animations/UseFadeInScroll";
-import Header from "../Components/MainComponent/Header";
-import FlatInteriors221GalleryHero from "../Components/Gallery/FlatInteriors221/FlatInteriors221GalleryHero";
-import Footer from "../Components/MainComponent/Footer";
-import Preloader from "../Components/MainComponent/PreLoader";
-import FlatInteriors221GalleryLayout from "../Components/Gallery/FlatInteriors221/FlatInteriors221GalleryLayout";
-import ScroolAbout from "../Components/Works/ScroolAbout"
+import CustomCursor from "../../Animations/CustomCursor";
+import useFadeInOnScroll from "../../Animations/UseFadeInScroll";
+import Header from "../../Components/MainComponent/Header";
+import Footer from "../../Components/MainComponent/Footer";
+import Preloader from "../../Components/MainComponent/PreLoader";
+import ScroolAbout from "../../Components/Works/ScroolAbout";
+
+import FlatInteriors221GalleryLayout from "../../Components/Gallery/FlatInteriors221/FlatInteriors221GalleryLayout";
+import FlatInteriors221GalleryHero from "../../Components/Gallery/FlatInteriors221/FlatInteriors221GalleryHero";
 
 export default function FlatInteriors221Gallery() {
   const [loading, setLoading] = useState(true);

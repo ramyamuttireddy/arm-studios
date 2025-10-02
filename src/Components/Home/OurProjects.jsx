@@ -91,7 +91,7 @@ const handleClick = (path) => {
               {/* Villa #44 */}
               <div
                 className="flex flex-col justify-center items-start lg:items-end cursor-pointer group "
-                onClick={handleClick}
+                onClick={() => handleClick("/projects/villa44")}
               >
                 <div className="cursor-pointer group flex flex-col justify-center xl:ml-10 3xl:ml-60 gap-5 3xl:gap-20">
                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px] ">
@@ -126,7 +126,7 @@ const handleClick = (path) => {
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
                 <div
                   className="cursor-pointer group flex flex-col justify-center xl:ml-10 gap-5 3xl:gap-20"
-                  onClick={handleClick}
+                  onClick={() => handleClick("/projects/sandalwoodvilla")}
                 >
                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium 3xl:text-[72px]">
                     Sandalwood Villa
@@ -172,7 +172,7 @@ const handleClick = (path) => {
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
                 <div
                   className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
-                  onClick={handleClick}
+                  onClick={() => handleClick("/projects/residence11")}
                 >
                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[24px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                     Residence #11
@@ -199,7 +199,7 @@ const handleClick = (path) => {
               <div className="flex flex-col items-start lg:items-end mt-8 md:mt-12 fade-in">
                 <div
                   className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
-                  onClick={handleClick}
+                  onClick={() => handleClick("/projects/residence622")}
                 >
                   <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                     Residence #622
@@ -231,7 +231,7 @@ const handleClick = (path) => {
             {/* Villa Entrance */}
             <div
               className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
-              onClick={handleClick}
+              onClick={() => handleClick("/projects/villaentrance")}
             >
               <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Villa Entrance
@@ -255,7 +255,7 @@ const handleClick = (path) => {
             {/* Private Villa */}
             <div
               className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
-              onClick={handleClick}
+              onClick={() => handleClick("/projects/privatevilla")}
             >
               <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Private Villa

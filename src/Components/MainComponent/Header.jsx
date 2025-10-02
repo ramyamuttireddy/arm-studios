@@ -27,7 +27,6 @@ export default function Header() {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   const handleLogoClick = () => {
-    toggleMenu();
     navigate("/home");
   };
 

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import { IoMdClose } from "react-icons/io"; // Close icon
 
@@ -16,6 +16,7 @@ export default function StaggeredMenu({
   const menuRef = useRef(null);
   const itemsRef = useRef([]);
   const socialsRef = useRef([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (open) {
@@ -72,7 +73,13 @@ export default function StaggeredMenu({
           {/* Left: Logo + Menu Items */}
           <div className="flex-1 flex flex-col justify-center min-w-0">
             {logoUrl && (
-              <div className="mb-6 xl:mb-10 3xl:mb-24">
+              <div
+                className="mb-6 xl:mb-10 3xl:mb-24 cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation(); // prevent triggering parent click
+                  setOpen(true); // open menu only on logo click
+                }}
+              >
                 <img
                   src={logoUrl}
                   alt="Logo"
@@ -81,48 +88,49 @@ export default function StaggeredMenu({
               </div>
             )}
 
-            <div className="flex flex-col uppercase font-bold leading-tight">
+            <div
+              className="flex flex-col uppercase font-bold leading-tight"
+              onClick={() => navigate("/")} // navigate home when content clicked
+            >
               {items.map((item, idx) => (
-                <Link
+                <span
                   key={idx}
-                  to={item.link}
-                  onClick={() => setOpen(false)}
                   ref={(el) => (itemsRef.current[idx] = el)}
                   className="
                     hover:[-webkit-text-stroke:1px_white] relative
                     text-[40px] md:text-[60px] xl:text-[80px] 2xl:text-[90px] 3xl:text-[270px]
                     mb-4 xl:mb-6 3xl:mb-20
-                    hover:text-transparent transition-colors duration-300
+                    hover:text-transparent transition-colors duration-300 cursor-pointer
                   "
                 >
                   {item.label}
-                </Link>
+                </span>
               ))}
             </div>
           </div>
 
           {/* Right: Socials + Contact Info */}
-          <div className="flex-1 flex flex-col justify-center items-start gap-10 xl:gap-16 3xl:gap-32">
+          <div
+            className="flex-1 flex flex-col justify-center items-start gap-10 xl:gap-16 3xl:gap-32"
+            onClick={() => navigate("/")} // whole right side goes home
+          >
             {displaySocials && socialItems.length > 0 && (
               <div className="flex flex-col">
                 <h3 className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-bold uppercase tracking-widest mb-3 3xl:mb-10">
                   Socials
                 </h3>
                 {socialItems.map((social, idx) => (
-                  <a
+                  <span
                     key={idx}
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="
                       hover:text-gray-400 transition-colors
                       text-sm md:text-base xl:text-lg 2xl:text-xl 3xl:text-5xl 
-                      mb-2 3xl:mb-8
+                      mb-2 3xl:mb-8 cursor-pointer
                     "
                     ref={(el) => (socialsRef.current[idx] = el)}
                   >
                     {social.label}
-                  </a>
+                  </span>
                 ))}
               </div>
             )}
@@ -143,16 +151,15 @@ export default function StaggeredMenu({
                 <h3 className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-semibold uppercase tracking-widest mb-2 3xl:mb-8">
                   Say Hi
                 </h3>
-                <a
-                  href={`mailto:${contactInfo.email}`}
+                <span
                   className="
                     hover:text-gray-400 block
                     text-sm md:text-base xl:text-lg 2xl:text-xl 3xl:text-5xl
-                    3xl:leading-[5rem]
+                    3xl:leading-[5rem] cursor-pointer
                   "
                 >
                   {contactInfo.email}
-                </a>
+                </span>
               </div>
             )}
           </div>
