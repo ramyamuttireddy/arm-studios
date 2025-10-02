@@ -92,7 +92,7 @@ export default function AllWorksList() {
 
       {/* Scrollable project list */}
       <div className="relative z-10 w-full h-full overflow-y-auto scrollbar-none xl:pt-20">
-        <div className="w-full lg:w-[50%] xl:w-[50%] 2xl:w-[40%] mx-auto py-8 flex flex-col gap-4 px-4">
+        <div className="w-full lg:w-[50%] xl:w-[50%] 2xl:w-[40%] mx-auto py-8 flex flex-col gap-3 px-4 3xl:gap-10">
           {projects.slice(0, visibleCount).map((project) => (
             <div
               key={project.id}

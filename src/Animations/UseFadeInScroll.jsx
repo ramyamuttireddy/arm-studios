@@ -3,12 +3,13 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function useFadeInOnScroll(selector = ".fade-in") {
   useEffect(() => {
-    gsap.utils.toArray(selector).forEach((el) => {
+    const elements = gsap.utils.toArray(selector);
+
+    const animations = elements.map((el) =>
       gsap.fromTo(
         el,
         { autoAlpha: 0, y: 50 },
@@ -20,9 +21,15 @@ export default function useFadeInOnScroll(selector = ".fade-in") {
           scrollTrigger: {
             trigger: el,
             start: "top 80%",
+            toggleActions: "play none none reverse", // optional smooth play/reverse
           },
         }
-      );
-    });
+      )
+    );
+
+    return () => {
+      // Kill all animations & scroll triggers on unmount
+      animations.forEach((anim) => anim.scrollTrigger.kill());
+    };
   }, [selector]);
 }

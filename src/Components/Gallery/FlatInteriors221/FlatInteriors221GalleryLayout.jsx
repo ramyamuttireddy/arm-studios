@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
+import { SlArrowRight , SlArrowLeft  } from "react-icons/sl";
 
 const slideData = [
   { title: "Cosmic Harmony", img: "https://cdn.cosmos.so/1d4dbaff-8087-4451-a727-9d3266b573dd?format=jpeg" },
@@ -16,12 +17,18 @@ export default function FlatInteriors221GalleryLayout() {
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Initialize heartbeat on current thumbnail
+  // Animate active thumbnail (heartbeat effect)
   useEffect(() => {
     thumbsRef.current.forEach((thumb, i) => {
       gsap.killTweensOf(thumb);
       if (i === current && thumb) {
-        gsap.to(thumb, { scale: 1.05, duration: 0.6, repeat: -1, yoyo: true, ease: "power1.inOut" });
+        gsap.to(thumb, {
+          scale: 1.05,
+          duration: 0.6,
+          repeat: -1,
+          yoyo: true,
+          ease: "power1.inOut",
+        });
         thumb.style.opacity = 1;
       } else if (thumb) {
         thumb.style.opacity = 0.5;
@@ -30,8 +37,6 @@ export default function FlatInteriors221GalleryLayout() {
     });
   }, [current]);
 
-  const formatCounter = (i) => String(i + 1).padStart(2, "0");
-
   const goToSlide = (index) => {
     if (index === current || isAnimating) return;
     setIsAnimating(true);
@@ -39,13 +44,18 @@ export default function FlatInteriors221GalleryLayout() {
     const prevSlide = slidesRef.current[current];
     const nextSlide = slidesRef.current[index];
 
-    gsap.timeline({
-      onComplete: () => {
-        setCurrent(index);
-        setIsAnimating(false);
-      },
-    })
-      .fromTo(nextSlide, { scale: 0.1, yPercent: 100, autoAlpha: 1 }, { duration: 0.7, scale: 0.4, yPercent: 0, ease: "expo" })
+    gsap
+      .timeline({
+        onComplete: () => {
+          setCurrent(index);
+          setIsAnimating(false);
+        },
+      })
+      .fromTo(
+        nextSlide,
+        { scale: 0.1, yPercent: 100, autoAlpha: 1 },
+        { duration: 0.7, scale: 0.4, yPercent: 0, ease: "expo" }
+      )
       .to(nextSlide, { duration: 1, scale: 1, ease: "power4.inOut" }, ">-0.3")
       .to(prevSlide, { duration: 1, autoAlpha: 0, ease: "power4.inOut" }, "<");
   };
@@ -58,8 +68,7 @@ export default function FlatInteriors221GalleryLayout() {
   };
 
   return (
-    <section className="relative w-full h-[90vh] bg-black text-white font-sans flex flex-col items-center justify-center ">
-      
+    <section className="relative w-full h-[90vh] bg-black text-white flex flex-col items-center justify-center">
       {/* Main Slides */}
       <div className="relative w-full aspect-video overflow-hidden">
         {slideData.map((slide, i) => (
@@ -67,45 +76,62 @@ export default function FlatInteriors221GalleryLayout() {
             key={i}
             ref={(el) => (slidesRef.current[i] = el)}
             className="absolute inset-0 bg-cover bg-center will-change-transform w-full h-full"
-            style={{ backgroundImage: `url(${slide.img})`, opacity: i === current ? 1 : 0 }}
+            style={{
+              backgroundImage: `url(${slide.img})`,
+              opacity: i === current ? 1 : 0,
+            }}
           />
         ))}
 
-        {/* Navigation Arrows */}
-        <div
+        {/* Custom Navigation Arrows with FontAwesome */}
+        <button
           onClick={() => navigate(-1)}
-          className="absolute left-0 top-0 bottom-0 w-16 flex items-center justify-center cursor-pointer bg-black/30 hover:bg-black/50 transition-colors z-10"
+          className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/90 hover:bg-black/70 w-12 h-24 flex items-center justify-center z-10"
         >
-          <span className="text-4xl">&lt;</span>
-        </div>
-        <div
+          <SlArrowLeft
+            className="size-20 xl:size-40 2xl:size-60 3xl:text-[400px] text-white"
+            style={{
+              WebkitTextStroke: "0.5px black",
+              WebkitTextFillColor: "white",
+            }}
+          />
+        </button>
+        <button
           onClick={() => navigate(1)}
-          className="absolute right-0 top-0 bottom-0 w-16 flex items-center justify-center cursor-pointer bg-black/30 hover:bg-black/50 transition-colors z-10"
+          className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/90 hover:bg-black/70 w-12 h-24 flex items-center justify-center z-10"
         >
-          <span className="text-4xl">&gt;</span>
-        </div>
-      </div>
-
-      {/* Title and Counter */}
-      <div className="flex items-center justify-between w-full mt-4 px-2 max-w-full">
-        <h2 className="text-lg md:text-xl font-bold opacity-90 3xl:text-[50px]">{slideData[current].title}</h2>
-        <span className="text-sm opacity-70 3xl:text-[50px]">{formatCounter(current)} / {formatCounter(slideData.length)}</span>
+          <SlArrowRight
+            className="size-20 xl:size-40 2xl:size-60 3xl:size-[80] text-white"
+            style={{
+              WebkitTextStroke: "1px black", // border stroke
+              WebkitTextFillColor: "white", // inside fill
+            }}
+          />
+        </button>
       </div>
 
       {/* Thumbnails */}
       <div className="w-full flex gap-2 mt-4 overflow-x-auto px-2 justify-center pb-8">
         {slideData.map((slide, i) => (
-          <div key={i} className="flex flex-col items-center flex-shrink-0 cursor-pointer">
+          <div
+            key={i}
+            className="flex flex-col items-center flex-shrink-0 cursor-pointer"
+          >
             <div
               ref={(el) => (thumbsRef.current[i] = el)}
               onClick={() => goToSlide(i)}
-              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60  bg-cover bg-center transition-transform transition-opacity "
+              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
               style={{ backgroundImage: `url(${slide.img})` }}
             />
-            <div className={`h-[2px] w-full mt-1 rounded-full transition-all ${i === current ? "bg-white" : "bg-gray-500"}`} />
+            <div
+              className={`h-[2px] w-full mt-1 rounded-full transition-all ${
+                i === current ? "bg-white" : "bg-gray-500"
+              }`}
+            />
           </div>
         ))}
       </div>
     </section>
   );
 }
+

@@ -5,11 +5,11 @@ export default function WorkProjects() {
   return (
     <div>
       {/* image section */}
-      <div className="flex flex-col justify-center items-center p-4 xl:p-20 2xl:p-40">
+      <div className="flex flex-col justify-center items-center p-4 xl:p-20 2xl:p-40 3xl:gap-[200px]">
         {/* condominium and conceptual section */}
-        <div className="flex flex-col gap-20 lg:flex-row lg:gap-12">
+        <div className="flex flex-col gap-20 lg:flex-row lg:gap-12 3xl:gap-[120px]">
           {/* first div */}
-          <div className="flex flex-col gap-20">
+          <div className="flex flex-col gap-20 3xl:gap-40">
             <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px]">
                 <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
@@ -55,7 +55,7 @@ export default function WorkProjects() {
           {/* first div */}
 
           {/* second div */}
-          <div className="flex flex-col gap-20 xl:gap-28">
+          <div className="flex flex-col gap-20 xl:gap-28 ">
             <div className="flex justify-center lg:justify-end">
               <div className="border size-48 rounded-full flex justify-center items-center 3xl:size-96">
                 <svg
@@ -100,7 +100,7 @@ export default function WorkProjects() {
         {/* condominium and conceptual section */}
 
         {/* House for Staycation section */}
-        <div className="pt-20 flex flex-col gap-20 lg:flex-row lg:pt-28 lg:pl-20 xl:gap-80">
+        <div className="pt-20 flex flex-col gap-20 lg:flex-row lg:pt-28 lg:pl-20 xl:gap-80 ">
           <div className="flex justify-center items-end lg:pb-20 ">
             <div className="border size-48 rounded-full flex justify-center items-center 3xl:size-96">
               <svg
@@ -144,7 +144,7 @@ export default function WorkProjects() {
         {/* House for Staycation section */}
 
         {/* Luxury Gated Community and CAD section */}
-        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16">
+        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16 3xl:gap-[120px] ">
           <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
             <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
               Luxury Gated Community
@@ -183,7 +183,7 @@ export default function WorkProjects() {
         {/* Luxury Gated Community and CAD section */}
 
         {/* Residence and Mixed Use Apartment section */}
-        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16">
+        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16 3xl:gap-[120px]">
           {/* first div */}
           <div className="flex flex-col gap-20 xl:gap-28">
             <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
@@ -247,7 +247,7 @@ export default function WorkProjects() {
         {/* Residence and Mixed Use Apartment section */}
 
         {/* Villa Entrance and farmhouse section */}
-        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16">
+        <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16 3xl:gap-[120px]">
           {/* first div */}
           <div className="flex flex-col gap-20">
             <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">

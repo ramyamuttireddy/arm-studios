@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import CustomCursor from "../../Animations/CustomCursor";
 import useFadeInOnScroll from "../../Animations/UseFadeInScroll";
 import Header from "../../Components/MainComponent/Header";
@@ -9,9 +10,13 @@ import  VillaEntranceGalleryLayout from "../../Components/Gallery/Villa Entrance
 
 export default function VillaEntranceGallery() {
   useFadeInOnScroll(".fade-in");
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-black text-white overflow-x-hidden font-sans">
+      <CustomCursor />
       <Header />
       <main className="space-y-24">
         <div className="fade-in">
@@ -23,7 +28,7 @@ export default function VillaEntranceGallery() {
         </div>
       </main>
       <Footer />
-      <CustomCursor />
+      
     </div>
   );
 }

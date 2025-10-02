@@ -280,12 +280,12 @@ const handleClick = (path) => {
         </div>
 
         {/* Circle Container */}
-        <div className="circle-container w-full h-full" onClick={() => handleClick("/allworks")}>
+        <div className="circle-container w-full h-full" >
           <div className="mt-10 md:mt-16 lg:mt-[140px] 3xl:mt-[280px] flex justify-center fade-in">
-            <button
+            <button 
               type="button"
               className="circle-button bg-[#0100FC] w-[150px] sm:w-[200px] lg:w-[250px] xl:w-[320px] 3xl:w-[700px] h-[150px] sm:h-[200px] lg:h-[250px] xl:h-[320px] 3xl:h-[700px] flex items-center justify-center rounded-full hover:bg-blue transition duration-300 shadow-2xl"
-              onClick={handleClick}
+              onClick={() => handleClick("/allworks")}
             >
               <div className="text-base sm:text-lg md:text-xl lg:text-[24px] 3xl:text-[55px] circle-button-text">
                 <h3>All projects 19</h3>

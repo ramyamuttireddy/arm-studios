@@ -1,4 +1,4 @@
-
+import { useEffect } from "react";
 import CustomCursor from "../../Animations/CustomCursor";
 import useFadeInOnScroll from "../../Animations/UseFadeInScroll";
 import Header from "../../Components/MainComponent/Header";
@@ -12,10 +12,13 @@ export default function Residence622Gallery() {
   
 useFadeInOnScroll(".fade-in");
 
-  
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-black text-white overflow-x-hidden font-sans">
+      <CustomCursor />
       <Header />
       <main className="space-y-24">
         <div className="fade-in">
@@ -27,7 +30,7 @@ useFadeInOnScroll(".fade-in");
         </div>
       </main>
       <Footer />
-      <CustomCursor />
+      
     </div>
   );
 }
