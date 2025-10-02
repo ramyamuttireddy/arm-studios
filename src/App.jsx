@@ -15,7 +15,7 @@ import SandalwoodVillaGallery from "./Pages/HomeProjectsGalleryPages/SandalwoodV
 import Residence11Gallery from "./Pages/HomeProjectsGalleryPages/Residence11Gallery";
 import Residence622Gallery from "./Pages/HomeProjectsGalleryPages/Residence622Gallery ";
 import PrivateVillaGallery from "./Pages/HomeProjectsGalleryPages/PrivateVillaGallery";
-import VillaEntranceGallery from "./Pages/HomeProjectsGalleryPages/VillaEntranceGallery";
+import VillaEntranceGallery from "./Pages/HomeProjectsGalleryPages/VillaEntranceGallery"
 
 export default function App() {
   return (
