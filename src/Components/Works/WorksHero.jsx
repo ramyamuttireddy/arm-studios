@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+
 export default function WorksHero() {
   return (
     <section
@@ -74,3 +75,5 @@ export default function WorksHero() {
     </section>
   );
 }
+
+

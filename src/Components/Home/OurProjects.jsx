@@ -51,7 +51,7 @@ const handleClick = (path) => {
                   <p>Residential</p>
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  <p>0000</p>
+                  <p>2019</p>
                 </div>
               </div>
             </div>
@@ -72,10 +72,10 @@ const handleClick = (path) => {
 
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  <h3>Lorem Ipsum ajdf</h3>
+                  <h3>Residential</h3>
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  <p>0000</p>
+                  <p>2020</p>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ const handleClick = (path) => {
                       <h3>Residential</h3>
                     </div>
                     <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                      <p>0000</p>
+                      <p>2023</p>
                     </div>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ const handleClick = (path) => {
                       <h3>Residential</h3>
                     </div>
                     <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                      <p>0000</p>
+                      <p>2019</p>
                     </div>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const handleClick = (path) => {
                       <h3>Residential</h3>
                     </div>
                     <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                      <p>0000</p>
+                      <p>2024</p>
                     </div>
                   </div>
                 </div>
@@ -216,7 +216,7 @@ const handleClick = (path) => {
                       <h3>Residential</h3>
                     </div>
                     <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                      <p>0000</p>
+                      <p>2021</p>
                     </div>
                   </div>
                 </div>
@@ -247,7 +247,7 @@ const handleClick = (path) => {
                   <h3>Residential</h3>
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  <p>0000</p>
+                  <p>2023</p>
                 </div>
               </div>
             </div>
@@ -272,7 +272,7 @@ const handleClick = (path) => {
                   <h3>Residential</h3>
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  <p>0000</p>
+                  <p>2023</p>
                 </div>
               </div>
             </div>
@@ -280,7 +280,7 @@ const handleClick = (path) => {
         </div>
 
         {/* Circle Container */}
-        <div className="circle-container w-full h-full" onClick={handleClick}>
+        <div className="circle-container w-full h-full" onClick={() => handleClick("/allworks")}>
           <div className="mt-10 md:mt-16 lg:mt-[140px] 3xl:mt-[280px] flex justify-center fade-in">
             <button
               type="button"
