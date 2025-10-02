@@ -1,24 +1,14 @@
-import { useState, useEffect } from "react";
 import CustomCursor from "../../Animations/CustomCursor";
 import useFadeInOnScroll from "../../Animations/UseFadeInScroll";
 import Header from "../../Components/MainComponent/Header";
 import Footer from "../../Components/MainComponent/Footer";
-import Preloader from "../../Components/MainComponent/PreLoader";
 import ScroolAbout from "../../Components/Works/ScroolAbout";
 
 import FlatInteriors221GalleryLayout from "../../Components/Gallery/FlatInteriors221/FlatInteriors221GalleryLayout";
 import FlatInteriors221GalleryHero from "../../Components/Gallery/FlatInteriors221/FlatInteriors221GalleryHero";
 
 export default function FlatInteriors221Gallery() {
-  const [loading, setLoading] = useState(true);
   useFadeInOnScroll(".fade-in");
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) return <Preloader />;
 
   return (
     <div className="bg-black text-white overflow-x-hidden font-sans">

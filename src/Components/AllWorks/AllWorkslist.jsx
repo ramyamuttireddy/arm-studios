@@ -81,7 +81,7 @@ export default function AllWorksList() {
   const handleClick = () => navigate("/gallery");
 
   return (
-    <div className="relative w-full h-screen 3xl:h-[60vh] bg-black text-white overflow-hidden">
+    <div className="relative w-full h-screen  bg-black text-white overflow-hidden">
       {/* Background */}
       <img
         ref={bgRef}
@@ -91,19 +91,19 @@ export default function AllWorksList() {
       <div className="absolute inset-0 bg-white/20 z-5"></div>
 
       {/* Scrollable project list */}
-      <div className="relative z-10 w-full h-full overflow-y-auto scrollbar-none">
-        <div className="w-full lg:w-[80%] xl:w-[60%] mx-auto py-8 flex flex-col gap-4 px-4">
+      <div className="relative z-10 w-full h-full overflow-y-auto scrollbar-none xl:pt-20">
+        <div className="w-full lg:w-[50%] xl:w-[50%] 2xl:w-[40%] mx-auto py-8 flex flex-col gap-4 px-4">
           {projects.slice(0, visibleCount).map((project) => (
             <div
               key={project.id}
-              className="project-item w-full flex flex-col  sm:flex-row justify-between items-start sm:items-center py-4 3xl:py-10  px-4 sm:px-6 border-b border-white/20 cursor-pointer group relative"
+              className="project-item w-full flex flex-col  sm:flex-row justify-between items-start sm:items-center py-2 3xl:py-6  px-2 sm:px-6 border-b border-white/20 cursor-pointer group relative"
               onMouseEnter={() => setHoverImage(project.image)}
               onClick={handleClick}
             >
-              <div className="font-sans text-lg sm:text-md md:text-[18px] 3xl:text-[40px]  font-bold text-white group-hover:text-black transition-colors duration-300">
+              <div className="font-sans text-lg sm:text-md md:text-[16px] 3xl:text-[40px]  font-bold text-white group-hover:text-black transition-colors duration-300">
                 {project.title}
               </div>
-              <div className="project-year text-base sm:text-md md:text-[18px] 3xl:text-[40px]  text-white group-hover:text-black transition-colors duration-300 mt-1 sm:mt-0">
+              <div className="project-year text-base sm:text-md md:text-[16px] 3xl:text-[40px]  text-white group-hover:text-black transition-colors duration-300 mt-1 sm:mt-0">
                 {project.year}
               </div>
               <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></span>

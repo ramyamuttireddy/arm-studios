@@ -1,23 +1,13 @@
-import { useState, useEffect } from "react";
 import CustomCursor from "../Animations/CustomCursor";
 import useFadeInOnScroll from "../Animations/UseFadeInScroll";
 import Header from "../Components/MainComponent/Header";
 import GalleryHero from "../Components/Gallery/Main Gallery/GalleryHero";
 import Footer from "../Components/MainComponent/Footer";
-import Preloader from "../Components/MainComponent/PreLoader";
 import GalleryLayout from "../Components/Gallery/Main Gallery/GalleryLayout";
 import ScroolAbout from "../Components/Works/ScroolAbout"
 
 export default function Gallery() {
-  const [loading, setLoading] = useState(true);
   useFadeInOnScroll(".fade-in");
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) return <Preloader />;
 
   return (
     <div className="bg-black text-white overflow-x-hidden font-sans">
