@@ -4,14 +4,14 @@ export default function Villa22GalleryHero() {
   return (
       <section
       id="featured"
-      className="relative flex flex-col justify-evenly  bg-black text-white overflow-hidden h-screen 3xl:gap-[120px]"
+      className="max-w-[1000px] mx-auto relative flex flex-col justify-evenly  bg-black text-white overflow-hidden h-screen 3xl:gap-[120px]"
     >
       {/* Container */}
       <div
         className="
           hero-container w-full p-5 pt-60 md:px-12 lg:px-20 flex gap-10 justify-center items-start 
           xl:p-30 xl:gap-20 
-           3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[200px]   3xl:pt-[700px]
+           3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[100px]   3xl:pt-[700px]
         "
       >
         {/* Section Counter - Left */}

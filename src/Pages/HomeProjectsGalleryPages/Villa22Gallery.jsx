@@ -22,7 +22,7 @@ export default function Villa22Gallery() {
       {/* Fixed header OUTSIDE smooth-content */}
       <Header />
 
-      <div id="smooth-content" className="relative">
+      <div id="smooth-content" className="relative bg-black">
         <main className="">
           <div className="fade-in">
             <Villa22GalleryHero />
