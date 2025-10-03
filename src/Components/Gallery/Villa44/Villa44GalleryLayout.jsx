@@ -1,13 +1,28 @@
 import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
-import { SlArrowRight , SlArrowLeft  } from "react-icons/sl";
+import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
-import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 44 (Miami)/PNG image 1.png"
-import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 44 (Miami)/PNG image 2.png"
-import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 44 (Miami)/PNG image 3.png"
-import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 44 (Miami)/PNG image 4.png"
-import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 44 (Miami)/PNG image 5.png"
-
+import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 2.png"
+import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 3.png"
+import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 4.png"
+import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 5.png"
+import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 6.png"
+import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 7.png"
+import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 8.png"
+import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 9.png"
+import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 10.png"
+import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 11.png"
+import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 12.png"
+import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 13.png"
+import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 14.png"
+import img14 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 15.png"
+import img15 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 16.png"
+import img16 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 17.png"
+import img17 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 18.png"
+import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 19.png"
+import img19 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 20.png"
+import img20 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 21.png"
+import img21 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 22.png"
 
 
 const slideData = [
@@ -15,7 +30,23 @@ const slideData = [
   {id:2, img:img2},
   {id:3, img:img3},
   {id:4, img:img4},
-  {id:5, img:img5},
+   {id:5, img:img5},
+  {id:6, img:img6},
+  {id:7, img:img7},
+  {id:8, img:img8},
+   {id:9, img:img9},
+  {id:10, img:img10},
+  {id:11, img:img11},
+  {id:12, img:img12},
+   {id:13, img:img13},
+   {id:14, img:img14},
+  {id:15, img:img15},
+  {id:16, img:img16},
+   {id:17, img:img17},
+  {id:18, img:img18},
+  {id:19, img:img19},
+  {id:20, img:img20},
+   {id:21, img:img21},
 ];
 
 export default function Villa44GalleryLayout() {
@@ -24,7 +55,6 @@ export default function Villa44GalleryLayout() {
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Animate active thumbnail (heartbeat effect)
   useEffect(() => {
     thumbsRef.current.forEach((thumb, i) => {
       gsap.killTweensOf(thumb);
@@ -79,11 +109,14 @@ export default function Villa44GalleryLayout() {
       {/* Main Slides */}
       <div className="relative w-full aspect-video overflow-hidden">
         {slideData.map((slide, i) => (
-          <div
+          <img
             key={slide.id}
             ref={(el) => (slidesRef.current[i] = el)}
-            className="absolute inset-0 bg-cover bg-center w-full h-full"
-            style={{ backgroundImage: `url(${slide.img})`, opacity: i === current ? 1 : 0 }}
+            src={slide.img}
+            alt={`Slide ${i + 1}`}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+              i === current ? "opacity-100" : "opacity-0"
+            }`}
           />
         ))}
 
@@ -102,7 +135,7 @@ export default function Villa44GalleryLayout() {
         </button>
       </div>
 
-      {/* Thumbnails with horizontal scroll */}
+      {/* Thumbnails */}
       <div className="w-full overflow-x-auto flex gap-2 mt-4 px-2 pb-8 scrollbar-none justify-center">
         {slideData.map((slide, i) => (
           <div
@@ -110,10 +143,11 @@ export default function Villa44GalleryLayout() {
             className="flex flex-col items-center flex-shrink-0 cursor-pointer"
             onClick={() => goToSlide(i)}
           >
-            <div
+            <img
               ref={(el) => (thumbsRef.current[i] = el)}
-              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
-              style={{ backgroundImage: `url(${slide.img})` }}
+              src={slide.img}
+              alt={`Thumb ${i + 1}`}
+              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60 object-cover transition-transform transition-opacity"
             />
             <div
               className={`h-[2px] w-full mt-1 rounded-full transition-all ${
@@ -124,7 +158,6 @@ export default function Villa44GalleryLayout() {
         ))}
       </div>
 
-      {/* Hide scrollbar */}
       <style>{`
         .scrollbar-none::-webkit-scrollbar { display: none; }
         .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }

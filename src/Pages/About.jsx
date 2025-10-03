@@ -22,7 +22,7 @@ export default function About() {
       {/* Fixed header OUTSIDE smooth-content */}
       <Header />
 
-      <div id="smooth-content" className="relative">
+      <div id="smooth-content" className="relative bg-black text-white">
         <main className="">
           <section className="fade-in">
             <AboutHero />
