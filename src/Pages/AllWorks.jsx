@@ -6,27 +6,29 @@ import AllWorksHero from "../Components/AllWorks/AllWorksHero";
 import AllWorksList from "../Components/AllWorks/AllWorkslist";
 import Footer from "../Components/MainComponent/Footer";
 
-
 export default function AllWorks() {
   useFadeInOnScroll(".fade-in");
 
- useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="bg-black text-white font-sans scroll-smooth overflow-x-hidden overflow-y-scroll [&::-webkit-scrollbar]:hidden">
-      <CustomCursor />
+    <div id="smooth-wrapper">
+      {/* Fixed header OUTSIDE smooth-content */}
       <Header />
-      <main className="space-y-24">
-        <div className="fade-in">
-          <AllWorksHero/>
-        </div>
-        <div className="fade-in">
-          <AllWorksList />
-        </div>
-      </main>
-      <Footer />
+
+      <div id="smooth-content" className="relative">
+        <main className="bg-black">
+          <div className="fade-in">
+            <AllWorksHero />
+          </div>
+          <div className="fade-in">
+            <AllWorksList />
+          </div>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 function HomeAbout() {
   return (
-    <>
-      <div className="w-full xl:w-[80%] 3xl:max-w-[2840px] m-[0_auto] flex flex-col lg:flex-row  justify-center object-contain pt-20 pb-20 3xl:pt-40 3xl:pb-40 font-sans">
+    <div>
+      <div className=" w-full xl:w-[80%] 3xl:max-w-[2840px] m-[0_auto] flex flex-col lg:flex-row  justify-center object-contain pt-20 pb-20 3xl:pt-40 3xl:pb-40 font-sans">
         
         {/* Left side -> 02 */}
         <div className="flex justify-center lg:justify-end  ">
@@ -105,7 +105,7 @@ function HomeAbout() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

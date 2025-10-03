@@ -2,17 +2,55 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight , SlArrowLeft  } from "react-icons/sl";
 
+import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 2.png"
+import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 3.png"
+import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 4.png"
+import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 5.png"
+import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 6.png"
+import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 7.png"
+import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 8.png"
+import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 9.png"
+import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 10.png"
+import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 11.png"
+import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 12.png"
+import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 13.png"
+import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 14.png"
+import img14 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 15.png"
+import img15 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 16.png"
+import img16 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 17.png"
+import img17 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 18.png"
+import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 19.png"
+import img19 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 20.png"
+import img20 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 21.png"
+import img21 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 22.png"
+
+
 const slideData = [
-  { title: "Cosmic Harmony", img: "https://cdn.cosmos.so/1d4dbaff-8087-4451-a727-9d3266b573dd?format=jpeg" },
-  { title: "Astral Journey", img: "https://cdn.cosmos.so/67ef01f5-09c8-4117-9199-04ec5323d64f?format=jpeg" },
-  { title: "Ethereal Vision", img: "https://cdn.cosmos.so/77f73423-0eb7-4eaa-a782-036457985290?format=jpeg" },
-  { title: "Quantum Field", img: "https://cdn.cosmos.so/3dd498a9-169d-4b69-8e2e-df042123c124?format=jpeg" },
-  { title: "Celestial Path", img: "https://cdn.cosmos.so/ca346107-04c8-4241-85e6-f26c8b64c85c?format=jpeg" },
-  { title: "Cosmic Whisper", img: "https://cdn.cosmos.so/7d2c5113-b2d3-4f9d-8215-f46fbb679f31?format=jpeg" },
+  {id:1, img:img1},
+  {id:2, img:img2},
+  {id:3, img:img3},
+  {id:4, img:img4},
+   {id:5, img:img5},
+  {id:6, img:img6},
+  {id:7, img:img7},
+  {id:8, img:img8},
+   {id:9, img:img9},
+  {id:10, img:img10},
+  {id:11, img:img11},
+  {id:12, img:img12},
+   {id:13, img:img13},
+   {id:14, img:img14},
+  {id:15, img:img15},
+  {id:16, img:img16},
+   {id:17, img:img17},
+  {id:18, img:img18},
+  {id:19, img:img19},
+  {id:20, img:img20},
+   {id:21, img:img21},
 ];
 
 export default function FlatInteriors221GalleryLayout() {
-  const slidesRef = useRef([]);
+   const slidesRef = useRef([]);
   const thumbsRef = useRef([]);
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -73,7 +111,7 @@ export default function FlatInteriors221GalleryLayout() {
       <div className="relative w-full aspect-video overflow-hidden">
         {slideData.map((slide, i) => (
           <div
-            key={i}
+            key={slide.id}
             ref={(el) => (slidesRef.current[i] = el)}
             className="absolute inset-0 bg-cover bg-center will-change-transform w-full h-full"
             style={{
@@ -83,44 +121,32 @@ export default function FlatInteriors221GalleryLayout() {
           />
         ))}
 
-        {/* Custom Navigation Arrows with FontAwesome */}
+        {/* Custom Navigation Arrows */}
         <button
           onClick={() => navigate(-1)}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/90 hover:bg-black/70 w-12 h-24 flex items-center justify-center z-10"
+          className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 w-12 h-24 flex items-center justify-center z-10"
         >
-          <SlArrowLeft
-            className="size-20 xl:size-40 2xl:size-60 3xl:text-[400px] text-white"
-            style={{
-              WebkitTextStroke: "0.5px black",
-              WebkitTextFillColor: "white",
-            }}
-          />
+          <SlArrowLeft className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
         </button>
         <button
           onClick={() => navigate(1)}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/90 hover:bg-black/70 w-12 h-24 flex items-center justify-center z-10"
+          className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 w-12 h-24 flex items-center justify-center z-10"
         >
-          <SlArrowRight
-            className="size-20 xl:size-40 2xl:size-60 3xl:size-[80] text-white"
-            style={{
-              WebkitTextStroke: "1px black", // border stroke
-              WebkitTextFillColor: "white", // inside fill
-            }}
-          />
+          <SlArrowRight className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
         </button>
       </div>
 
-      {/* Thumbnails */}
-      <div className="w-full flex gap-2 mt-4 overflow-x-auto px-2 justify-center pb-8">
+      {/* Thumbnails with horizontal scroll */}
+      <div className="w-full overflow-x-auto flex gap-2 mt-4 px-2 pb-8 scrollbar-none justify-center">
         {slideData.map((slide, i) => (
           <div
-            key={i}
+            key={slide.id}
             className="flex flex-col items-center flex-shrink-0 cursor-pointer"
+            onClick={() => goToSlide(i)}
           >
             <div
               ref={(el) => (thumbsRef.current[i] = el)}
-              onClick={() => goToSlide(i)}
-              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
+              className="w-10 h-10 sm:w-10 sm:h-10 md:w-20 md:h-20 3xl:w-40 3xl:h-40 bg-cover bg-center transition-transform transition-opacity"
               style={{ backgroundImage: `url(${slide.img})` }}
             />
             <div
@@ -131,7 +157,19 @@ export default function FlatInteriors221GalleryLayout() {
           </div>
         ))}
       </div>
+
+      {/* Tailwind scrollbar hide */}
+      <style>
+        {`
+          .scrollbar-none::-webkit-scrollbar {
+            display: none;
+          }
+          .scrollbar-none {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+        `}
+      </style>
     </section>
   );
 }
-

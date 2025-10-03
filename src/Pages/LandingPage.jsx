@@ -8,6 +8,10 @@ export default function LandingPage() {
   const landingRef = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (landingRef.current) {
       $(landingRef.current).ripples({
         resolution: 256,   // exact value you wanted

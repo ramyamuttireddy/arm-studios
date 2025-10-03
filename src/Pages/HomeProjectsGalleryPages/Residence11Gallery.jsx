@@ -10,28 +10,28 @@ import Residence11GalleryLayout from "../../Components/Gallery/Residence11/Resid
 import Residence11GalleryHero from "../../Components/Gallery/Residence11/Residence11GalleryHero";
 
 export default function Residence11Gallery() {
-  
   useFadeInOnScroll(".fade-in");
-   useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
- 
 
   return (
-    <div className="bg-black text-white overflow-x-hidden font-sans">
-      <CustomCursor />
+    <div id="smooth-wrapper">
+      {/* Fixed header OUTSIDE smooth-content */}
       <Header />
-      <main className="space-y-24">
-        <div className="fade-in">
-          <Residence11GalleryHero />
-        </div>
-        <div className="fade-in">
-          <Residence11GalleryLayout />
-          <ScroolAbout />
-        </div>
-      </main>
-      <Footer />
-      
+
+      <div id="smooth-content" className="relative">
+        <main className="">
+          <div className="fade-in">
+            <Residence11GalleryHero />
+          </div>
+          <div className="fade-in pt-10 bg-black">
+            <Residence11GalleryLayout />
+            <ScroolAbout />
+          </div>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

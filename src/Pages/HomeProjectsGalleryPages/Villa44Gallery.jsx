@@ -9,7 +9,6 @@ import Villa44GalleryLayout from "../../Components/Gallery/Villa44/Villa44Galler
 import Villa44GalleryHero from "../../Components/Gallery/Villa44/Villa44GalleryHero";
 
 export default function Villa44Gallery() {
-  
   useFadeInOnScroll(".fade-in");
 
   useEffect(() => {
@@ -17,20 +16,22 @@ export default function Villa44Gallery() {
   }, []);
 
   return (
-    <div className="bg-black text-white overflow-x-hidden font-sans">
-      <CustomCursor />
+    <div id="smooth-wrapper">
+      {/* Fixed header OUTSIDE smooth-content */}
       <Header />
-      <main className="space-y-24">
-        <div className="fade-in">
-          <Villa44GalleryHero />
-        </div>
-        <div className="fade-in">
-          <Villa44GalleryLayout />
-          <ScroolAbout />
-        </div>
-      </main>
-      <Footer />
-      
+
+      <div id="smooth-content" className="relative">
+        <main className="">
+          <div className="fade-in">
+            <Villa44GalleryHero />
+          </div>
+          <div className="fade-in pt-10 bg-black">
+            <Villa44GalleryLayout />
+            <ScroolAbout />
+          </div>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

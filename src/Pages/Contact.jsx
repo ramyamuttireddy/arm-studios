@@ -1,4 +1,5 @@
-import CustomCursor from "../Animations/CustomCursor"
+import { useEffect } from "react";
+import CustomCursor from "../Animations/CustomCursor";
 import useFadeInOnScroll from "../Animations/UseFadeInScroll";
 import Header from "../Components/MainComponent/Header";
 import Footer from "../Components/MainComponent/Footer";
@@ -7,24 +8,27 @@ import ContactSection from "../Components/Contact/ContactSection";
 
 export default function Contact() {
   useFadeInOnScroll(".fade-in");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className="bg-black text-white font-sans scroll-smooth overflow-x-hidden overflow-y-scroll [&::-webkit-scrollbar]:hidden">
-  <CustomCursor />
-  <Header />
-  <main className="space-y-24">
-    <section className="fade-in">
-      <ContactHero />
-    </section>
-    <section className="fade-in">
-      <ContactSection  />
-    </section>
-    <section className="fade-in">
-      
-    </section>
-  </main>
-  <Footer />
-</div>
+    <div id="smooth-wrapper">
+      {/* Fixed header OUTSIDE smooth-content */}
+      <Header />
 
+      <div id="smooth-content" className="relative">
+        <main className="space-y-24">
+          <section className="fade-in">
+            <ContactHero />
+          </section>
+          <section className="fade-in">
+            <ContactSection />
+          </section>
+          <section className="fade-in"></section>
+        </main>
+        <Footer />
+      </div>
+    </div>
   );
 }

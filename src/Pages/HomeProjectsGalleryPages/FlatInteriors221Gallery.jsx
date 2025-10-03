@@ -11,25 +11,27 @@ import FlatInteriors221GalleryHero from "../../Components/Gallery/FlatInteriors2
 export default function FlatInteriors221Gallery() {
   useFadeInOnScroll(".fade-in");
 
-   useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="bg-black text-white overflow-x-hidden font-sans">
-      <CustomCursor />
+    <div id="smooth-wrapper">
+      {/* Fixed header OUTSIDE smooth-content */}
       <Header />
-      <main className="space-y-24">
-        <div className="fade-in">
-          <FlatInteriors221GalleryHero />
-        </div>
-        <div className="fade-in">
-          <FlatInteriors221GalleryLayout />
-          <ScroolAbout />
-        </div>
-      </main>
-      <Footer />
-      <CustomCursor />
+
+      <div id="smooth-content" className="relative">
+        <main className="">
+          <div className="fade-in">
+            <FlatInteriors221GalleryHero />
+          </div>
+          <div className="fade-in pt-10 bg-black">
+            <FlatInteriors221GalleryLayout />
+            <ScroolAbout />
+          </div>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

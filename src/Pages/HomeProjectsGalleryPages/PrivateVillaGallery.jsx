@@ -11,24 +11,29 @@ import PrivateVillaGalleryLayout from "../../Components/Gallery/Private Villa/Pr
 export default function PrivateVillaGallery() {
   useFadeInOnScroll(".fade-in");
 
-   useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="bg-black text-white overflow-x-hidden font-sans">
-      <CustomCursor />
-      <Header />
-      <main className="space-y-24">
-        <div className="fade-in">
-          <PrivateVillaGalleryHero />
+    <>
+      <div id="smooth-wrapper">
+        {/* Fixed header OUTSIDE smooth-content */}
+        <Header />
+
+        <div id="smooth-content" className="relative">
+          <main className="">
+            <div className="fade-in">
+              <PrivateVillaGalleryHero />
+            </div>
+            <div className="fade-in pt-10 bg-black">
+              <PrivateVillaGalleryLayout />
+              <ScroolAbout />
+            </div>
+          </main>
+          <Footer />
         </div>
-        <div className="fade-in">
-          <PrivateVillaGalleryLayout />
-          <ScroolAbout />
-        </div>
-      </main>
-      <Footer />
-    </div>
+      </div>
+    </>
   );
 }
