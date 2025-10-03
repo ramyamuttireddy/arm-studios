@@ -2,20 +2,17 @@ import React from "react";
 
 export default function ContactSection() {
   return (
-    <section className="relative w-full min-h-screen">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-no-repeat bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/assets/contact/contactus-bg-images.jpg')",
-        }}
-      ></div>
-
-      {/* Overlay for opacity */}
+    <section
+      className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat mt-20"
+      style={{
+        backgroundImage: "url('/assets/contact/contactus-bg-images.jpg')",
+      }}
+    >
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="relative w-[90%] m-auto z-10">
+      <div className="relative z-10 w-[90%] m-auto">
         {/* Top Border & Title */}
         <div className="pt-14 pb-14 lg:pt-[75px] lg:pb-[75px] xl:pt-[90px] xl:pb-[90px] 3xl:pt-40 3xl:pb-40">
           <div className="flex justify-end">

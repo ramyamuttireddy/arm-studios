@@ -17,7 +17,7 @@ export default function Contact() {
       {/* Fixed header OUTSIDE smooth-content */}
       <Header />
 
-      <div id="smooth-content" className="relative bg-black text-white">
+      <div id="smooth-content" className=" bg-black text-white">
         <main className="">
           <section className="fade-in">
             <ContactHero />
