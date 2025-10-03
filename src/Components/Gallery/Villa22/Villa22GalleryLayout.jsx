@@ -130,7 +130,7 @@ export default function Villa22GalleryLayout() {
           >
             <div
               ref={(el) => (thumbsRef.current[i] = el)}
-              className="w-20 h-12 sm:w-24 sm:h-16 md:w-10 md:h-10 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
+              className="w-15 h-15 sm:w-15 sm:h-15 md:w-16 md:h-16 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
               style={{ backgroundImage: `url(${slide.img})` }}
             />
             <div
