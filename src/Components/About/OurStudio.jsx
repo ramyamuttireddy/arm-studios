@@ -1,7 +1,7 @@
 function OurStudio () {
      return(
         <>
-       <div className="pb-16 xl:pb-[126px]"> 
+       <div className="pb-16 xl:pb-[126px] xl:p-10"> 
         <div className="2xl:w-[60%] 4xl:w-[40%] m-auto">
           <div className="p-[0px_20px] md:p-[0px_80px] lg:p-[0px_150px] xl:p-[0px_200px] 2xl:p-[0px_250px]">
               <div className="flex flex-col gap-9 2xl:gap-14 3xl:gap-20">

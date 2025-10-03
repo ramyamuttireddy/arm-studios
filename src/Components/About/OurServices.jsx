@@ -2,7 +2,7 @@ function OurServices () {
     return(
         <>
           <div>
-               <div className="flex flex-col gap-10 justify-center items-center pr-1pd pl-1pd pb-28
+               <div className="flex flex-col gap-10 justify-center items-center pr-1pd pl-1pd pb-28 xl:p-10
                                 md:gap-16 lg:flex-row 
                                 xl:pb-40 2xl:pb-44
                                 1xl:pr-2p 1xl:pl-2p">

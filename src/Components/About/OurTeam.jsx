@@ -9,7 +9,7 @@ function OurTeam () {
                      </div>
                 {/* Images section */}
                 {/* Our Team Section */}
-                <div className="pr-5 bg-black text-white lg:pr-12">
+                <div className="pr-5 bg-black text-white lg:pr-12 xl:p-10">
                     {/* headin section */}
                       <div className="">                        
                           <div className="pl-5 pt-[75px]">

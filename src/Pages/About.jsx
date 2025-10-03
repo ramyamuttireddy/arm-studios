@@ -18,7 +18,7 @@ export default function About() {
     }, []);
 
   return (
-    <div className="bg-black text-white font-sans scroll-m-48 overflow-x-hidden [&::-webkit-scrollbar]:hidden">
+    <div className="bg-black text-white font-sans scroll-m-48 overflow-x-hidden [&::-webkit-scrollbar]:hidden ">
       <CustomCursor />
       <Header />
       <main className="space-y-24">
