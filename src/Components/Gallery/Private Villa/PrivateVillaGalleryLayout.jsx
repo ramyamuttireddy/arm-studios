@@ -3,17 +3,55 @@ import gsap from "gsap";
 // FontAwesome Imports
 import { SlArrowRight , SlArrowLeft  } from "react-icons/sl";
 
+import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 1.png"
+import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 2.png"
+import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 3.png"
+import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 4.png"
+import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 5.png"
+import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 6.png"
+import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 7.png"
+import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 8.png"
+import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 9.png"
+import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 10.png"
+import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 11.png"
+import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 12.png"
+import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 13.png"
+import img14 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 14.png"
+import img15 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 15.png"
+import img16 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 16.png"
+import img17 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 17.png"
+import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 18.png"
+import img19 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 19.png"
+import img20 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 20.png"
+import img21 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 21.png"
+
+
 const slideData = [
-  { title: "Cosmic Harmony", img: "https://cdn.cosmos.so/1d4dbaff-8087-4451-a727-9d3266b573dd?format=jpeg" },
-  { title: "Astral Journey", img: "https://cdn.cosmos.so/67ef01f5-09c8-4117-9199-04ec5323d64f?format=jpeg" },
-  { title: "Ethereal Vision", img: "https://cdn.cosmos.so/77f73423-0eb7-4eaa-a782-036457985290?format=jpeg" },
-  { title: "Quantum Field", img: "https://cdn.cosmos.so/3dd498a9-169d-4b69-8e2e-df042123c124?format=jpeg" },
-  { title: "Celestial Path", img: "https://cdn.cosmos.so/ca346107-04c8-4241-85e6-f26c8b64c85c?format=jpeg" },
-  { title: "Cosmic Whisper", img: "https://cdn.cosmos.so/7d2c5113-b2d3-4f9d-8215-f46fbb679f31?format=jpeg" },
+  {id:1, img:img1},
+  {id:2, img:img2},
+  {id:3, img:img3},
+  {id:4, img:img4},
+   {id:5, img:img5},
+  {id:6, img:img6},
+  {id:7, img:img7},
+  {id:8, img:img8},
+   {id:9, img:img9},
+  {id:10, img:img10},
+  {id:11, img:img11},
+  {id:12, img:img12},
+   {id:13, img:img13},
+   {id:14, img:img14},
+  {id:15, img:img15},
+  {id:16, img:img16},
+   {id:17, img:img17},
+  {id:18, img:img18},
+  {id:19, img:img19},
+  {id:20, img:img20},
+   {id:21, img:img21},
 ];
 
 export default function PrivateVillaGalleryLayout() {
-  const slidesRef = useRef([]);
+ const slidesRef = useRef([]);
   const thumbsRef = useRef([]);
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -121,7 +159,7 @@ export default function PrivateVillaGalleryLayout() {
             <div
               ref={(el) => (thumbsRef.current[i] = el)}
               onClick={() => goToSlide(i)}
-              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
+              className="w-20 h-12 sm:w-24 sm:h-16 md:w-20 md:h-20 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
               style={{ backgroundImage: `url(${slide.img})` }}
             />
             <div

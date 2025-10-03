@@ -1,18 +1,33 @@
 import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight , SlArrowLeft  } from "react-icons/sl";
+import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 1.png"
+import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 2.png"
+import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 3.png"
+import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 4.png"
+import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 5.png"
+import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 6.png"
+import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 7.png"
+import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 8.png"
+import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa Entrance/PNG image 9.png"
+
+
 
 const slideData = [
-  { title: "Cosmic Harmony", img: "https://cdn.cosmos.so/1d4dbaff-8087-4451-a727-9d3266b573dd?format=jpeg" },
-  { title: "Astral Journey", img: "https://cdn.cosmos.so/67ef01f5-09c8-4117-9199-04ec5323d64f?format=jpeg" },
-  { title: "Ethereal Vision", img: "https://cdn.cosmos.so/77f73423-0eb7-4eaa-a782-036457985290?format=jpeg" },
-  { title: "Quantum Field", img: "https://cdn.cosmos.so/3dd498a9-169d-4b69-8e2e-df042123c124?format=jpeg" },
-  { title: "Celestial Path", img: "https://cdn.cosmos.so/ca346107-04c8-4241-85e6-f26c8b64c85c?format=jpeg" },
-  { title: "Cosmic Whisper", img: "https://cdn.cosmos.so/7d2c5113-b2d3-4f9d-8215-f46fbb679f31?format=jpeg" },
+  {id:1, img:img1},
+  {id:2, img:img2},
+  {id:3, img:img3},
+  {id:4, img:img4},
+   {id:5, img:img5},
+  {id:6, img:img6},
+  {id:7, img:img7},
+  {id:8, img:img8},
+   {id:9, img:img9},
+
 ];
 
 export default function VillaEntranceGalleryLayout() {
-   const slidesRef = useRef([]);
+  const slidesRef = useRef([]);
   const thumbsRef = useRef([]);
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -120,7 +135,7 @@ export default function VillaEntranceGalleryLayout() {
             <div
               ref={(el) => (thumbsRef.current[i] = el)}
               onClick={() => goToSlide(i)}
-              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
+              className="w-20 h-12 sm:w-24 sm:h-16 md:w-20 md:h-20 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
               style={{ backgroundImage: `url(${slide.img})` }}
             />
             <div
