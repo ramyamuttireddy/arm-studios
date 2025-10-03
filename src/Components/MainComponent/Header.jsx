@@ -34,7 +34,7 @@ export default function Header() {
     <>
       <header
         className="fixed top-0 left-0 w-full h-16 3xl:h-26 z-50 px-6 md:px-16   flex justify-between items-center bg-black text-white transition-all duration-500
-  3xl:px-32 
+  3xl:px-32
 "
       >
         {/* Logo & Hamburger */}

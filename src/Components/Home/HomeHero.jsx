@@ -14,7 +14,7 @@ export default function HomeHero() {
       <div
         className="
           hero-container w-full p-5 pt-60 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[80vh]
-          xl:p-30 xl:gap-20 
+          xl:p-30 xl:gap-16 
            3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[200px] xl:pt-[280px] 2xl:pt-[300px] 3xl:pt-[700px]
         "
       >
@@ -37,7 +37,7 @@ export default function HomeHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, staggerChildren: 0.2 }}
           className="
-            hero-headline leading-[50px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[96px] font-medium
+            hero-headline leading-[50px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[80px] font-medium
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
           "
         >
