@@ -4,8 +4,8 @@ import useFadeInOnScroll from "../../Animations/UseFadeInScroll";
 import Header from "../../Components/MainComponent/Header";
 import Footer from "../../Components/MainComponent/Footer";
 import ScroolAbout from "../../Components/Works/ScroolAbout";
-import Villa22GalleryLayout from "../../Components/Gallery/Villa22/Villa22GalleryLayout";
-import Villa22GalleryHero from "../../Components/Gallery/Villa22/Villa22GalleryHero";
+import CondominiumKarmaResidenceGalleryHero from "../../Components/Featured Works gallery/CondominiumKarmaResidence/CondominiumKarmaResidenceGalleryHero";
+import CondominiumKarmaResidenceGalleryLayout from "../../Components/Featured Works gallery/CondominiumKarmaResidence/CondominiumKarmaResidenceGalleryLayout";
 
 export default function CondominiumKarmaResidenceGallery() {
   useFadeInOnScroll(".fade-in");

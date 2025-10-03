@@ -1,7 +1,15 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
+import useFadeInOnScroll from "../../Animations/UseFadeInScroll";
 
 export default function WorkProjects() {
+  useFadeInOnScroll(".fade-in");
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+  };
+
   return (
     <div>
       {/* image section */}
@@ -10,7 +18,10 @@ export default function WorkProjects() {
         <div className="flex flex-col gap-20 lg:flex-row lg:gap-12 3xl:gap-[120px]">
           {/* first div */}
           <div className="flex flex-col gap-20 3xl:gap-40">
-            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div
+              className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+              onClick={() => handleClick("/projects/condominium-apartment42")}
+            >
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[25px] 2xl:text-[30px] font-medium   3xl:text-[72px]">
                 <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                   Condominium Apartment #42
@@ -32,7 +43,10 @@ export default function WorkProjects() {
                 </div>
               </div>
             </div>
-            <div className="lg:pl-20 cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div
+              className="fade-in lg:pl-20 cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+              onClick={() => handleClick("/projects/condominium-karmaResidence")}
+            >
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Condominium Karma Residence
               </div>
@@ -74,7 +88,10 @@ export default function WorkProjects() {
                 </svg>
               </div>
             </div>
-            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div
+              className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+              onClick={() => handleClick("/projects/conceptual-skyscraper25")}
+            >
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Conceptual Skyscraper #25
               </div>
@@ -119,7 +136,10 @@ export default function WorkProjects() {
               </svg>
             </div>
           </div>
-          <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+          <div
+            className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+            onClick={() => handleClick("/projects/housefor-staycation")}
+          >
             <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
               House For Staycation
             </div>
@@ -145,7 +165,10 @@ export default function WorkProjects() {
 
         {/* Luxury Gated Community and CAD section */}
         <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16 3xl:gap-[120px] ">
-          <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+          <div
+            className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+            onClick={() => handleClick("/projects/luxurygated-community")}
+          >
             <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
               Luxury Gated Community
             </div>
@@ -164,7 +187,10 @@ export default function WorkProjects() {
               <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
             </div>
           </div>
-          <div  className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+          <div
+            className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+            onClick={() => handleClick("/projects/house-cad")}
+          >
             <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
               House CAD
             </div>
@@ -186,7 +212,10 @@ export default function WorkProjects() {
         <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16 3xl:gap-[120px]">
           {/* first div */}
           <div className="flex flex-col gap-20 xl:gap-28">
-            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div
+              className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+              onClick={() => handleClick("/projects/residence7")}
+            >
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Residence #7
               </div>
@@ -198,8 +227,12 @@ export default function WorkProjects() {
                 />
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">Lorem Ipusm ajdf Residential</div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  Lorem Ipusm ajdf Residential
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  0000
+                </div>
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
@@ -225,7 +258,10 @@ export default function WorkProjects() {
 
           {/* second div */}
           <div className="flex flex-col gap-20 lg:pt-[70px]">
-            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div
+              className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+              onClick={() => handleClick("/projects/mixeduse-apartment-astralis")}
+            >
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Mixed Use Apartment (Astralis)
               </div>
@@ -237,8 +273,12 @@ export default function WorkProjects() {
                 />
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
-                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">Lorem Ipusm ajdf Residential</div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  Lorem Ipusm ajdf Residential
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  0000
+                </div>
               </div>
             </div>
           </div>
@@ -250,7 +290,10 @@ export default function WorkProjects() {
         <div className="flex flex-col gap-[45px] pt-20 lg:flex-row lg:pl-16 3xl:gap-[120px]">
           {/* first div */}
           <div className="flex flex-col gap-20">
-            <div className="cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div
+              className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+              onClick={() => handleClick("/projects/villaentrance")}
+            >
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Villa Entrance
               </div>
@@ -266,10 +309,15 @@ export default function WorkProjects() {
                   <div>Lorem Ipusm ajdf</div>
                   <div> Residential</div>
                 </div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  0000
+                </div>
               </div>
             </div>
-            <div className="lg:pl-52 cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div
+              className="fade-in lg:pl-52 cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+              onClick={() => handleClick("/projects/forest-resort-gallery")}
+            >
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Forest Resort
               </div>
@@ -285,7 +333,9 @@ export default function WorkProjects() {
                   <div>Lorem Ipusm ajdf</div>
                   <div> Residential</div>
                 </div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  0000
+                </div>
               </div>
             </div>
           </div>
@@ -311,7 +361,10 @@ export default function WorkProjects() {
                 </svg>
               </div>
             </div>
-            <div className=" cursor-pointer group flex flex-col gap-5 3xl:gap-20">
+            <div
+              className="fade-in cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+              onClick={() => handleClick("/projects/farmhouse")}
+            >
               <div className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium   3xl:text-[72px]">
                 Farmhouse
               </div>
@@ -327,7 +380,9 @@ export default function WorkProjects() {
                   <div>Lorem Ipusm ajdf</div>
                   <div> Residential</div>
                 </div>
-                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
+                  0000
+                </div>
               </div>
             </div>
           </div>

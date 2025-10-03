@@ -37,7 +37,7 @@ export default function ForestResortGalleryHero() {
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
           "
         >
-          <span className="block 3xl:mb-6">Villa #22</span>
+          <span className="block 3xl:mb-6">Forest Resort</span>
           
           
         </motion.h1>

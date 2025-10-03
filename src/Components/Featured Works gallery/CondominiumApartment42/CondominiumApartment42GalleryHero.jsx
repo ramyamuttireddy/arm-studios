@@ -24,7 +24,7 @@ export default function CondominiumApartment42GalleryHero() {
             fade-in text-left 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant
           "
         >
-         19'
+         20'
         </motion.div>
 
         {/* Hero Headline - Right */}
@@ -37,8 +37,8 @@ export default function CondominiumApartment42GalleryHero() {
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
           "
         >
-          <span className="block 3xl:mb-6">Villa #22</span>
-          
+          <span className="block 3xl:mb-6">Condominium </span>
+          <span className="block 3xl:mb-6">Apartment #42</span>
           
         </motion.h1>
 
@@ -61,13 +61,13 @@ export default function CondominiumApartment42GalleryHero() {
       <div className="w-full bg-black/80 flex justify-center md:justify-end p-8 pb-0 z-20 3xl:pb-8">
         <div className="text-left border-b border-white/30 p-3 3xl:p-6">
           <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-            Residential  
+            Condominium  
           </p>
           <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
            
           </p>
           <p className="text-sm mt-1 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-           2019
+           2020
           </p>
         </div>
       </div>
