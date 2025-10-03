@@ -24,7 +24,7 @@ export default function ForestResortGalleryHero() {
             fade-in text-left 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant
           "
         >
-         19'
+         23'
         </motion.div>
 
         {/* Hero Headline - Right */}
@@ -61,13 +61,13 @@ export default function ForestResortGalleryHero() {
       <div className="w-full bg-black/80 flex justify-center md:justify-end p-8 pb-0 z-20 3xl:pb-8">
         <div className="text-left border-b border-white/30 p-3 3xl:p-6">
           <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-            Residential  
+            Hospitality  
           </p>
           <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
            
           </p>
           <p className="text-sm mt-1 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
-           2019
+           2023
           </p>
         </div>
       </div>
