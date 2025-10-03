@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContactHero() {
   return (
     <div>
-        <div className="bg-black text-white h-screen w-full mx-auto">
+        <div className="bg-black text-white h-screen w-full mx-auto mb-20">
               <div className="w-[90%] xl:w-[85%] m-auto">
                 {/* hero Section */}
                   <div className="pt-60 pb-20 2xl:pt-50 2xl:mb-20 3xl:pt-[600px] 3xl:pb-72 ">

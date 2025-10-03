@@ -2,13 +2,21 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight , SlArrowLeft  } from "react-icons/sl";
 
+import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 622/PNG image 2.png"
+import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 622/PNG image 3.png"
+import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 622/PNG image 4.png"
+import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 622/PNG image 5.png"
+import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 622/PNG image.png"
+
+
+
 const slideData = [
-  { title: "Cosmic Harmony", img: "https://cdn.cosmos.so/1d4dbaff-8087-4451-a727-9d3266b573dd?format=jpeg" },
-  { title: "Astral Journey", img: "https://cdn.cosmos.so/67ef01f5-09c8-4117-9199-04ec5323d64f?format=jpeg" },
-  { title: "Ethereal Vision", img: "https://cdn.cosmos.so/77f73423-0eb7-4eaa-a782-036457985290?format=jpeg" },
-  { title: "Quantum Field", img: "https://cdn.cosmos.so/3dd498a9-169d-4b69-8e2e-df042123c124?format=jpeg" },
-  { title: "Celestial Path", img: "https://cdn.cosmos.so/ca346107-04c8-4241-85e6-f26c8b64c85c?format=jpeg" },
-  { title: "Cosmic Whisper", img: "https://cdn.cosmos.so/7d2c5113-b2d3-4f9d-8215-f46fbb679f31?format=jpeg" },
+  {id:1, img:img1},
+  {id:2, img:img2},
+  {id:3, img:img3},
+  {id:4, img:img4},
+   {id:5, img:img5},
+ 
 ];
 
 export default function Residence622GalleryLayout() {
