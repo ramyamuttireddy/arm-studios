@@ -4,7 +4,7 @@ export default function Villa22GalleryHero() {
   return (
       <section
       id="featured"
-      className="max-w-[1000px] mx-auto relative flex flex-col justify-evenly  bg-black text-white overflow-hidden h-screen 3xl:gap-[120px]"
+      className="max-w-[900px] mx-auto relative flex flex-col justify-center gap-10 bg-black text-white overflow-hidden h-screen 3xl:gap-[120px]"
     >
       {/* Container */}
       <div
