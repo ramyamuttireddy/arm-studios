@@ -107,13 +107,13 @@ export default function Villa22GalleryLayout() {
         {/* Custom Navigation Arrows */}
         <button
           onClick={() => navigate(-1)}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 w-12 h-24 flex items-center justify-center z-10"
+          className="absolute left-0 top-1/2 -translate-y-1/2   w-12 h-24 flex items-center justify-center z-10"
         >
           <SlArrowLeft className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
         </button>
         <button
           onClick={() => navigate(1)}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 w-12 h-24 flex items-center justify-center z-10"
+          className="absolute right-0 top-1/2 -translate-y-1/2   w-12 h-24 flex items-center justify-center z-10"
         >
           <SlArrowRight className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
         </button>
