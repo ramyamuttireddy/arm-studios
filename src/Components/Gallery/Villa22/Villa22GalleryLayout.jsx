@@ -96,7 +96,7 @@ export default function Villa22GalleryLayout() {
           <div
             key={slide.id}
             ref={(el) => (slidesRef.current[i] = el)}
-            className="absolute inset-0 bg-cover bg-center will-change-transform w-full h-full"
+            className="absolute inset-0 object-fit  bg-center will-change-transform w-full h-full bg-no-repeat"
             style={{
               backgroundImage: `url(${slide.img})`,
               opacity: i === current ? 1 : 0,
