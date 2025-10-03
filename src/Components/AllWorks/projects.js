@@ -75,7 +75,7 @@ const projects = [
     id: 11,
     title: "Private Villa",
     year: "Residential 2023",
-    image: "/assets/PROJECTSALLPROJECTS/Private Villa (USA)/PNG image 1.png",
+    image: "/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 1.png",
     link: "/gallery/private-villa",
   },
   {

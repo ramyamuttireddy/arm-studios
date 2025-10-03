@@ -4,9 +4,10 @@ import projects from "./projects";
 
 export default function AllWorksList() {
   const [hoverImage, setHoverImage] = useState(projects[0].image);
-  const [visibleCount, setVisibleCount] = useState(10);
+  const [visibleCount, setVisibleCount] = useState(11); // initially show first 11
   const bgRef = useRef(null);
   const navigate = useNavigate();
+  const observerRef = useRef(null);
 
   // Fade-in effect
   useEffect(() => {
@@ -39,15 +40,14 @@ export default function AllWorksList() {
     });
   }, [hoverImage]);
 
-  // Intersection Observer
-  const observerRef = useRef(null);
+  // Intersection Observer for lazy loading remaining projects
   useEffect(() => {
     if (!observerRef.current) return;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisibleCount(projects.length);
+            setVisibleCount(projects.length); // show all projects
             observer.disconnect();
           }
         });
@@ -59,7 +59,7 @@ export default function AllWorksList() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-black text-white overflow-hidden">
+    <div className="relative w-full min-h-screen bg-black text-white overflow-hidden">
       {/* Background */}
       <img
         ref={bgRef}
@@ -67,11 +67,11 @@ export default function AllWorksList() {
         alt="Background Hover"
       />
 
-      {/* Overlay with lighter opacity */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/10 z-[1]"></div>
 
-      {/* Scrollable project list */}
-      <div className="relative z-[5] w-full h-full overflow-y-auto scrollbar-none xl:pt-20">
+      {/* Project list */}
+      <div className="relative z-[5] w-full min-h-screen overflow-y-auto scrollbar-none xl:pt-20">
         <div className="w-full lg:w-[50%] xl:w-[50%] 2xl:w-[40%] mx-auto py-8 flex flex-col gap-3 px-4 3xl:gap-10">
           {projects.slice(0, visibleCount).map((project) => (
             <div
@@ -89,11 +89,12 @@ export default function AllWorksList() {
               <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></span>
             </div>
           ))}
+          {/* Invisible div to trigger IntersectionObserver */}
           <div ref={observerRef} className="h-1 w-full"></div>
         </div>
       </div>
 
-      {/* Tailwind custom scrollbar hide */}
+      {/* Hide scrollbar */}
       <style>
         {`
           .scrollbar-none::-webkit-scrollbar {

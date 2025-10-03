@@ -7,9 +7,9 @@ export default function OurProjects() {
   useFadeInOnScroll(".fade-in");
   const navigate = useNavigate();
 
-const handleClick = (path) => {
-  navigate(path);
-};
+  const handleClick = (path) => {
+    navigate(path);
+  };
 
   return (
     <section className="projects-section relative w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-black text-white overflow-hidden fade-in">
@@ -116,7 +116,10 @@ const handleClick = (path) => {
               </div>
 
               {/* Arrow Button */}
-              <div className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-start">
+              <div
+                className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-start"
+                onClick={() => handleClick("/projects/sandalwoodvilla")}
+              >
                 <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
                   <GoArrowDownRight className="text-gray-400 w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] 2xl:w-[100px] 2xl:h-[100px] 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
@@ -152,7 +155,10 @@ const handleClick = (path) => {
               </div>
 
               {/* Arrow Button */}
-              <div className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-end">
+              <div
+                className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-end"
+                onClick={() => handleClick("/projects/villaentrance")}
+              >
                 <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
                   <GoArrowDown className="text-gray-400 w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] 2xl:w-[100px] 2xl:h-[100px] 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
@@ -162,7 +168,10 @@ const handleClick = (path) => {
             {/* Right Column */}
             <div className="flex flex-col gap-12">
               {/* Arrow Button */}
-              <div className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-end">
+              <div
+                className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-end"
+                onClick={() => handleClick("/projects/residence11")}
+              >
                 <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
                   <GoArrowDown className="text-gray-400 w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] 2xl:w-[100px] 2xl:h-[100px] 3xl:w-[120px] 3xl:h-[120px]" />
                 </button>
@@ -182,7 +191,7 @@ const handleClick = (path) => {
                     alt="Villa"
                     className="shadow-slate-50 w-full lg:w-[550px] lg:h-[750px] 2xl:w-[615px] 2xl:h-[820px] object-cover 3xl:w-[1200px] 3xl:h-auto"
                   />
-                  
+
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                     <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                       <h3>USA</h3>
@@ -209,7 +218,7 @@ const handleClick = (path) => {
                     alt="Villa"
                     className="shadow-slate-50 w-full lg:w-[550px] lg:h-[700px] 2xl:w-[615px] 2xl:h-[769px] object-cover 3xl:w-[1200px] 3xl:h-auto"
                   />
-                  
+
                   <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                     <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                       <h3>xxxxxxxxxxxxxxx</h3>
@@ -265,7 +274,7 @@ const handleClick = (path) => {
                 alt="Flat"
                 className="shadow-slate-50 w-full lg:w-[450px] lg:h-[600px] 2xl:w-[511px] 2xl:h-[681px] object-cover 3xl:w-[1200px] 3xl:h-[1400px]"
               />
-              
+
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
                   <h3>USA</h3>
@@ -280,9 +289,9 @@ const handleClick = (path) => {
         </div>
 
         {/* Circle Container */}
-        <div className="circle-container w-full h-full" >
+        <div className="circle-container w-full h-full">
           <div className="mt-10 md:mt-16 lg:mt-[140px] 3xl:mt-[280px] flex justify-center fade-in">
-            <button 
+            <button
               type="button"
               className="circle-button bg-[#0100FC] w-[150px] sm:w-[200px] lg:w-[250px] xl:w-[320px] 3xl:w-[700px] h-[150px] sm:h-[200px] lg:h-[250px] xl:h-[320px] 3xl:h-[700px] flex items-center justify-center rounded-full hover:bg-blue transition duration-300 shadow-2xl"
               onClick={() => handleClick("/allworks")}
