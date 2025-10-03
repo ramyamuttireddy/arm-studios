@@ -3,7 +3,7 @@ import React from "react";
 export default function ContactSection() {
   return (
     <section
-      className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat mt-20"
+      className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat mt-40"
       style={{
         backgroundImage: "url('/assets/contact/contactus-bg-images.jpg')",
       }}
