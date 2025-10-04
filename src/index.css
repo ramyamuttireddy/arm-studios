@@ -13,4 +13,10 @@
   background-color: black;
 }
 
+@font-face {
+  font-family: 'MyFont';
+  src: url('/assets/fonts/Free Sans Bold.ttf') format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
 
