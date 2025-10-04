@@ -24,6 +24,19 @@ import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa U
 import img19 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 19.png"
 import img20 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 20.png"
 import img21 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 21.png"
+import img22 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 8.png"
+import img23 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 9.png"
+import img24 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 10.png"
+import img25 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 11.png"
+import img26 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 12.png"
+import img27 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 13.png"
+import img28 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 14.png"
+import img29 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 15.png"
+import img30 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 16.png"
+import img31 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 17.png"
+import img32 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 18.png"
+import img33 from "../../../../public/assets/PROJECTSALLPROJECTS/Private Villa USA/PNG image 19.png"
+
 
 
 const slideData = [
@@ -48,6 +61,18 @@ const slideData = [
   {id:19, img:img19},
   {id:20, img:img20},
    {id:21, img:img21},
+    {id:22, img:img10},
+  {id:23, img:img11},
+  {id:24, img:img12},
+   {id:25, img:img13},
+   {id:26, img:img14},
+  {id:27, img:img15},
+  {id:28, img:img16},
+   {id:29, img:img17},
+  {id:30, img:img18},
+  {id:31, img:img19},
+  {id:32, img:img20},
+   {id:33, img:img21},
 ];
 
 export default function PrivateVillaGalleryLayout() {
