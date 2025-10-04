@@ -5,7 +5,7 @@ function OurTeam() {
         {/* Images section */}
         <div className="flex justify-end items-end">
           <img
-            src="assets/images/about-page-image.jpg"
+            src="/assets/About/about-page-image.jpg"
             alt=""
             className="w-[80%] md:w-[60%] xl:w-[65%]"
           />
@@ -13,7 +13,7 @@ function OurTeam() {
         {/* Images section */}
 
         {/* Our Team Section */}
-        <div className="pr-5 bg-black text-white lg:pr-12 2xl:pr-20 3xl:pr-36">
+        <div className="pr-5 py-40 bg-black text-white lg:pr-12 2xl:pr-20 3xl:pr-36">
           {/* heading section */}
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 lg:gap-10 mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px]">
             {/* Counter */}
