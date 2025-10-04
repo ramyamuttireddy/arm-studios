@@ -8,7 +8,7 @@ export default function Footer() {
           
           {/* Left side - Number */}
           <div className="w-full lg:w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
-            text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant lg:fade-in">
+            text-left md:text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant lg:fade-in">
             04
           </div>
 
