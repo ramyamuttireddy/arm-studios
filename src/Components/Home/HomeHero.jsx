@@ -7,7 +7,7 @@ export default function HomeHero() {
       className="
         relative flex flex-col gap-40 min-h-screen bg-black text-white overflow-hidden
         hero-top-padding
-        3xl:gap-[300px]  lg:gap-80 xl:gap-40 2xl:gap-40
+        3xl:gap-[300px]  lg:gap-80 xl:gap-10 2xl:gap-20
       "
     >
       {/* Container */}
@@ -60,8 +60,8 @@ export default function HomeHero() {
       </div>
 
       {/* Main Image Section */}
-      <div className="relative w-full flex justify-end pt-50  xl:pb-[150px]  3xl:pt-[100px]">
-        <motion.div
+      <div className="relative w-full flex justify-end pt-50  xl:pb-[50px]  3xl:pt-[100px]">
+        {/* <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 1.2, duration: 0.6 }}
@@ -70,7 +70,7 @@ export default function HomeHero() {
             -translate-x-1/2 -translate-y-1/2
             3xl:w-[24rem] 3xl:h-[24rem] 3xl:top-[-200px] 3xl:right-[400px]
           "
-        />
+        /> */}
 
         <img
           src="/assets/HomePageImages/hero_circle.png"
