@@ -26,7 +26,7 @@ export default function Footer() {
               
               {/* Social */}
               <div>
-                <p className="text-xs md:text-sm 2xl:text-sm 3xl:text-5xl 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Socials</p>
+                <p className="text-xs md:text-sm 2xl:text-sm 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Socials</p>
                 <div className="hover:text-gray-400 transition-colors
                       text-sm md:text-base xl:text-xl 2xl:text-2xl 3xl:text-5xl 
                       leading-tight 3xl:mb-8">
