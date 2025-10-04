@@ -12,7 +12,7 @@ export default function OurProjects() {
   };
 
   return (
-    <section className="projects-section relative w-full py-12 md:py-16 lg:py-10 xl:py-6 bg-black text-white overflow-hidden fade-in">
+    <section className="projects-section relative w-full py-12 md:py-16 lg:py-16 xl:py-16 bg-black text-white overflow-hidden fade-in">
       <div className="px-4 sm:px-6 md:px-2 lg:px-1 xl:px-0">
         {/* Header */}
         <div className=" w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px] ">

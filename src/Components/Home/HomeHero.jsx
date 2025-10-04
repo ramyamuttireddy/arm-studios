@@ -75,7 +75,7 @@ export default function HomeHero() {
         <img
           src="/assets/HomePageImages/hero_circle.png"
           alt="House Design" 
-          className="w-full lg:w-[400px] xl:w-[950px] 2xl:w-[1370px] object-cover 3xl:w-[2800px] 3xl:h-auto"
+          className="w-full lg:w-[400px] xl:w-[960px] 2xl:w-[1370px] object-cover 3xl:w-[2800px] 3xl:h-auto"
         />
 
         {/* Dark Gradient Overlay */}
