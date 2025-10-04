@@ -24,7 +24,7 @@ export default function Footer() {
               
               {/* Social */}
               <div>
-                <p className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Socials</p>
+                <p className="text-xs md:text-sm 2xl:text-sm 3xl:text-5xl 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Socials</p>
                 <div className="hover:text-gray-400 transition-colors
                       text-sm md:text-base xl:text-xl 2xl:text-2xl 3xl:text-5xl 
                       leading-tight 3xl:mb-8">
@@ -36,7 +36,7 @@ export default function Footer() {
 
               {/* Address */}
               <div>
-                <p className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Address</p>
+                <p className="text-xs md:text-sm xl:text-sm 2xl:text-sm 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Address</p>
                 <div className="hover:text-gray-400 transition-colors
                       text-sm md:text-base xl:text-xl 2xl:text-2xl 3xl:text-5xl 
                       leading-tight 3xl:mb-8">
@@ -48,7 +48,7 @@ export default function Footer() {
 
               {/* Say Hi */}
               <div>
-                <p className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Say Hi</p>
+                <p className="text-xs md:text-sm xl:text-sm 2xl:text-sm 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Say Hi</p>
                 <div className="hover:text-gray-400 transition-colors
                       text-sm md:text-base xl:text-xl 2xl:text-2xl 3xl:text-5xl 
                       leading-tight 3xl:mb-8">
@@ -59,7 +59,7 @@ export default function Footer() {
 
             {/* Bottom Line */}
             <div className="footer-bottom w-full flex justify-start items-start border-t border-gray-600 pt-10 pb-6 3xl:pt-[40px] 3xl:pb-[40px]">
-              <div className="text-lg xl:text-lg 2xl:text-[18px] 3xl:text-[40px] text-gray-400 font-semibold">
+              <div className="text-lg xl:text-md 2xl:text-[15px] 3xl:text-[40px] text-gray-400 font-medium">
                 @armstudios.design
               </div>
             </div>

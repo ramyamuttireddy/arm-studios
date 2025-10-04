@@ -86,8 +86,8 @@ export default function StaggeredMenu({
                   onClick={() => setOpen(false)}
                   ref={(el) => (itemsRef.current[idx] = el)}
                   className="
-                    hover:[-webkit-text-stroke:0.5px_white] relative italic
-                    text-[40px] md:text-[60px] xl:text-[80px] 2xl:text-[90px] 3xl:text-[250px]
+                    hover:[-webkit-text-stroke:0.5px_white] relative 
+                    text-[40px] md:text-[60px] xl:text-[90px] 2xl:text-[100px] 3xl:text-[250px]
                      3xl:mb-6
                     hover:text-transparent transition-colors duration-300 pl-10 font-myfont
                   "

@@ -108,10 +108,10 @@ function OurTeam () {
                                                                 md:flex-row md:justify-between md:text-xl md:pb-9
                                                                 lg:text-base xl:text-xl 1xl:text-2xl">
                                                      <div className="">
-                                                         <div>Lorem Ipusm ajdf</div>
-                                                         <div>alkdfj adlfjj adfjlaf jjl..</div>
+                                                         <div>Guild </div>
+                                                         
                                                      </div>
-                                                     <div>CITY</div>
+                                                     <div>Bharat</div>
                                                 </div>
                                              </div>
                                             {/* images 2 */} 

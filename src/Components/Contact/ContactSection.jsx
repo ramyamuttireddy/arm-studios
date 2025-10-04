@@ -24,22 +24,22 @@ export default function ContactSection() {
           <div className="flex flex-col md:gap-3 font-medium text-4xl md:text-5xl xl:text-7xl 2xl:text-8xl 3xl:text-[200px] text-white">
             <div className="pl-10 md:pl-36 xl:pl-72 2xl:pl-[450px] 3xl:pl-[600px]">HELLO,</div>
             <div className="flex flex-col md:gap-3">
-              <div>
-                MY NAME IS
-                <div className="flex justify-end">
-                  <div className="border-b w-[60%] md:w-[50%] 3xl:w-[40%] border-white"></div>
+              <div className="flex  gap-10">
+                 <div>MY NAME IS</div>
+                <div className="border-b w-[60%] md:w-[50%] 3xl:w-[40%] border-white">
+                  <div className=""></div>
                 </div>
               </div>
-              <div>
-                HERE IS MY EMAIL
-                <div className="flex justify-end">
-                  <div className="border-b w-[40%] md:w-[30%] 3xl:w-[25%] border-white"></div>
+              <div className="flex  gap-10">
+                 <div>HERE IS MY EMAIL</div>
+                <div className="border-b w-[40%] md:w-[30%] 3xl:w-[25%] border-white">
+                  <div></div>
                 </div>
               </div>
-              <div>
-                I’M LOOKING FOR
-                <div className="flex justify-end">
-                  <div className="border-b w-[50%] md:w-[40%] 3xl:w-[30%] border-white"></div>
+              <div className="flex  gap-10">
+                <div>I’M LOOKING FOR </div>
+                <div className="border-b w-[50%] md:w-[40%] 3xl:w-[30%] border-white">
+                  <div className=""></div>
                 </div>
               </div>
             </div>
