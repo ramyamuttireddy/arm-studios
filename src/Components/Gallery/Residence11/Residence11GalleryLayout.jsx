@@ -2,13 +2,13 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight , SlArrowLeft  } from "react-icons/sl";
 
-import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 7.png"
-import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 2.png"
-import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 1.png"
-import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 4.png"
-import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 5.png"
-import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 6.png"
-import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 1.png"
+import img1 from "../../../../public/assets/PROJECTS OUR PROJECTS/Residence 11/PNG image 1.png"
+import img2 from "../../../../public/assets/PROJECTS OUR PROJECTS/Residence 11/PNG image 2.png"
+import img3 from "../../../../public/assets/PROJECTS OUR PROJECTS/Residence 11/PNG image 3.png"
+import img4 from "../../../../public/assets/PROJECTS OUR PROJECTS/Residence 11/PNG image 4.png"
+import img5 from "../../../../public/assets/PROJECTS OUR PROJECTS/Residence 11/PNG image 5.png"
+import img6 from "../../../../public/assets/PROJECTS OUR PROJECTS/Residence 11/PNG image 6.png"
+import img7 from "../../../../public/assets/PROJECTS OUR PROJECTS/Residence 11/PNG image 7.png";
 
 
 const slideData = [

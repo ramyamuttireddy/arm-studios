@@ -28,8 +28,9 @@ import img23 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interior
 import img24 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 25.png"
 import img25 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 26.png"
 import img26 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 27.png"
-import img27 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 29.png"
-import img28 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image.png"
+import img27 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 28.png"
+import img28 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 29.png"
+import img29 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image.png"
 
 
 
@@ -62,7 +63,7 @@ const slideData = [
   {id:26, img:img26},
   {id:27, img:img27},
   {id:28, img:img28},
-   
+   {id:29, img:img29},
 ];
 
 export default function FlatInteriors221GalleryLayout() {
