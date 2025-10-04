@@ -5,7 +5,7 @@ export default function HomeHero() {
     <section
       id="home"
       className="
-        relative flex flex-col gap-20 min-h-screen bg-black text-white overflow-hidden
+        relative flex flex-col gap-4 min-h-screen bg-black text-white overflow-hidden
         hero-top-padding
         3xl:gap-[300px]  lg:gap-80 xl:gap-10 2xl:gap-20
       "
@@ -60,7 +60,7 @@ export default function HomeHero() {
       </div>
 
       {/* Main Image Section */}
-      <div className="relative w-full flex justify-end pt-50  xl:pb-[50px]  3xl:pt-[100px]">
+      <div className="relative w-full flex justify-end md:pt-50  xl:pb-[50px]  3xl:pt-[100px]">
         {/* <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
