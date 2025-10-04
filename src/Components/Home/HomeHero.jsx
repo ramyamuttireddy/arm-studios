@@ -7,15 +7,15 @@ export default function HomeHero() {
       className="
         relative flex flex-col gap-40 min-h-screen bg-black text-white overflow-hidden
         hero-top-padding
-        3xl:gap-[300px] 3xl:min-h-[3000px] lg:gap-80 xl:gap-60 2xl:gap-40
+        3xl:gap-[300px]  lg:gap-80 xl:gap-40 2xl:gap-40
       "
     >
       {/* Container */}
       <div
         className="
-          hero-container w-full p-5 pt-60 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[80vh]
-          xl:p-30 xl:gap-16 
-           3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[200px] xl:pt-[280px] 2xl:pt-[300px] 3xl:pt-[700px]
+          hero-container w-full p-5 pt-60 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[60vh]
+          xl:p-30 xl:gap-8 
+           3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[180px] xl:pt-[180px] 2xl:pt-[200px] 3xl:pt-[700px]
         "
       >
         {/* Section Counter - Left */}
@@ -37,7 +37,7 @@ export default function HomeHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, staggerChildren: 0.2 }}
           className="
-            hero-headline leading-[50px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[80px] font-medium
+            hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
           "
         >
@@ -74,8 +74,8 @@ export default function HomeHero() {
 
         <img
           src="/assets/HomePageImages/hero_circle.png"
-          alt="House Design"
-          className="hero-main-img w-[1300px] object-cover 3xl:w-[2600px]"
+          alt="House Design" 
+          className="w-full lg:w-[400px] xl:w-[950px] 2xl:w-[1370px] object-cover 3xl:w-[2800px] 3xl:h-auto"
         />
 
         {/* Dark Gradient Overlay */}

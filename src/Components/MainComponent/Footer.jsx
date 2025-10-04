@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="relative w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-black text-white overflow-hidden fade-in flex justify-end">
         
         {/* Wrapper - left aligned */}
-        <div className="w-[80%] xl:w-[90%] 2xl:w-[77%] flex flex-col md:flex-row gap-8 md:gap-16 3xl:gap-[100px] justify-start items-start text-left">
+        <div className="w-[80%] xl:w-[90%] 2xl:w-[73%] flex flex-col md:flex-row gap-8 md:gap-16 3xl:gap-[100px] justify-start items-start text-left">
           
           {/* Left side - Number */}
           <div className="text-white text-4xl md:text-6xl xl:text-[64px] 2xl:text-[64px] 3xl:text-[192px] font-Cormorant italic leading-[1] fade-in">
@@ -24,8 +24,10 @@ export default function Footer() {
               
               {/* Social */}
               <div>
-                <p className="font-medium text-xl xl:text-xl 2xl:text-[15px] 3xl:text-[40px] mb-4">Socials</p>
-                <div className="text-gray-300 flex flex-col gap-2 text-base xl:text-xl 2xl:text-[20px] 3xl:text-[50px] leading-[1.5] font-semibold 3xl:gap-10 3xl:pt-14">
+                <p className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Socials</p>
+                <div className="hover:text-gray-400 transition-colors
+                      text-sm md:text-base xl:text-xl 2xl:text-2xl 3xl:text-5xl 
+                      leading-tight 3xl:mb-8">
                   <p>Twitter</p>
                   <p>Instagram</p>
                   <p>Facebook</p>
@@ -34,8 +36,10 @@ export default function Footer() {
 
               {/* Address */}
               <div>
-                <p className="font-medium text-xl xl:text-xl 2xl:text-[15px] 3xl:text-[40px] mb-4">Address</p>
-                <div className="text-gray-300 flex flex-col gap-2 text-base xl:text-xl 2xl:text-[20px] 3xl:text-[50px] leading-[1.5] font-semibold 3xl:gap-10 3xl:pt-14">
+                <p className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Address</p>
+                <div className="hover:text-gray-400 transition-colors
+                      text-sm md:text-base xl:text-xl 2xl:text-2xl 3xl:text-5xl 
+                      leading-tight 3xl:mb-8">
                   <p>Manikonda</p>
                   <p>Bhagyanagar</p>
                   <p>Bharat</p>
@@ -44,8 +48,10 @@ export default function Footer() {
 
               {/* Say Hi */}
               <div>
-                <p className="font-medium text-xl xl:text-xl 2xl:text-[15px] 3xl:text-[40px] mb-4">Say Hi</p>
-                <div className="text-gray-300 flex flex-col gap-2 text-base xl:text-xl 2xl:text-[20px] 3xl:text-[50px] leading-[1.5] font-semibold 3xl:gap-10 3xl:pt-14">
+                <p className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">Say Hi</p>
+                <div className="hover:text-gray-400 transition-colors
+                      text-sm md:text-base xl:text-xl 2xl:text-2xl 3xl:text-5xl 
+                      leading-tight 3xl:mb-8">
                   <p>info@armstudios.design</p>
                 </div>
               </div>
@@ -53,7 +59,7 @@ export default function Footer() {
 
             {/* Bottom Line */}
             <div className="footer-bottom w-full flex justify-start items-start border-t border-gray-600 pt-10 pb-6 3xl:pt-[40px] 3xl:pb-[40px]">
-              <div className="text-lg xl:text-xl 2xl:text-[15px] 3xl:text-[40px] text-gray-400 font-semibold">
+              <div className="text-lg xl:text-lg 2xl:text-[18px] 3xl:text-[40px] text-gray-400 font-semibold">
                 @armstudios.design
               </div>
             </div>

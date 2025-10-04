@@ -21,7 +21,7 @@ export default function Home() {
       {/* Fixed header OUTSIDE smooth-content */}
       <Header />
 
-      <div id="smooth-content" className="relative">
+      <div id="smooth-content" className="relative bg-black">
           <main className="pt-20"> {/* adjust pt to match header height */}
           <section className="fade-in">
             <HomeHero />

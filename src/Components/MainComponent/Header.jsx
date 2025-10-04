@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import StaggeredMenu from "./Menu" // Adjust path
+import StaggeredMenu from "./Menu"; // Adjust path
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Header() {
   ];
 
   const contactInfo = {
-    address: "Manikonda, Bhagyanagar, Bharat",
+   address: "Manikonda,\nBhagyanagar,\nBharat",
     email: "info@armstudios.design",
   };
 
@@ -33,26 +33,25 @@ export default function Header() {
   return (
     <>
       <header
-        className="fixed top-0 left-0 w-full h-16 3xl:h-26 z-50 px-6 md:px-16   flex justify-between items-center bg-black text-white transition-all duration-500
-  3xl:px-32
-"
+        className="fixed top-0 left-0 w-full h-16 3xl:h-40 z-50 px-6 md:px-16 flex justify-between items-center 
+        bg-black/40 backdrop-blur-sm text-white transition-all duration-500 3xl:px-32"
       >
         {/* Logo & Hamburger */}
         <div className="flex items-center">
-          {/* Left Icon Logo (replacing FaTh) */}
+          {/* Left Icon Logo */}
           <img
-            src="/assets/hederimages/logo.png" // <-- replace with your 9-dots logo path
+            src="/assets/hederimages/logo.png"
             alt="Menu Logo"
             onClick={toggleMenu}
-            className="cursor-pointer w-8  md:w-[42px]  object-contain hover:opacity-80 transition 3xl:w-[5rem] 3xl:h-[5rem]"
+            className="cursor-pointer w-8 md:w-[42px] object-contain hover:opacity-80 transition 3xl:w-[5rem] 3xl:h-[5rem]"
           />
 
-          {/* Right Logo (replacing ARM STUDIO text) */}
+          {/* Right Logo */}
           <img
-            src="/assets/hederimages/arm_content.png" // <-- replace with your ARM logo path
+            src="/assets/hederimages/arm_content.png"
             alt="ARM Studio Logo"
             onClick={handleLogoClick}
-            className="cursor-pointer w-[105px] md:w-[110px]  object-fit hover:opacity-80 transition 3xl:w-[300px] 3xl:h-[300px]"
+            className="cursor-pointer w-[105px] md:w-[110px] object-contain hover:opacity-80 transition 3xl:w-[300px] 3xl:h-[300px]"
           />
         </div>
 
@@ -62,7 +61,7 @@ export default function Header() {
             <Link
               key={idx}
               to={item.link}
-              className="text-white hover:[-webkit-text-stroke:1px_white] hover:text-blue-600 transition-all duration-300 text-[12px] relative after:content-[''] after:block after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full 3xl:text-4xl"
+              className="text-white  hover:font-bold transition-all duration-300 text-[12px]  3xl:text-4xl"
             >
               {item.label}
             </Link>

@@ -1,27 +1,27 @@
 function HomeAbout() {
   return (
     <div>
-      <div className=" w-full xl:w-[80%] 3xl:max-w-[2840px] m-[0_auto] flex flex-col lg:flex-row  justify-center object-contain pt-20 pb-20 3xl:pt-40 3xl:pb-40 font-sans">
+      <div className="py-40  w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px]">
         
         {/* Left side -> 02 */}
-        <div className="flex justify-center lg:justify-end  ">
-          <div className="font-Cormorant  text-4xl font-light italic md:text-5xl  xl:text-[90px] 3xl:text-[90px]">
+        <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[64px] fade-in w-[30%] 2xl:w-[40%] text-right 3xl:text-[120px] 3xl:leading-[1]">
+          <div className="sm:pl-2 md:pl-6 font-Cormorant  text-4xl font-light italic md:text-5xl  xl:text-[90px] 3xl:text-[90px]">
             02
           </div>
         </div>
 
         {/* Right side -> About Content */}
-        <div className="px-0 sm:px-2 md:px-6 lg:px-8 xl:px-10 flex flex-col">
+        <div className="px-0   flex flex-col w-[100%] xl:w-[80%] 2xl:w-[95%]">
           
           {/* Heading */}
           <div className="border-b-2 w-full pb-2 mb-6">
-            <h2 className="text-2xl font-sans sm:text-4xl md:text-5xl lg:text-5xl xl:text-[96px] 2xl:text-[110px] font-medium border-white tracking-wide fade-in 3xl:text-[220px] 3xl:leading-[1] header-title">
+            <h2 className=" text-2xl font-sans sm:text-4xl md:text-5xl lg:text-5xl xl:text-[96px] 2xl:text-[110px] font-medium border-white tracking-wide fade-in 3xl:text-[220px] 3xl:leading-[1] header-title">
               ABOUT US
             </h2>
           </div>
 
           {/* First Paragraph */}
-          <div className="font-sans pt-10 pb-10 text-[16px] font-normal md:pt-16 md:pb-14 lg:text-[25px] lg:pb-[134px] 3xl:text-[48px] 3xl:leading-[1.4]">
+          <div className="font-sans pt-10 pb-10 text-[16px] font-normal md:pt-16 md:pb-14 lg:text-[20px] xl:text-[18px] lg:pb-[134px] 3xl:text-[48px] 3xl:leading-[1.4]">
             <p className="pb-4">
               Founded in 2022, ARM STUDIOS offers 15+ years of experience to the
               Deccan Plateaus Community. Recognized for our commitment and
@@ -39,7 +39,7 @@ function HomeAbout() {
           </div>
 
           {/* Image + Project Box + About Text */}
-          <div className="flex flex-col gap-[30px] lg:flex-row lg:gap-[20px] 3xl:gap-[100px]">
+          <div className="flex flex-col gap-[20px] lg:flex-row lg:gap-[20px] 3xl:gap-[100px]">
             
             {/* Image */}
             <div className="p-[0px_15px]">
@@ -51,13 +51,13 @@ function HomeAbout() {
             </div>
 
             {/* Project box + About text */}
-            <div className="pl-[38px] flex flex-col gap-[40px] lg:flex-col-reverse lg:gap-[100px]">
+            <div className="pl-[10px] flex flex-col gap-[20px] lg:flex-col-reverse lg:gap-[100px]">
               
               {/* Project Box */}
-              <div className=" bg-[#0100fc] p-[45px_25px] mt-[-70px] lg:ml-[-150px] lg:mr-[80px] lg:w-[700px] 3xl:w-[1400px] 3xl:p-[100px_50px] 3xl:mt-[-90px] 3xl:ml-[-200px]">
+              <div className=" bg-[#0100fc] p-[45px_25px] mt-[-70px] lg:ml-[-150px] lg:mr-[80px] lg:w-[500px] 3xl:w-[1400px] 3xl:p-[100px_50px] 3xl:mt-[-90px] 3xl:ml-[-200px]">
                 <div className="flex justify-between font-medium border-b border-white pb-[20px]">
                   <div className="text-[16px] lg:text-[25px] 3xl:text-[72px]">Project 1</div>
-                  <div className="text-[16px] lg:text-[18px] 3xl:text-[48px] text-right">
+                  <div className="text-[16px] lg:text-[20px] 3xl:text-[48px] text-right">
                     <div>it is a long</div>
                     <div>established fact</div>
                   </div>
@@ -81,7 +81,7 @@ function HomeAbout() {
               </div>
 
               {/* About Text */}
-              <div className="flex flex-col gap-4 text-base font-normal pb-[30px] lg:text-[18px] lg:leading-7 about-text 3xl:text-[48px] 3xl:leading-[1.4]">
+              <div className="flex flex-col gap-4 text-base font-normal pb-[30px] lg:text-[15px] lg:leading-7 about-text 3xl:text-[48px] 3xl:leading-[1.4]">
                 <p>
                   ARM STUDIOS LLP. is a high-energy, Bharatiya design firm
                   offering architecture, interior design, planning, and
