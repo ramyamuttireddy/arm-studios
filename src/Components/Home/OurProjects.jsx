@@ -35,7 +35,7 @@ export default function OurProjects() {
             <div className="w-full mt-10 md:mt-16 lg:mt-20 xl:mt-[120px] flex flex-col justify-center lg:flex-row gap-10 md:gap-12 lg:gap-[60px] xl:gap-[40px] lg:fade-in 3xl:gap-[100px] 3xl:mt-[240px]">
               {/* Villa #22 */}
               <div
-                className="cursor-pointer group flex flex-col gap-5 3xl:gap-20"
+                className="cursor-pointer group flex flex-col gap-6 3xl:gap-20"
                 onClick={() => handleClick("/projects/villa22")}
               >
                 <h2 className="text-2xl sm:text-[28px] md:text-[32px] lg:text-[20px] 2xl:text-[24px] font-medium 3xl:text-[72px]">
@@ -84,7 +84,7 @@ export default function OurProjects() {
           </div>
 
           {/* 2nd Container */}
-          <div className="flex flex-col justify-center lg:flex-row gap-10 md:gap-12 lg:gap-[40px] lg:fade-in 3xl:gap-[100px] 3xl:p-[100px]">
+          <div className="flex flex-col justify-center pt-10 lg:flex-row gap-10 md:gap-12 lg:gap-[40px] lg:fade-in 3xl:gap-[100px] 3xl:p-[100px]">
             <div className="flex flex-col justify-center lg:flex-row gap-10 md:gap-12 lg:gap-[40px] lg:fade-in 3xl:gap-[100px] 3xl:p-[100px]">
               {/* Left Column */}
               <div className="flex flex-col gap-12">
