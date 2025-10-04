@@ -7,13 +7,13 @@ export default function Footer() {
         <div className=" w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px]">
           
           {/* Left side - Number */}
-          <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
+          <div className=" w-full lg:w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
             fade-in text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant">
             04
           </div>
 
           {/* Right side - Content */}
-          <div className="px-0   flex flex-col w-[100%] xl:w-[100%] 2xl:w-[100%]">
+          <div className="px-0   flex flex-col w-full  xl:w-[100%] 2xl:w-[100%]">
             
             {/* Heading */}
             <h2 className="hero-headline leading-tight uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
@@ -32,7 +32,7 @@ export default function Footer() {
                       leading-tight 3xl:mb-8">
                   <p>Twitter</p>
                   <p>Instagram</p>
-                  <p>Facebook</p>
+                  <p>LinkedIn</p>
                 </div>
               </div>
 

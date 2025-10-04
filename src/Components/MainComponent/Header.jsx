@@ -16,7 +16,7 @@ export default function Header() {
   const socialItems = [
     { label: "Twitter", link: "https://twitter.com" },
     { label: "Instagram", link: "https://instagram.com" },
-    { label: "Facebook", link: "https://facebook.com" },
+    { label: "LinkedIn", link: "https://www.linkedin.com/" },
   ];
 
   const contactInfo = {
