@@ -17,13 +17,15 @@ export default function OurProjects() {
         {/* Header */}
         <div className=" w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px] ">
           {/* Number */}
-          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[64px] fade-in w-[30%] 2xl:w-[45%] text-right 3xl:text-[120px] 3xl:leading-[1] ">
+          <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
+            fade-in text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant ">
             02
           </div>
 
           {/* Heading */}
           <div className="border-b-2 w-full pb-2 flex justify-start">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-[90px] 2xl:text-[110px] font-medium border-white pb-2 tracking-wide fade-in 3xl:text-[220px] 3xl:leading-[1] header-title">
+            <h2 className="hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
+            3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2">
               OUR PROJECTS
             </h2>
           </div>
