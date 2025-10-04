@@ -89,16 +89,17 @@ export default function MixedUseApartmentAstralisGalleryLayout() {
   };
 
   return (
-    <section className="relative w-full h-[90vh] bg-black text-white flex flex-col items-center justify-center">
+     <section className="relative w-full lg:h-screen bg-black text-white flex flex-col items-center justify-center">
       {/* Main Slides */}
       <div className="relative w-full aspect-video overflow-hidden">
         {slideData.map((slide, i) => (
           <div
             key={slide.id}
             ref={(el) => (slidesRef.current[i] = el)}
-            className="absolute inset-0 bg-cover bg-center will-change-transform w-full h-full"
+            className="absolute inset-0 w-full h-full bg-center bg-no-repeat"
             style={{
               backgroundImage: `url(${slide.img})`,
+              backgroundSize: "contain", // 👈 image full ga kanipistundi
               opacity: i === current ? 1 : 0,
             }}
           />
@@ -107,13 +108,13 @@ export default function MixedUseApartmentAstralisGalleryLayout() {
         {/* Custom Navigation Arrows */}
         <button
           onClick={() => navigate(-1)}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 w-12 h-24 flex items-center justify-center z-10"
+          className="absolute left-0 top-1/2 -translate-y-1/2   w-12 h-24 flex items-center justify-center z-10"
         >
           <SlArrowLeft className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
         </button>
         <button
           onClick={() => navigate(1)}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 w-12 h-24 flex items-center justify-center z-10"
+          className="absolute right-0 top-1/2 -translate-y-1/2   w-12 h-24 flex items-center justify-center z-10"
         >
           <SlArrowRight className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
         </button>
@@ -129,7 +130,7 @@ export default function MixedUseApartmentAstralisGalleryLayout() {
           >
             <div
               ref={(el) => (thumbsRef.current[i] = el)}
-              className="w-20 h-12 sm:w-24 sm:h-16 md:w-20 md:h-20 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
+              className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 3xl:w-40 3xl:h-40 bg-cover bg-center transition-transform transition-opacity"
               style={{ backgroundImage: `url(${slide.img})` }}
             />
             <div

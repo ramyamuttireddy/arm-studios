@@ -105,63 +105,71 @@ export default function Villa44GalleryLayout() {
   };
 
   return (
-    <section className="relative w-full h-[90vh] bg-black text-white flex flex-col items-center justify-center">
-      {/* Main Slides */}
-      <div className="relative w-full aspect-video overflow-hidden">
-        {slideData.map((slide, i) => (
-          <img
-            key={slide.id}
-            ref={(el) => (slidesRef.current[i] = el)}
-            src={slide.img}
-            alt={`Slide ${i + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
-              i === current ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        ))}
-
-        {/* Navigation Arrows */}
-        <button
-          onClick={() => navigate(-1)}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 w-12 h-24 flex items-center justify-center z-10"
-        >
-          <SlArrowLeft className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
-        </button>
-        <button
-          onClick={() => navigate(1)}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 w-12 h-24 flex items-center justify-center z-10"
-        >
-          <SlArrowRight className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
-        </button>
-      </div>
-
-      {/* Thumbnails */}
-      <div className="w-full overflow-x-auto flex gap-2 mt-4 px-2 pb-8 scrollbar-none justify-center">
-        {slideData.map((slide, i) => (
-          <div
-            key={slide.id}
-            className="flex flex-col items-center flex-shrink-0 cursor-pointer"
-            onClick={() => goToSlide(i)}
-          >
-            <img
-              ref={(el) => (thumbsRef.current[i] = el)}
-              src={slide.img}
-              alt={`Thumb ${i + 1}`}
-              className="w-20 h-12 sm:w-24 sm:h-16 md:w-28 md:h-20 3xl:w-60 3xl:h-60 object-cover transition-transform transition-opacity"
-            />
-            <div
-              className={`h-[2px] w-full mt-1 rounded-full transition-all ${
-                i === current ? "bg-white" : "bg-gray-500"
-              }`}
-            />
+     <section className="relative w-full lg:h-screen bg-black text-white flex flex-col items-center justify-center">
+          {/* Main Slides */}
+          <div className="relative w-full aspect-video overflow-hidden">
+            {slideData.map((slide, i) => (
+              <div
+                key={slide.id}
+                ref={(el) => (slidesRef.current[i] = el)}
+                className="absolute inset-0 w-full h-full bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: `url(${slide.img})`,
+                  backgroundSize: "contain", // 👈 image full ga kanipistundi
+                  opacity: i === current ? 1 : 0,
+                }}
+              />
+            ))}
+    
+            {/* Custom Navigation Arrows */}
+            <button
+              onClick={() => navigate(-1)}
+              className="absolute left-0 top-1/2 -translate-y-1/2   w-12 h-24 flex items-center justify-center z-10"
+            >
+              <SlArrowLeft className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
+            </button>
+            <button
+              onClick={() => navigate(1)}
+              className="absolute right-0 top-1/2 -translate-y-1/2   w-12 h-24 flex items-center justify-center z-10"
+            >
+              <SlArrowRight className="text-white text-2xl xl:text-4xl 2xl:text-5xl" />
+            </button>
           </div>
-        ))}
-      </div>
-
-      <style>{`
-        .scrollbar-none::-webkit-scrollbar { display: none; }
-        .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
-      `}</style>
-    </section>
+    
+          {/* Thumbnails with horizontal scroll */}
+          <div className="w-full overflow-x-auto flex gap-2 mt-4 px-2 pb-8 scrollbar-none justify-center">
+            {slideData.map((slide, i) => (
+              <div
+                key={slide.id}
+                className="flex flex-col items-center flex-shrink-0 cursor-pointer"
+                onClick={() => goToSlide(i)}
+              >
+                <div
+                  ref={(el) => (thumbsRef.current[i] = el)}
+                  className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 3xl:w-40 3xl:h-40 bg-cover bg-center transition-transform transition-opacity"
+                  style={{ backgroundImage: `url(${slide.img})` }}
+                />
+                <div
+                  className={`h-[2px] w-full mt-1 rounded-full transition-all ${
+                    i === current ? "bg-white" : "bg-gray-500"
+                  }`}
+                />
+              </div>
+            ))}
+          </div>
+    
+          {/* Tailwind scrollbar hide */}
+          <style>
+            {`
+              .scrollbar-none::-webkit-scrollbar {
+                display: none;
+              }
+              .scrollbar-none {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+              }
+            `}
+          </style>
+        </section>
   );
 }

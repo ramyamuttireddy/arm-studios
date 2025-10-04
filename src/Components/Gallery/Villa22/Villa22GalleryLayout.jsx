@@ -89,7 +89,7 @@ export default function Villa22GalleryLayout() {
   };
 
   return (
-    <section className="relative w-full h-screen bg-black text-white flex flex-col items-center justify-center">
+    <section className="relative w-full lg:h-screen bg-black text-white flex flex-col items-center justify-center">
       {/* Main Slides */}
       <div className="relative w-full aspect-video overflow-hidden">
         {slideData.map((slide, i) => (
@@ -130,7 +130,7 @@ export default function Villa22GalleryLayout() {
           >
             <div
               ref={(el) => (thumbsRef.current[i] = el)}
-              className="w-15 h-15 sm:w-15 sm:h-15 md:w-16 md:h-16 3xl:w-60 3xl:h-60 bg-cover bg-center transition-transform transition-opacity"
+              className="w-10 h-10 sm:w-10 sm:h-10 md:w-15 md:h-15 3xl:w-40 3xl:h-40 bg-cover bg-center transition-transform transition-opacity"
               style={{ backgroundImage: `url(${slide.img})` }}
             />
             <div

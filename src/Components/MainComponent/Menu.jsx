@@ -102,7 +102,7 @@ export default function StaggeredMenu({
           <div className=" flex flex-col justify-center items-start gap-20 lg:gap-10 xl:gap-12 3xl:gap-32 px-20 md:px-0">
             {displaySocials && socialItems.length > 0 && (
               <div className="flex flex-col">
-                <h3 className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">
+                <h3 className="text-xs md:text-sm xl:text-sm 2xl:text-sm 3xl:text-5xl font-light uppercase tracking-widest mb-3 3xl:mb-10">
                   Socials
                 </h3>
                 {socialItems.map((social, idx) => (
@@ -126,7 +126,7 @@ export default function StaggeredMenu({
 
             {contactInfo.address && (
               <div className="3xl:mb-12">
-                <h3 className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-2 3xl:mb-8">
+                <h3 className="text-xs md:text-sm xl:text-sm 2xl:text-sm 3xl:text-5xl font-light uppercase tracking-widest mb-2 3xl:mb-8">
                   Address
                 </h3>
                 <p className="text-sm md:text-base xl:text-xl 2xl:text-2xl 3xl:text-5xl leading-relaxed 3xl:leading-[5.5rem] whitespace-pre-line break-words">
@@ -137,7 +137,7 @@ export default function StaggeredMenu({
 
             {contactInfo.email && (
               <div>
-                <h3 className="text-xs md:text-sm xl:text-base 2xl:text-lg 3xl:text-5xl font-light uppercase tracking-widest mb-2 3xl:mb-8">
+                <h3 className="text-xs md:text-sm xl:text-sm 2xl:text-sm 3xl:text-5xl font-light uppercase tracking-widest mb-2 3xl:mb-8">
                   Say Hi
                 </h3>
                 <a
