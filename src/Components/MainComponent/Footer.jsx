@@ -4,18 +4,20 @@ export default function Footer() {
       <div className="relative w-full py-12 md:py-16 lg:py-20 xl:py-24 bg-black text-white overflow-hidden fade-in flex justify-end">
         
         {/* Wrapper - left aligned */}
-        <div className="w-[80%] xl:w-[90%] 2xl:w-[73%] flex flex-col md:flex-row gap-8 md:gap-16 3xl:gap-[100px] justify-start items-start text-left">
+        <div className=" w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px]">
           
           {/* Left side - Number */}
-          <div className="text-white text-4xl md:text-6xl xl:text-[64px] 2xl:text-[64px] 3xl:text-[192px] font-Cormorant italic leading-[1] fade-in">
+          <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
+            fade-in text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant">
             04
           </div>
 
           {/* Right side - Content */}
-          <div className="flex flex-col gap-12 w-full">
+          <div className="px-0   flex flex-col w-[100%] xl:w-[100%] 2xl:w-[100%]">
             
             {/* Heading */}
-            <h2 className="pb-2 footer-heading text-3xl sm:text-5xl lg:text-6xl xl:text-[96px] 2xl:text-[96px] 3xl:text-[150px] font-sans font-medium tracking-wide fade-in leading-[1.1] border-b border-gray-600 lg:pb-[30px] 3xl:pb-[60px]">
+            <h2 className="hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
+            3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2 border-b pb-2">
               LET'S CREATE
             </h2>
 
