@@ -9,22 +9,32 @@ import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PN
 import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 9.png"
 import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 10.png"
 import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 14.png"
-import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 15.png"
-import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 18.png"
-import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 19.png"
-import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 20.png"
-import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 28.png"
-import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 29.png"
-import img14 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 30.png"
-import img15 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 31.png"
-import img16 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 32.png"
-import img17 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 35.png"
-import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 36.png"
-import img19 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 37.png"
-import img20 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 41.png"
-import img21 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 42.png"
-import img22 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 45.png"
-import img23 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 46.png"
+import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 18.png"
+import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 19.png"
+import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 28.png"
+import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 29.png"
+import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 30.png"
+import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 31.png"
+import img14 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 32.png"
+import img15 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 36.png"
+import img16 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 41.png"
+import img17 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 45.png"
+import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 46.png"
+import img19 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 51.png"
+import img20 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 52.png"
+import img21 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 53.png"
+import img22 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 58.png"
+import img23 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 59.png"
+import img24 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 61.png"
+import img25 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 62.png"
+import img26 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 65.png"
+import img27 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 66.png"
+import img28 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 67.png"
+import img29 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 68.png"
+import img30 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 69.png"
+import img31 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 71.png"
+
+
 
 const slideData = [
   {id:1, img:img1},
@@ -50,6 +60,14 @@ const slideData = [
   {id:21, img:img21},
   {id:22, img:img22},
   {id:23, img:img23},
+  {id:24, img:img16},
+  {id:25, img:img17},
+  {id:26, img:img18},
+  {id:27, img:img19},
+   {id:28, img:img20},
+  {id:29, img:img21},
+  {id:30, img:img22},
+  {id:31, img:img23},
   
 ];
 
