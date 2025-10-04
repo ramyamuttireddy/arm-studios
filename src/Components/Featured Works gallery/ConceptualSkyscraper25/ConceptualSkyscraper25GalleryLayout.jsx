@@ -2,11 +2,11 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
-import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Conceptual Skyscrapers 25/IMG1880.JPG"
-import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Conceptual Skyscrapers 25/IMG1880.JPG"
-import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Conceptual Skyscrapers 25/IMG1880.JPG"
-import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Conceptual Skyscrapers 25/IMG1883.JPG"
-import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Conceptual Skyscrapers 25/IMG1884.JPG"
+import img1 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Conceptual Skyscrapers 25/IMG_1880.JPG"
+import img2 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Conceptual Skyscrapers 25/IMG_1881.JPG"
+import img3 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Conceptual Skyscrapers 25/IMG_1882.JPG"
+import img4 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Conceptual Skyscrapers 25/IMG_1883.JPG"
+import img5 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Conceptual Skyscrapers 25/IMG_1883.JPG"
 
 const slideData = [
   {id:1, img:img1},
