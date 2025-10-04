@@ -2,13 +2,16 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
-import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 1.png"
-import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 2.png"
-import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 3.png"
-import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 4.png"
-import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 5.png"
-import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 6.png"
-import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Residence 11/PNG image 7.png"
+import img1 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 1.png"
+import img2 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 2.png"
+import img3 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 3.png"
+import img4 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 4.png"
+import img5 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 5.png"
+import img6 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 6.png"
+import img7 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 7.png"
+import img8 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 8.png"
+import img9 from "../../../../public/assets/PROJECTS  FEATURED WORKS/Residence 7/PNG image 9.png"
+
 
 
 const slideData = [
@@ -19,6 +22,8 @@ const slideData = [
    {id:5, img:img5},
   {id:6, img:img6},
   {id:7, img:img7},
+  {id:8, img:img8},
+  {id:9, img:img9},
 ];
 
 export default function Residence7GalleryLayout() {
