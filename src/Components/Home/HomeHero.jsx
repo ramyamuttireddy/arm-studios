@@ -13,7 +13,7 @@ export default function HomeHero() {
       {/* Container */}
       <div
         className="
-          hero-container w-full p-5 pt-60 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[60vh]
+          hero-container w-full p-5 pt-40 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[60vh]
           xl:p-30 xl:gap-8 
            3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[180px] xl:pt-[180px] 2xl:pt-[200px] 3xl:pt-[700px]
         "
@@ -37,13 +37,13 @@ export default function HomeHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, staggerChildren: 0.2 }}
           className="
-            hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
-            3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
+            hero-headline leading-tight uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
+            3xl:text-[220px] 3xl:leading-[200px] flex flex-col 
           "
         >
-          <span className="block 3xl:mb-6">WE DESIGN</span>
-          <span className="block 3xl:mb-6">UNIQUE SPACIAL</span>
-          <span className="block 3xl:mb-6">EXPERIENCES</span>
+          <span className="block  3xl:mb-6">WE DESIGN</span>
+          <span className="block  3xl:mb-6">UNIQUE SPACIAL</span>
+          <span className="block  3xl:mb-6">EXPERIENCES</span>
         </motion.h1>
 
         {/* Hidden image hover effect */}

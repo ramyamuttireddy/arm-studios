@@ -1,7 +1,7 @@
 function HomeAbout() {
   return (
     <div>
-      <div className="py-32  w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px]">
+      <div className="py-32  w-full flex flex-col p-10  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px]">
         {/* Left side -> 02 */}
         <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
             fade-in text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant">
@@ -11,10 +11,10 @@ function HomeAbout() {
         </div>
 
         {/* Right side -> About Content */}
-        <div className="px-0   flex flex-col w-[100%] xl:w-[100%] 2xl:w-[100%]">
+        <div className="px-0   flex flex-col  w-[100%] xl:w-[100%] 2xl:w-[100%]">
           {/* Heading */}
           <div className="border-b-2 w-full pb-2 mb-6">
-            <h2 className=" hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
+            <h2 className=" hero-headline leading-tight uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2">
               ABOUT US
             </h2>

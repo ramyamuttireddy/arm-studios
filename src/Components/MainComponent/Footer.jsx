@@ -16,13 +16,13 @@ export default function Footer() {
           <div className="px-0   flex flex-col w-[100%] xl:w-[100%] 2xl:w-[100%]">
             
             {/* Heading */}
-            <h2 className="hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
+            <h2 className="hero-headline leading-tight uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2 border-b pb-2">
               LET'S CREATE
             </h2>
 
             {/* Socials + Address + Say Hi */}
-            <div className="footer-socials w-full flex flex-col md:flex-row flex-wrap gap-12 lg:gap-20 xl:gap-28 2xl:gap-32 3xl:gap-80 lg:mt-[50px] lg:mb-[80px] items-start 3xl:mt-[100px] 3xl:mb-[150px]">
+            <div className="footer-socials w-full flex flex-col md:flex-row flex-wrap gap-12 lg:gap-20 xl:gap-28 2xl:gap-32 3xl:gap-80 mt-[50px] mb-[80px] lg:mt-[50px] lg:mb-[80px] items-start 3xl:mt-[100px] 3xl:mb-[150px]">
               
               {/* Social */}
               <div>

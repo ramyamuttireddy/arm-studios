@@ -2,27 +2,35 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight , SlArrowLeft  } from "react-icons/sl";
 
-import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 2.png"
-import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 3.png"
-import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 4.png"
-import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 5.png"
-import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 6.png"
-import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 7.png"
-import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 8.png"
-import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 9.png"
-import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 10.png"
-import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 11.png"
-import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 12.png"
-import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 13.png"
-import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 14.png"
-import img14 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 15.png"
-import img15 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 16.png"
-import img16 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 17.png"
-import img17 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 18.png"
-import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 19.png"
-import img19 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 20.png"
-import img20 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 21.png"
-import img21 from "../../../../public/assets/PROJECTSALLPROJECTS/Flat Interiors 221/PNG image 22.png"
+import img1 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 2.png"
+import img2 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 3.png"
+import img3 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 4.png"
+import img4 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 5.png"
+import img5 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 6.png"
+import img6 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 7.png"
+import img7 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 8.png"
+import img8 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 9.png"
+import img9 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 10.png"
+import img10 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 11.png"
+import img11 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 12.png"
+import img12 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 13.png"
+import img13 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 14.png"
+import img14 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 15.png"
+import img15 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 16.png"
+import img16 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 17.png"
+import img17 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 18.png"
+import img18 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 19.png"
+import img19 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 20.png"
+import img20 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 21.png"
+import img21 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 22.png"
+import img22 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 23.png"
+import img23 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 24.png"
+import img24 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 25.png"
+import img25 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 26.png"
+import img26 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 27.png"
+import img27 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image 29.png"
+import img28 from "../../../../public/assets/PROJECTS OUR PROJECTS/Flat Interiors 221/PNG image.png"
+
 
 
 const slideData = [
@@ -47,6 +55,14 @@ const slideData = [
   {id:19, img:img19},
   {id:20, img:img20},
    {id:21, img:img21},
+    {id:22, img:img22},
+  {id:23, img:img23},
+  {id:24, img:img24},
+   {id:25, img:img25},
+  {id:26, img:img26},
+  {id:27, img:img27},
+  {id:28, img:img28},
+   
 ];
 
 export default function FlatInteriors221GalleryLayout() {

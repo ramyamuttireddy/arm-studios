@@ -24,7 +24,7 @@ export default function OurProjects() {
 
           {/* Heading */}
           <div className="px-0   flex flex-col w-[100%] xl:w-[100%] 2xl:w-[100%] border-b pb-2">
-            <h2 className="hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
+            <h2 className="hero-headline leading-tight uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
             3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2">
               OUR PROJECTS
             </h2>
