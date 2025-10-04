@@ -46,7 +46,7 @@ const projects = [
   {
     id: 7,
     title: "House CAD",
-    year: " 2012",
+    year: " 2019",
     image: "/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 2.png",
     link: "/projects/house-cad",
   },

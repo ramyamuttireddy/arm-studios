@@ -2,19 +2,29 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
-import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 1.png"
-import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 2.png"
-import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 3.png"
-import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 4.png"
-import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 5.png"
-import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 6.png"
-import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 7.png"
-import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 8.png"
-import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 9.png"
-import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 10.png"
-import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 11.png"
-import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 12.png"
-import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 13.png"
+import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 2.png"
+import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 3.png"
+import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 4.png"
+import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 8.png"
+import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 9.png"
+import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 10.png"
+import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 14.png"
+import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 15.png"
+import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 18.png"
+import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 19.png"
+import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 20.png"
+import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 28.png"
+import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 29.png"
+import img14 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 30.png"
+import img15 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 31.png"
+import img16 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 32.png"
+import img17 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 35.png"
+import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 36.png"
+import img19 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 37.png"
+import img20 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 41.png"
+import img21 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 42.png"
+import img22 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 45.png"
+import img23 from "../../../../public/assets/PROJECTSALLPROJECTS/Forest Resort/PNG image 46.png"
 
 const slideData = [
   {id:1, img:img1},
@@ -30,6 +40,17 @@ const slideData = [
   {id:11, img:img11},
   {id:12, img:img12},
    {id:13, img:img13},
+   {id:14, img:img14},
+  {id:15, img:img15},
+   {id:16, img:img16},
+  {id:17, img:img17},
+  {id:18, img:img18},
+  {id:19, img:img19},
+   {id:20, img:img20},
+  {id:21, img:img21},
+  {id:22, img:img22},
+  {id:23, img:img23},
+  
 ];
 
 export default function ForestResortGalleryLayout() {

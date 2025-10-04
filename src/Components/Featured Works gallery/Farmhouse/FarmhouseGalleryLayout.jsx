@@ -2,19 +2,25 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
-import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 1.png"
-import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 2.png"
-import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 3.png"
-import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 4.png"
-import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 5.png"
-import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 6.png"
-import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 7.png"
-import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 8.png"
-import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 9.png"
-import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 10.png"
-import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 11.png"
-import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 12.png"
-import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 13.png"
+import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 01.jpg"
+import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 02.jpg"
+import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 03.jpg"
+import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 04.jpg"
+import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 05.jpg"
+import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 06.jpg"
+import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 07.jpg"
+import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 08.jpg"
+import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 09.jpg"
+import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 10.jpg"
+import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 11.jpg"
+import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 12.jpg"
+import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 13.jpg"
+import img14 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 14.jpg"
+import img15 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 15.jpg"
+import img16 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 16.jpg"
+import img17 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 17.jpg"
+import img18 from "../../../../public/assets/PROJECTSALLPROJECTS/Farm house near richmond/PNG IMAGE 18.jpg"
+
 
 const slideData = [
   {id:1, img:img1},
@@ -30,6 +36,11 @@ const slideData = [
   {id:11, img:img11},
   {id:12, img:img12},
    {id:13, img:img13},
+    {id:14, img:img14},
+  {id:15, img:img15},
+  {id:16, img:img16},
+  {id:17, img:img17},
+   {id:18, img:img18},
 ];
 
 export default function FarmhouseGalleryLayout() {

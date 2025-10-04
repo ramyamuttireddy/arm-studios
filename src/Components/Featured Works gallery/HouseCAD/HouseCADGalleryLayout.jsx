@@ -2,19 +2,17 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
-import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 1.png"
-import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 2.png"
-import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 3.png"
-import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 4.png"
-import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 5.png"
-import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 6.png"
-import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 7.png"
-import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 8.png"
-import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 9.png"
-import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 10.png"
-import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 11.png"
-import img12 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 12.png"
-import img13 from "../../../../public/assets/PROJECTSALLPROJECTS/Villa 22/PNG image 13.png"
+import img1 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 2.png"
+import img2 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 3.png"
+import img3 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 4.png"
+import img4 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 5.png"
+import img5 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 6.png"
+import img6 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 7.png"
+import img7 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 8.png"
+import img8 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 9.png"
+import img9 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 10.png"
+import img10 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image 11.png"
+import img11 from "../../../../public/assets/PROJECTSALLPROJECTS/House CAD Brazil/PNG image.png"
 
 const slideData = [
   {id:1, img:img1},
@@ -28,8 +26,7 @@ const slideData = [
    {id:9, img:img9},
   {id:10, img:img10},
   {id:11, img:img11},
-  {id:12, img:img12},
-   {id:13, img:img13},
+ 
 ];
 
 export default function HouseCADGalleryLayout() {
