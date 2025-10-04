@@ -5,7 +5,7 @@ export default function HomeHero() {
     <section
       id="home"
       className="
-        relative flex flex-col gap-40 min-h-screen bg-black text-white overflow-hidden
+        relative flex flex-col gap-20 min-h-screen bg-black text-white overflow-hidden
         hero-top-padding
         3xl:gap-[300px]  lg:gap-80 xl:gap-10 2xl:gap-20
       "
@@ -13,7 +13,7 @@ export default function HomeHero() {
       {/* Container */}
       <div
         className="
-          hero-container w-full p-5 pt-40 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[60vh]
+          hero-container w-full p-5 pt-20 md:px-12 lg:px-20 flex gap-10 justify-center items-start h-[60vh]
           xl:p-30 xl:gap-8 
            3xl:gap-[100px] 3xl:px-[130px]  lg:pt-[180px] xl:pt-[180px] 2xl:pt-[200px] 3xl:pt-[700px]
         "
