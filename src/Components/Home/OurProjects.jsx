@@ -106,7 +106,6 @@ export default function OurProjects() {
 
                     <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                       <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                        <h3>xxxxxxxxxxxxxxx</h3>
                         <h3>Residential</h3>
                       </div>
                       <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
@@ -145,7 +144,7 @@ export default function OurProjects() {
 
                     <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                       <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                        <h3>xxxxxxxxxxxxxxx</h3>
+                        
                         <h3>Residential</h3>
                       </div>
                       <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
@@ -222,7 +221,7 @@ export default function OurProjects() {
 
                     <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                       <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                        <h3>xxxxxxxxxxxxxxx</h3>
+              
                         <h3>Residential</h3>
                       </div>
                       <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
@@ -253,7 +252,7 @@ export default function OurProjects() {
                 />
                 <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                   <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                    <h3>xxxxxxxxxxxxxxx</h3>
+                    
                     <h3>Residential</h3>
                   </div>
                   <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">

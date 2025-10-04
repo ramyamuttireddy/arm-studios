@@ -36,10 +36,10 @@ export default function WorkProjects() {
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  Lorem Ipusm ajdf Residential
+                   Condominium
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px] 3xl:text-[50px]">
-                  0000
+                  2020
                 </div>
               </div>
             </div>
@@ -58,10 +58,10 @@ export default function WorkProjects() {
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  Lorem Ipusm ajdf Residential
+                  Condominium
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  0000
+                  2022
                 </div>
               </div>
             </div>
@@ -104,10 +104,10 @@ export default function WorkProjects() {
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  Lorem Ipusm ajdf Residential
+                  Residential
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  0000
+                  2021
                 </div>
               </div>
             </div>
@@ -152,11 +152,11 @@ export default function WorkProjects() {
             </div>
             <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
               <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                <h3>Lorem Ipusm ajdf </h3>
+                
                 <h3>Residential</h3>
               </div>
               <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                <p>0000</p>
+                <p>2021</p>
               </div>
             </div>
           </div>
@@ -181,10 +181,10 @@ export default function WorkProjects() {
             </div>
             <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
               <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                <div>Lorem Ipusm ajdf</div>
+                
                 <div>Residential</div>
               </div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
+              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">2022</div>
             </div>
           </div>
           <div
@@ -199,10 +199,9 @@ export default function WorkProjects() {
             </div>
             <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
               <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                <div>Lorem Ipusm ajdf</div>
                 <div>Residential</div>
               </div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">0000</div>
+              <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">2019</div>
             </div>
           </div>
         </div>
@@ -228,10 +227,10 @@ export default function WorkProjects() {
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  Lorem Ipusm ajdf Residential
+                   Residential
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  0000
+                  2020
                 </div>
               </div>
             </div>
@@ -274,10 +273,10 @@ export default function WorkProjects() {
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  Lorem Ipusm ajdf Residential
+                   Residential
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  0000
+                  2023
                 </div>
               </div>
             </div>
@@ -306,11 +305,11 @@ export default function WorkProjects() {
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                  <div>Lorem Ipusm ajdf</div>
+                  
                   <div> Residential</div>
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  0000
+                  2023
                 </div>
               </div>
             </div>
@@ -330,11 +329,11 @@ export default function WorkProjects() {
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                  <div>Lorem Ipusm ajdf</div>
-                  <div> Residential</div>
+                  
+                  <div> Hospitality</div>
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  0000
+                  2023
                 </div>
               </div>
             </div>
@@ -377,11 +376,11 @@ export default function WorkProjects() {
               </div>
               <div className="flex justify-between border-b pb-3 md:pb-4 lg:pb-6 xl:pb-[35px] 3xl:pb-[88px]">
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px] flex flex-col 3xl:gap-8">
-                  <div>Lorem Ipusm ajdf</div>
+                  
                   <div> Residential</div>
                 </div>
                 <div className="text-base sm:text-lg md:text-xl lg:text-[15px] 2xl:text-[20px]  3xl:text-[50px]">
-                  0000
+                  2016
                 </div>
               </div>
             </div>
