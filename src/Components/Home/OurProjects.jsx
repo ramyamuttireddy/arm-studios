@@ -12,20 +12,18 @@ export default function OurProjects() {
   };
 
   return (
-    <section className="projects-section relative w-full py-12 md:py-16 lg:py-16 xl:py-16 bg-black text-white overflow-hidden fade-in">
+    <section className="projects-section relative w-full py-12 md:py-16 lg:py-20 xl:py-10 bg-black text-white overflow-hidden fade-in">
       <div className="px-4 sm:px-6 md:px-2 lg:px-1 xl:px-0">
         {/* Header */}
         <div className=" w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px] ">
           {/* Number */}
-          <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
-            fade-in text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant ">
+          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[64px] fade-in  text-right 3xl:text-[120px] 3xl:leading-[1] ">
             02
           </div>
 
           {/* Heading */}
-          <div className="lg:w-[100%] 2xl:w-[45%] border-b-2 w-full pb-2 flex justify-start">
-            <h2 className="hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium
-            3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2">
+          <div className="border-b-2 w-full pb-2 flex justify-start">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-[90px] 2xl:text-[110px] font-medium border-white pb-2 tracking-wide fade-in 3xl:text-[220px] 3xl:leading-[1] header-title">
               OUR PROJECTS
             </h2>
           </div>
