@@ -2,20 +2,20 @@ function OurServices () {
     return(
         <>
           <div>
-               <div className="flex flex-col gap-10 justify-center items-center pr-1pd pl-1pd pb-28 xl:p-10
-                                md:gap-16 lg:flex-row 
-                                xl:pb-40 2xl:pb-44
-                                1xl:pr-2p 1xl:pl-2p">
-                  <div className="flex-1">
-                    <div className="lg:pl-1p flex justify-center items-center">
-                      <div class='border size-48 rounded-full flex justify-center items-center 2xl:size-64 3xl:size-80'>
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25" stroke-width="0.1" stroke="currentColor" class="size-32 xl:size-36 1xl:size-56">
+               <div className="flex flex-col gap-10 pb-28 pr-7 pl-7
+                                md:gap-16 lg:flex-row lg:gap-2
+                                xl:pb-40 xl:pr-16 2xl:pb-44
+                                ">
+                  <div className="flex-1 lg:relative">
+                    <div className="lg:pl-1p flex justify-center items-center lg:absolute lg:top-[10%] lg:left-[10%] xl:left-[20%] xl:top-[16%] 4xl:left-[40%]">
+                      <div class='border size-40 rounded-full flex justify-center items-center xl:size-44 2xl:size-52 3xl:size-60'>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25" stroke-width="0.1" stroke="currentColor" class="size-24 xl:size-28 2xl:size-36">
                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                             </svg>
                         </div>
                     </div>    
                   </div>
-                  <div className="flex-1 xl:mr-6">
+                  <div className="flex-1 4xl:pr-96">
                       <div className="flex flex-col gap-9">
                          <div className="text-4xl font-medium">
                               Our Services

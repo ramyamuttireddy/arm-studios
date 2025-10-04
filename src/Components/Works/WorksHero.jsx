@@ -39,8 +39,8 @@ export default function WorksHero() {
               3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
             "
           >
-            <span className="block 3xl:mb-6">FEATURED</span>
-            <span className="block 3xl:mb-6">WORKS</span>
+            <span className="block 3xl:mb-6">FEATURED WORKS</span>
+            
           </motion.h1>
 
           {/* Hidden image hover effect (optional) */}
