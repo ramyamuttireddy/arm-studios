@@ -17,7 +17,7 @@ export default function OurProjects() {
         {/* Header */}
         <div className=" w-full flex  md:flex-row gap-4 md:gap-10 lg:gap-10   mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px] ">
           {/* Number */}
-          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[64px] fade-in  text-right 3xl:text-[120px] 3xl:leading-[1] ">
+          <div className="text-white text-2xl sm:text-4xl md:text-5xl font-serif italic xl:text-[50px] 2xl:text-[64px] fade-in w-[30%] 2xl:w-[45%] text-right 3xl:text-[120px] 3xl:leading-[1] ">
             02
           </div>
 

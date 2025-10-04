@@ -4,7 +4,7 @@ import projects from "./projects";
 
 export default function AllWorksList() {
   const [hoverImage, setHoverImage] = useState(projects[0].image);
-  const [visibleCount, setVisibleCount] = useState(11); // initially show first 11
+  const [visibleCount, setVisibleCount] = useState(11);
   const bgRef = useRef(null);
   const navigate = useNavigate();
   const observerRef = useRef(null);
@@ -40,19 +40,19 @@ export default function AllWorksList() {
     });
   }, [hoverImage]);
 
-  // Intersection Observer for lazy loading remaining projects
+  // Lazy load
   useEffect(() => {
     if (!observerRef.current) return;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisibleCount(projects.length); // show all projects
+            setVisibleCount(projects.length);
             observer.disconnect();
           }
         });
       },
-      { root: null, rootMargin: "0px", threshold: 0.1 }
+      { threshold: 0.1 }
     );
     observer.observe(observerRef.current);
     return () => observer.disconnect();
@@ -60,36 +60,35 @@ export default function AllWorksList() {
 
   return (
     <div className="relative w-full min-h-screen bg-black text-white overflow-hidden">
-      {/* Background */}
+      {/* ✅ Background Image (always cover full area) */}
       <img
         ref={bgRef}
-        className="absolute top-0 left-0 w-full h-full object-cover object-center z-0"
+        className="absolute top-0 left-0 w-full h-full object-contain object-center z-0"
         alt="Background Hover"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/10 z-[1]"></div>
+      <div className="absolute inset-0 bg-black/30 z-[1]" />
 
       {/* Project list */}
-      <div className="relative z-[5] w-full min-h-screen overflow-y-auto scrollbar-none xl:pt-20">
-        <div className="w-full lg:w-[50%] xl:w-[50%] 2xl:w-[40%] mx-auto py-8 flex flex-col gap-3 px-4 3xl:gap-10">
+      <div className="relative z-[5] w-full min-h-screen overflow-y-auto scrollbar-none flex justify-center items-center">
+        <div className="w-full lg:w-[50%] xl:w-[40%] 2xl:w-[30%] m-auto py-5 flex flex-col justify-center items-center gap-2  3xl:gap-10">
           {projects.slice(0, visibleCount).map((project) => (
             <div
               key={project.id}
-              className="project-item w-full flex flex-col sm:flex-row justify-between items-start sm:items-center py-2 3xl:py-6 px-2 sm:px-6 border-b border-white/20 cursor-pointer group relative"
+              className="project-item w-full flex flex-col sm:flex-row justify-between items-start sm:items-center sm:px-2 border-b border-white/20 cursor-pointer group relative "
               onMouseEnter={() => setHoverImage(project.image)}
               onClick={() => navigate(project.link)}
             >
-              <div className="font-sans text-lg sm:text-md md:text-[16px] 3xl:text-[40px] font-bold text-white group-hover:text-black transition-colors duration-300">
+              <div className="font-sans text-lg md:text-[15px] 3xl:text-[40px] font-bold text-white group-hover:text-black transition-colors duration-300">
                 {project.title}
               </div>
-              <div className="project-year text-base sm:text-md md:text-[16px] 3xl:text-[40px] text-white group-hover:text-black transition-colors duration-300 mt-1 sm:mt-0">
+              <div className="project-year text-base md:text-[15px] 3xl:text-[40px] text-white group-hover:text-black transition-colors duration-300 mt-1 sm:mt-0">
                 {project.year}
               </div>
               <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></span>
             </div>
           ))}
-          {/* Invisible div to trigger IntersectionObserver */}
           <div ref={observerRef} className="h-1 w-full"></div>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function AllWorksHero() {
             transition={{ duration: 0.8 }}
             className="
               hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px]
-              fade-in text-left 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant
+              fade-in text-left 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant 
             "
           >
             88
@@ -36,11 +36,11 @@ export default function AllWorksHero() {
             transition={{ duration: 1, staggerChildren: 0.2 }}
             className="
               hero-headline leading-[50px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[80px] font-medium
-              3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2
+              3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2 mr-20
             "
           >
-            <span className="block 3xl:mb-6">ALL</span>
-            <span className="block 3xl:mb-6">WORKS</span>
+            <span className="block 3xl:mb-6">ALL WORKS</span>
+            
           </motion.h1>
 
           {/* Hidden image hover effect (optional) */}
@@ -54,9 +54,9 @@ export default function AllWorksHero() {
         </div>
 
         {/* Bottom Info Section */}
-        <div className="w-full bg-black/80 flex justify-end md:justify-end p-8 pb-0 z-20 3xl:pb-8">
+        <div className=" w-full bg-black/80 flex justify-end md:justify-end p-8 pb-0 z-20 3xl:pb-8">
           <div className="text-left border-b border-white/30 p-3 3xl:p-6">
-            <div className="max-w-[1000px] mx-auto flex flex-col lg:mr-[100px] xl:mr-[200px] 2xl:mr-96">
+            <div className="max-w-[1000px] mx-auto flex flex-col lg:mr-[100px] xl:mr-[100px] 2xl:mr-96">
               <p className="text-sm 2xl:text-[20px] 3xl:text-[48px] 2xl:leading-[1.6] 3xl:leading-[1.8]">
                 Architecture
               </p>
