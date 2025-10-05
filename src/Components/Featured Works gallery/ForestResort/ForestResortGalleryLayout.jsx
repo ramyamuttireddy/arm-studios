@@ -60,14 +60,14 @@ const slideData = [
   {id:21, img:img21},
   {id:22, img:img22},
   {id:23, img:img23},
-  {id:24, img:img16},
-  {id:25, img:img17},
-  {id:26, img:img18},
-  {id:27, img:img19},
-   {id:28, img:img20},
-  {id:29, img:img21},
-  {id:30, img:img22},
-  {id:31, img:img23},
+  {id:24, img:img24},
+  {id:25, img:img25},
+  {id:26, img:img26},
+  {id:27, img:img27},
+   {id:28, img:img28},
+  {id:29, img:img29},
+  {id:30, img:img30},
+  {id:31, img:img31},
   
 ];
 
