@@ -4,7 +4,7 @@ export default function WorksHero() {
   return (
     <section
       id="featured"
-      className="relative flex flex-col gap-10 bg-black text-white overflow-hidden h-screen 3xl:gap-[120px]"
+      className="relative flex flex-col gap-10 bg-black text-white overflow-hidden h-[80vh] lg:h-screen 3xl:gap-[120px]"
     >
       <div>
         {/* Container */}
