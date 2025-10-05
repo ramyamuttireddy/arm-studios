@@ -6,11 +6,11 @@ function IndustryLeaders() {
         {/* Images section */}
 
         {/* Our Team Section */}
-        <div className="pr-5 py-20 bg-black text-white lg:pr-12 2xl:pr-20 3xl:pr-36">
+        <div className="p-5 py-20 bg-black text-white lg:pr-12 2xl:pr-20 3xl:pr-36">
           {/* heading section */}
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 lg:gap-10 mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px]">
             {/* Counter */}
-            <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px] fade-in text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant">
+            <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px] text-left md:text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant">
               25'
             </div>
 
@@ -18,12 +18,12 @@ function IndustryLeaders() {
             <div className="flex flex-col xl:w-[90%] 2xl:w-[80%]">
               {/* Heading */}
               <div className="border-b-2 w-full pb-2 mb-6">
-                <h2 className="hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium 3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2">
+                <h2 className="hero-headline leading-tight uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium 3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2">
                   INDUSTRY LEADER
                 </h2>
               </div>
 
-              <div className="w-full pt-16 flex flex-col lg:flex-row lg:gap-8 xl:gap-[70px]">
+              <div className="w-full pt-10 flex flex-col lg:flex-row lg:gap-8 xl:gap-[70px]">
                 <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 2xl:gap-6 pt-14">
                   <img
                     src="/assets/CORPORATE LOGOS/ABB.JPG"

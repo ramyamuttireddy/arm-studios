@@ -3,7 +3,7 @@ import React from "react";
 export default function ContactSection() {
   return (
           <section
-        className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat xl:mt-60 2xl:mt-60"
+        className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat mt-60 xl:mt-60 2xl:mt-60"
         style={{ backgroundImage: "url('/assets/contact/contactus-bg-images.jpg')" }}
       >
         {/* Overlay */}
@@ -21,18 +21,18 @@ export default function ContactSection() {
           </div>
 
           {/* Main Contact Text */}
-          <div className="flex flex-col md:gap-3 font-medium text-4xl md:text-5xl xl:text-7xl 2xl:text-8xl 3xl:text-[200px] text-white">
+          <div className="flex flex-col md:gap-3 font-medium text-md md:text-5xl xl:text-7xl 2xl:text-8xl 3xl:text-[200px] text-white">
             <div className="pl-10 md:pl-36 xl:pl-72 2xl:pl-[450px] 3xl:pl-[600px]">HELLO,</div>
             <div className="flex flex-col md:gap-3">
               <div className="flex  gap-10">
-                 <div>MY NAME IS</div>
-                <div className="border-b w-[60%] md:w-[50%] 3xl:w-[40%] border-white">
+                 <div >MY NAME IS</div>
+                <div className="border-b w-[50%] md:w-[50%] 3xl:w-[40%] border-white">
                   <div className=""></div>
                 </div>
               </div>
               <div className="flex  gap-10">
                  <div>HERE IS MY EMAIL</div>
-                <div className="border-b w-[40%] md:w-[30%] 3xl:w-[25%] border-white">
+                <div className="border-b w-[50%] md:w-[30%] 3xl:w-[25%] border-white">
                   <div></div>
                 </div>
               </div>

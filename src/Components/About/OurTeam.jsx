@@ -13,11 +13,11 @@ function OurTeam() {
         {/* Images section */}
 
         {/* Our Team Section */}
-        <div className="pr-5 py-40 bg-black text-white lg:pr-12 2xl:pr-20 3xl:pr-36">
+        <div className="p-5 py-40 bg-black text-white lg:pr-12 2xl:pr-20 3xl:pr-36">
           {/* heading section */}
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 lg:gap-10 mb-8 md:mb-12 lg:mb-1 3xl:gap-[40px] 3xl:mb-[80px]">
             {/* Counter */}
-            <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px] fade-in text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant">
+            <div className="w-[30%] 2xl:w-[45%] hero-counter text-white text-2xl sm:text-4xl md:text-5xl italic xl:text-[50px] 2xl:text-[64px] f text-left md:text-right 3xl:text-[180px] 3xl:leading-[180px] font-Cormorant">
               02
             </div>
 
@@ -25,7 +25,7 @@ function OurTeam() {
             <div className="flex flex-col xl:w-[90%] 2xl:w-[80%]">
               {/* Heading */}
               <div className="border-b-2 w-full pb-2 mb-6">
-                <h2 className="hero-headline leading-[0px] uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium 3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2">
+                <h2 className="hero-headline leading-tight uppercase text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-[75px] 2xl:text-[90px] font-medium 3xl:text-[220px] 3xl:leading-[200px] flex flex-col gap-2">
                   Our Team
                 </h2>
               </div>
