@@ -39,10 +39,16 @@ export default function LandingPage() {
     return () => clearTimeout(timer);
   }, [navigate]);
 
+  const goHome = () => {
+    localStorage.setItem("landingSeen", "true");
+    navigate("/home");
+  };
+
   return (
     <div
       ref={landingRef}
-      className="full-landing-image w-full h-screen relative font-sans overflow-hidden"
+      className="full-landing-image w-full h-screen relative font-sans overflow-hidden cursor-pointer"
+      onClick={goHome} // ✅ Click also navigates to home
     >
       {/* Background image applied via CSS */}
       <div className="absolute inset-0"></div>
