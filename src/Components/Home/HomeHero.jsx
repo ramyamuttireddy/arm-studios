@@ -5,7 +5,7 @@ export default function HomeHero() {
     <section
       id="home"
       className="
-        relative flex flex-col gap-4 min-h-screen bg-black text-white overflow-hidden
+        relative flex flex-col gap-4 h-[60vh] md:h-screen bg-black text-white overflow-hidden
         hero-top-padding
         3xl:gap-[300px]  lg:gap-80 xl:gap-10 2xl:gap-20
       "

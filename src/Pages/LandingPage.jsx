@@ -14,9 +14,9 @@ export default function LandingPage() {
   useEffect(() => {
     if (landingRef.current) {
       $(landingRef.current).ripples({
-        resolution: 256,   // exact value you wanted
-        perturbance: 0.01, // exact value you wanted
-        dropRadius: 20,    // optional: makes ripple more visible
+        resolution: 256,
+        perturbance: 0.01,
+        dropRadius: 20,
       });
     }
 
@@ -29,16 +29,20 @@ export default function LandingPage() {
     };
   }, []);
 
-  const goHome = () => {
-    localStorage.setItem("landingSeen", "true");
-    navigate("/home");
-  };
+  useEffect(() => {
+    // ✅ Automatically go to home after 10 seconds
+    const timer = setTimeout(() => {
+      localStorage.setItem("landingSeen", "true");
+      navigate("/home");
+    }, 10000); // 10 seconds
+
+    return () => clearTimeout(timer);
+  }, [navigate]);
 
   return (
     <div
       ref={landingRef}
-      className="full-landing-image w-full h-screen relative cursor-pointer font-sans overflow-hidden"
-      onClick={goHome}
+      className="full-landing-image w-full h-screen relative font-sans overflow-hidden"
     >
       {/* Background image applied via CSS */}
       <div className="absolute inset-0"></div>
