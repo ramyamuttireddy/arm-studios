@@ -30,11 +30,11 @@ export default function LandingPage() {
   }, []);
 
   useEffect(() => {
-    // ✅ Automatically go to home after 10 seconds
+    // ✅ Automatically go to home after 8 seconds
     const timer = setTimeout(() => {
       localStorage.setItem("landingSeen", "true");
       navigate("/home");
-    }, 10000); // 10 seconds
+    }, 8000); // 8000ms = 8 seconds
 
     return () => clearTimeout(timer);
   }, [navigate]);
