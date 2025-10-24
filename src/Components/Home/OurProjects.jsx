@@ -165,13 +165,17 @@ export default function OurProjects() {
               {/* Right Column */}
               <div className="flex flex-col gap-12">
                 {/* Arrow Button */}
-                <div
-                  className="mt-10 md:mt-16 lg:mt-40 flex justify-center lg:justify-end"
-                  onClick={() => handleClick("/projects/residence11")}
-                >
-                  <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
-                    <GoArrowDown className="text-gray-400 w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] 2xl:w-[100px] 2xl:h-[100px] 3xl:w-[120px] 3xl:h-[120px]" />
-                  </button>
+                {/* Right Column */}
+                <div className="flex flex-col gap-12">
+                  {/* Arrow Button */}
+                  <div
+                    className="mt-10 md:mt-16 lg:mt-40 hidden sm:flex justify-center lg:justify-end"
+                    onClick={() => handleClick("/projects/residence11")}
+                  >
+                    <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">
+                      <GoArrowDown className="text-gray-400 w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] 2xl:w-[100px] 2xl:h-[100px] 3xl:w-[120px] 3xl:h-[120px]" />
+                    </button>
+                  </div>
                 </div>
 
                 {/* Residence #11 */}
