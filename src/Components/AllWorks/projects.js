@@ -102,7 +102,7 @@ const projects = [
   {
     id: 15,
     title: "Sandalwood Villa Interiors",
-    year: "Residential 2019",
+    year: "2019",
     image: "/assets/PROJECTSALLPROJECTS/Sandalwood Villa Interiors/PNG image 1.png",
     link: "/projects/sandalwoodvilla",
   },
