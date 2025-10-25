@@ -169,7 +169,7 @@ export default function OurProjects() {
                 <div className="flex flex-col gap-12">
                   {/* Arrow Button */}
                   <div
-                    className="mt-10 md:mt-16 lg:mt-40 hidden md:flex justify-center lg:justify-end"
+                    className="mt-10 md:mt-16 lg:mt-40 hidden sm:hidden md:flex justify-center lg:justify-end"
                     onClick={() => handleClick("/projects/residence11")}
                   >
                     <button className="arrow-button flex items-center justify-center rounded-full border border-gray-400 hover:border-white hover:bg-white transition duration-300 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[500px] 3xl:h-[500px] 3xl:m-[100px]">

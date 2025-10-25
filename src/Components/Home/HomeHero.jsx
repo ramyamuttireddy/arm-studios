@@ -5,7 +5,7 @@ export default function HomeHero() {
     <section
       id="home"
       className="
-        relative flex flex-col gap-4 h-[60vh] md:h-screen bg-black text-white overflow-hidden
+        relative flex flex-col gap-4  bg-black text-white overflow-hidden
         hero-top-padding
         3xl:gap-[300px]  lg:gap-80 xl:gap-10 2xl:gap-20
       "
@@ -61,22 +61,15 @@ export default function HomeHero() {
 
       {/* Main Image Section */}
       <div className="relative w-full flex justify-end md:pt-50  xl:pb-[50px]  3xl:pt-[100px]">
-        {/* <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
-          className="
-            floating-circle absolute top-[-100px] right-[200px] w-32 h-32 md:w-48 md:h-48 bg-blue-500 rounded-full
-            -translate-x-1/2 -translate-y-1/2
-            3xl:w-[24rem] 3xl:h-[24rem] 3xl:top-[-200px] 3xl:right-[400px]
-          "
-        /> */}
+      
 
-        <img
-          src="/assets/HomePageImages/hero_circle.png"
-          alt="House Design" 
-          className="w-full lg:w-[900px]  xl:w-[960px] 2xl:w-[1370px] object-cover 3xl:w-[2800px] 3xl:h-auto"
-        />
+        <div className="h-[800px] lg:h-[800px] overflow-hidden">
+          <img
+            src="/assets/HomePageImages/hero_circle.png"
+            alt="House Design"
+            className="w-full h-full object-cover lg:w-[900px] xl:w-[960px] 2xl:w-[1370px] 3xl:w-[2800px]"
+          />
+        </div>
 
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
