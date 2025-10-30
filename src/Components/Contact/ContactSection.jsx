@@ -14,7 +14,7 @@ export default function ContactSection() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/muttireddyramya9@gmail.com",
+        "https://formsubmit.co/info@armstudios.design",
         {
           method: "POST",
           body: formData,
