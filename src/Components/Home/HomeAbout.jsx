@@ -53,7 +53,7 @@ function HomeAbout() {
               {/* About Text */}
               <div className="flex flex-col justify-start gap-4 text-left font-normal pb-[30px] lg:text-[15px] lg:leading-7 about-text 3xl:text-[48px] 3xl:leading-[1.4]">
                 <p>
-                  M STUDIOS LLP. is a high-energy, Bharatiya design firm
+                  ARM STUDIOS LLP. is a high-energy, Bharatiya design firm
                   offering architecture, interior design, planning, and
                   sustainability services to a diverse group of clients. Since
                   our firm has developed expertise in commercial, educational,
@@ -61,7 +61,7 @@ function HomeAbout() {
                   philosophy of sustainability woven into them
                 </p>
                 <p>
-                  ARM Studios brings quality assurance to bear on every project
+                  Studios brings quality assurance to bear on every project
                   we undertake. Your needs drive our vision to design and build
                   excellent spaces for your organization.
                 </p>
